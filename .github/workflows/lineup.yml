@@ -1,0 +1,44 @@
+# Rebuilds the Live TV guide's channel list every week and publishes it, signed, for the guide on the TV.
+name: Weekly channel list
+
+on:
+  schedule:
+    - cron: "30 21 * * 0"   # Mondays 03:00 India time
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # No stream test here: these machines are outside India, where India-only streams look dead. The list says
+      # "checked": false and the guide tests the streams on the TV.
+      - name: Build the channel list
+        run: python -I tools/build_channels.py --no-check --out lineup/channels.json
+
+      # The private key is the repository secret LINEUP_SIGNING_KEY; the guide holds the public half.
+      - name: Sign it
+        env:
+          LINEUP_KEY: ${{ secrets.LINEUP_SIGNING_KEY }}
+        run: |
+          umask 077
+          printf '%s\n' "$LINEUP_KEY" > "$RUNNER_TEMP/key.pem"
+          openssl dgst -sha256 -sign "$RUNNER_TEMP/key.pem" -out lineup/channels.json.sig lineup/channels.json
+          rm -f "$RUNNER_TEMP/key.pem"
+
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lineup/channels.json lineup/channels.json.sig data/jiotv_channels.json
+          git commit -m "Channel list $(date -u +%Y-%m-%d)" || echo "nothing new"
+          git push
