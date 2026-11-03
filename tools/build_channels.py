@@ -351,6 +351,8 @@ LANG_FIXES = {"ET Now Swadesh": "Hindi", "Saam TV": "Marathi", "Kaumudy TV": "Ma
               "DD Urdu": "Urdu", "DD Kashir": "Urdu", "Tehzeeb TV": "Urdu", "Gulistan News": "Urdu",
               "DD Assam": "Assamese", "DD Manipur": "Manipuri", "DD Mizoram": "Mizo", "Fateh TV": "Punjabi",
               "FashionTV (India)": "English",
+              # From the owner's own research (2026-11-04).
+              "Apna Punjab TV": "Punjabi",
               # Doordarshan's Shillong channel: Khasi and Garo programmes, not one of the English channels.
               "DD Meghalaya": "Khasi"}
 # Genres iptv-org gets wrong or leaves out (a channel without one used to land in Entertainment; the owner found
@@ -377,6 +379,8 @@ CAT_FIXES = {
     "TV 100 (India)": "News", "Jaya Plus": "News", "Win TV": "News", "MBC TV": "News",
     "ETV Life": "Devotional", "Disha TV": "Devotional", "Prarthana Bhawan TV": "Devotional",
     "MH One": "Music", "DD Mizoram": "Entertainment",
+    # From the owner's own research (2026-11-04).
+    "Calvary TV": "Devotional", "Shekinah TV": "Devotional", "Peppers TV": "Entertainment",
 }
 # A thousand numbers per genre (the owner's choice: Movies outgrew 401-500 and would have renumbered every genre
 # after it).
