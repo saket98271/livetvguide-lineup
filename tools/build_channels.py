@@ -347,6 +347,10 @@ LANG_FIXES = {"ET Now Swadesh": "Hindi", "Saam TV": "Marathi", "Kaumudy TV": "Ma
               "Mercy TV (India)": "Urdu",
               # Became a Hindi news channel (N1, rebroadcasting APN News).
               "Nepal 1": "Hindi",
+              # Channels the first cloud list added, checked on the web and approved by the owner (2026-11-04).
+              "DD Urdu": "Urdu", "DD Kashir": "Urdu", "Tehzeeb TV": "Urdu", "Gulistan News": "Urdu",
+              "DD Assam": "Assamese", "DD Manipur": "Manipuri", "DD Mizoram": "Mizo", "Fateh TV": "Punjabi",
+              "FashionTV (India)": "English",
               # Doordarshan's Shillong channel: Khasi and Garo programmes, not one of the English channels.
               "DD Meghalaya": "Khasi"}
 # Genres iptv-org gets wrong or leaves out (a channel without one used to land in Entertainment; the owner found
@@ -369,6 +373,10 @@ CAT_FIXES = {
     # Hybrids (serials and films) since August 2025: Zee Power replaced Zee Picchar, Zee BanglaSonar Zee Bangla Cinema.
     "Zee Bangla Sonar": "Entertainment", "Zee Power HD": "Entertainment",
     "BT TV": "Business News",
+    # Channels the first cloud list added (web-checked, owner-approved 2026-11-04).
+    "TV 100 (India)": "News", "Jaya Plus": "News", "Win TV": "News", "MBC TV": "News",
+    "ETV Life": "Devotional", "Disha TV": "Devotional", "Prarthana Bhawan TV": "Devotional",
+    "MH One": "Music", "DD Mizoram": "Entertainment",
 }
 # A thousand numbers per genre (the owner's choice: Movies outgrew 401-500 and would have renumbered every genre
 # after it).
