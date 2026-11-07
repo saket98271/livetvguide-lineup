@@ -1,4 +1,5 @@
-# Rebuilds the Live TV guide's channel list every week and publishes it, signed, for the guide on the TV.
+# Rebuilds the Live TV guide's channel list every week and publishes it, signed, for the guide on the TV. When
+# channels were added, removed or moved it files an issue listing them (GitHub emails it to the owner).
 name: Weekly channel list
 
 on:
@@ -8,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
@@ -20,10 +22,21 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Keep last week's list
+        run: cp lineup/channels.json "$RUNNER_TEMP/last-week.json" || echo '{"channels": []}' > "$RUNNER_TEMP/last-week.json"
+
       # No stream test here: these machines are outside India, where India-only streams look dead. The list says
       # "checked": false and the guide tests the streams on the TV.
       - name: Build the channel list
         run: python -I tools/build_channels.py --no-check --out lineup/channels.json
+
+      # Only a report: if it fails, the list is still published.
+      - name: What changed
+        continue-on-error: true
+        run: |
+          python -I tools/lineup_changes.py "$RUNNER_TEMP/last-week.json" lineup/channels.json \
+            --title-file "$RUNNER_TEMP/title.txt" > "$RUNNER_TEMP/changes.md"
+          cat "$RUNNER_TEMP/changes.md" >> "$GITHUB_STEP_SUMMARY"
 
       # The private key is the repository secret LINEUP_SIGNING_KEY; the guide holds the public half.
       - name: Sign it
@@ -35,10 +48,27 @@ jobs:
           openssl dgst -sha256 -sign "$RUNNER_TEMP/key.pem" -out lineup/channels.json.sig lineup/channels.json
           rm -f "$RUNNER_TEMP/key.pem"
 
+      # The app build (livetvguide-app) also pushes here (app/), so a push that lost the race is retried.
       - name: Publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add lineup/channels.json lineup/channels.json.sig data/jiotv_channels.json
           git commit -m "Channel list $(date -u +%Y-%m-%d)" || echo "nothing new"
-          git push
+          for i in 1 2 3; do git push && break; sleep 5; git pull --rebase; done
+
+      - name: Report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="$(cat "$RUNNER_TEMP/title.txt" 2>/dev/null || true)"
+          if [ -n "$TITLE" ]; then
+            # An issue holds at most 65,536 characters; the run's summary page keeps the whole report.
+            head -c 60000 "$RUNNER_TEMP/changes.md" > "$RUNNER_TEMP/issue.md"
+            if [ "$(wc -c < "$RUNNER_TEMP/changes.md")" -gt 60000 ]; then
+              printf '\n\n(Cut short: the full list is on %s/%s/actions/runs/%s)\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$RUNNER_TEMP/issue.md"
+            fi
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE ($(date -u '+%-d %b %Y'))" --body-file "$RUNNER_TEMP/issue.md"
+          else
+            echo "No channels added, removed or moved: no report."
+          fi
