@@ -22,8 +22,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      # A block (|), because a plain YAML value may not contain ": " and GitHub then cannot read this file at all.
       - name: Keep last week's list
-        run: cp lineup/channels.json "$RUNNER_TEMP/last-week.json" || echo '{"channels": []}' > "$RUNNER_TEMP/last-week.json"
+        run: |
+          cp lineup/channels.json "$RUNNER_TEMP/last-week.json" || echo '{"channels": []}' > "$RUNNER_TEMP/last-week.json"
 
       # No stream test here: these machines are outside India, where India-only streams look dead. The list says
       # "checked": false and the guide tests the streams on the TV.
