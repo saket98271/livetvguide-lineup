@@ -87,6 +87,8 @@ SOURCES = {
     "index.m3u": "https://iptv-org.github.io/iptv/index.m3u",
     "countries.json": "https://iptv-org.github.io/api/countries.json",
     "regions.json": "https://iptv-org.github.io/api/regions.json",
+    # Pluto TV's channel numbers in each country (i.mjh.nz's public data): World channels follow that order.
+    "plutotv_channels.json": "https://i.mjh.nz/PlutoTV/.channels.json",
 }
 LINKED = os.path.join(ROOT, "tools", "linked_channels.json")
 AIRTEL = os.path.join(ROOT, "tools", "airtel_numbers.tsv")
@@ -337,8 +339,11 @@ CATEGORY_MAP = {
 BAND_ORDER = ["Entertainment", "Movies", "Music", "Kids", "Sports", "Infotainment", "News", "Business News",
               "Devotional"]
 # The genre list's order on screen (the owner's), which differs from the number order of BAND_START.
-BAND_DISPLAY = ["Entertainment", "Movies", "News", "Music", "Sports", "Kids", "Infotainment", "Devotional",
-                "Business News"]
+BAND_DISPLAY = ["Entertainment", "Movies", "News", "Music", "Sports", "Kids", "Anime English", "Anime Japanese",
+                "Anime other languages", "Infotainment", "Devotional", "Business News"]
+# Anime genres (the owner's, 2026-11-09): anime channels from abroad by language (build_world.ANIME), numbered in
+# the unused part of Kids' thousand. Doraemon, Shin-chan and the Indian cartoon channels stay in Kids.
+ANIME_START = {"Anime English": 4501, "Anime Japanese": 4601, "Anime other languages": 4701}
 LANGUAGE_FIRST_BANDS = {"Entertainment", "Movies", "News"}
 # Every channel was checked on 2026-11-03 (the owner asked for it): channels JioTV carries against what their
 # programmes are (JioTV's guide gives each programme a category, genre and language), the Samsung TV Plus channels
@@ -362,7 +367,10 @@ LANG_FIXES = {"ET Now Swadesh": "Hindi", "Saam TV": "Marathi", "Kaumudy TV": "Ma
               # From the owner's own research (2026-11-04).
               "Apna Punjab TV": "Punjabi",
               # Doordarshan's Shillong channel: Khasi and Garo programmes, not one of the English channels.
-              "DD Meghalaya": "Khasi"}
+              "DD Meghalaya": "Khasi",
+              # Anime genres (2026-11-09): iptv-org lists Animax Asia as Japanese first, then English; the Spanish
+              # Yu-Gi-Oh! feed is listed as English.
+              "Animax Asia India": "Japanese", "Yu-Gi-Oh! en espanol": "Spanish"}
 # Genres iptv-org gets wrong or leaves out (a channel without one used to land in Entertainment; the owner found
 # Santvani, Sharnam, Total TV Haryana ... among the serials).
 CAT_FIXES = {
@@ -391,6 +399,8 @@ CAT_FIXES = {
     "Calvary TV": "Devotional", "Shekinah TV": "Devotional", "Peppers TV": "Entertainment",
     # From abroad (2026-11-09): Gurdwara Dukh Nivaran Sahib's live Gurbani kirtan (SikhNet lists it).
     "Dukh Nivaran": "Devotional",
+    # Sony's anime channel (mostly Japanese with English): the Anime Japanese genre, not Kids.
+    "Animax Asia India": "Anime Japanese",
 }
 # A thousand numbers per genre (the owner's choice: Movies outgrew 401-500 and would have renumbered every genre
 # after it).
@@ -401,7 +411,9 @@ WORLD_FIRST_NUMBER = 10001
 LANG_ORDER = ["Hindi", "English", "Marathi", "Bengali", "Tamil", "Telugu", "Kannada", "Malayalam", "Gujarati",
               "Punjabi", "Odia", "Assamese", "Bhojpuri", "Urdu"]
 LANG_ALIASES = {"Panjabi": "Punjabi", "Oriya (macrolanguage)": "Odia", "Oriya": "Odia",
-                "Konkani (macrolanguage)": "Konkani"}
+                "Konkani (macrolanguage)": "Konkani",
+                # Some Pluto TV feeds carry the bare code "jap" (One Piece).
+                "jap": "Japanese"}
 # Channels serving Chhattisgarh. iptv-org lists them as Hindi (their main language), so they get a region tag
 # the guide's language filter offers as "Chhattisgarhi".
 # Hindi news channels for one state or region, by the name (News18 Rajasthan, Zee UP UK, ABP Ganga ...): in News
@@ -462,7 +474,7 @@ def main():
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import build_world
     abroad = [] if "--no-abroad" in sys.argv else build_world.indian_abroad(sys.modules[__name__])
-    print(f"channels from abroad in an Indian language: {len(abroad)}")
+    print(f"channels from abroad (Indian languages, anime): {len(abroad)}")
     for e in abroad:
         e["abroad"] = 1
     entries += abroad
@@ -522,7 +534,7 @@ def main():
         ch = channels.get(cid, {})
         cats = [c.lower() for c in (ch.get("categories") or [])] or \
                [g.strip().lower() for g in e["attrs"].get("group-title", "undefined").split(";")]
-        band = next((CATEGORY_MAP[c] for c in cats if c in CATEGORY_MAP), "Entertainment")
+        band = e.get("anime_band") or next((CATEGORY_MAP[c] for c in cats if c in CATEGORY_MAP), "Entertainment")
         feed = next((f for f in feeds.get(cid, []) if f["id"] == feed_id), None) or \
             next((f for f in feeds.get(cid, []) if f.get("is_main")), None)
         langs = [LANG_ALIASES.get(n, n) for n in (lang_names.get(code, code) for code in (feed or {}).get("languages", []))]
@@ -645,6 +657,20 @@ def main():
             numbered.append(c)
         if group:
             next_free = ((start + len(group) - 1) // 1000 + 1) * 1000 + 1
+    # The anime genres sit in the unused part of Kids' thousand, each from its fixed start; none may run into the
+    # next one (or Kids into the first).
+    limits = list(ANIME_START.values())[1:] + [BAND_START["Kids"] + 1000]
+    kids_end = max((c["n"] for c in numbered if c["cat"] == "Kids"), default=0)
+    if kids_end >= min(ANIME_START.values()):
+        raise SystemExit(f"Kids reached {kids_end}, where the anime genres start")
+    for (band, start), limit in zip(ANIME_START.items(), limits):
+        group = sorted((c for c in kept if c["cat"] == band), key=order)
+        if start + len(group) > limit:
+            raise SystemExit(f"{band} has {len(group)} channels, more than fit before {limit}")
+        for i, c in enumerate(group):
+            c["n"] = start + i
+            c.pop("_abroad", None)
+            numbered.append(c)
     if any(c["n"] >= WORLD_FIRST_NUMBER for c in numbered):
         raise SystemExit(f"an Indian genre reached {WORLD_FIRST_NUMBER}, where the World channels start")
 

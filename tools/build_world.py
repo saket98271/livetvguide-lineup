@@ -61,7 +61,18 @@ UNSURE_HOSTS = {"ncare.live": "one site carrying 11 channels of different broadc
                 "sonarbanglatv.com": "one site carrying several broadcasters' channels",
                 "smartplaytv.in": "one site re-sending 54 channels (BBC among them)",
                 "antenaplay.ro": "a Romanian site carrying 57 channels",
-                "ottlive.co.in": "one site re-sending 46 channels"}
+                "ottlive.co.in": "one site re-sending 46 channels",
+                "toonamiaftermath.com": "a fan-run stream of other companies' cartoons"}
+# Anime genres in the main list (the owner's, 2026-11-09): anime channels from abroad, by language. Doraemon,
+# Shin-chan and the Indian cartoon channels (Hungama ...) stay in Kids (the owner's rule), so they are not here.
+ANIME = re.compile(r"\banime\b|animax|crunchyroll|naruto|one piece|yu-?gi-?oh|dragon ?ball|pok[eé]mon|sailor moon|"
+                   r"hunter ?x ?hunter|gundam|retro ?crush|hidive|funimation|detective conan|captain tsubasa|"
+                   r"inuyasha|boruto|ranma|gintama|\bmanga\b", re.I)
+ANIME_BANDS = ("Anime English", "Anime Japanese", "Anime other languages")
+# iptv-org writes Japanese as "Japanese" or, for some Pluto TV feeds, the bare code "jap".
+JAPANESE = {"Japanese", "jap"}
+# Names that say the language when iptv-org's does not ("Yu-Gi-Oh! en espanol" is listed as English).
+NAME_LANGUAGE = [(re.compile(r"\ben espa[nñ]ol\b", re.I), "Spanish")]
 # iptv-org's language is wrong: Selangor TV is the Malaysian state's Malay channel, not Malayalam.
 MISLABELLED = {"SelangorTV": "Malay"}
 # Pakistani channels iptv-org files under another country: World only, like the rest of Pakistan's.
@@ -189,11 +200,14 @@ class Abroad:
                  (self.lang_names.get(c, c) for c in (feed or {}).get("languages", []))]
         name = self.clean(e["title"])
         main = MISLABELLED.get(name, langs[0] if langs else "")
+        for pattern, language in NAME_LANGUAGE:
+            if pattern.search(name):
+                main = language
         cats = [c.lower() for c in (ch.get("categories") or [])] or \
                [g.strip().lower() for g in e["attrs"].get("group-title", "undefined").split(";")]
         band = next((self.B.CATEGORY_MAP[c] for c in cats if c in self.B.CATEGORY_MAP), "Entertainment")
         flags = re.findall(r"\[([^\]]+)\]", e["title"])
-        return {"name": name, "tvg": tvg, "cc": country_of(tvg), "langs": langs, "lang": main or "Other",
+        return {"name": name, "tvg": tvg, "cc": country_of(tvg), "langs": langs, "lang": main or "Other", "cats": cats,
                 "band": "Entertainment" if band == "Shopping" else band, "nsfw": bool(ch.get("is_nsfw")),
                 "geo": "Geo-blocked" in flags, "part": "Not 24/7" in flags,
                 "quality": (re.findall(r"\((\d{3,4})[pi]\)", e["title"]) or ["0"])[0]}
@@ -233,6 +247,9 @@ class Abroad:
             reason = UNSURE_HOSTS[s] + "; no licence found"
         if reason:
             return "out", reason
+        anime = self.anime_band(i)
+        if anime:
+            return "anime", anime
         if i["cc"] == "PK" or i["name"] in PAKISTANI_ABROAD:
             return "world", "Pakistani channel (World only, the owner's choice)"
         if i["lang"] in self.indian:
@@ -243,9 +260,20 @@ class Abroad:
             return "out", "bare-IP server, not the broadcaster's own site"
         return "world", ""
 
+    @staticmethod
+    def anime_band(i):
+        """The anime genre of an anime channel (by name, or a Japanese animation channel), else None."""
+        japanese_cartoons = i["lang"] in JAPANESE and "animation" in i["cats"]
+        if not ANIME.search(i["name"]) and not japanese_cartoons:
+            return None
+        if i["lang"] == "English":
+            return ANIME_BANDS[0]
+        return ANIME_BANDS[1] if i["lang"] in JAPANESE else ANIME_BANDS[2]
+
     def abroad(self):
         """(entry, info, decision, reason) for every entry with a country other than India, except those
-        iptv-org's India playlist lists too (the Indian list has them already)."""
+        iptv-org's India playlist lists too (the Indian list has them already). An anime channel's "reason" is its
+        anime genre."""
         for e in self.entries:
             i = self.info(e)
             if not i["cc"] or i["cc"] == "IN":
@@ -253,17 +281,50 @@ class Abroad:
             if e["url"] in self.in_urls or i["tvg"].partition("@")[0].lower() in self.in_ids:
                 continue
             d, why = self.decide(e, i)
-            if d == "main" and self.B.guide_key(i["name"]) in self.in_keys:
+            if d in ("main", "anime") and self.B.guide_key(i["name"]) in self.in_keys:
                 continue
             yield e, i, d, why
 
 
 def indian_abroad(B):
-    """index.m3u entries from abroad whose main language is Indian, for build_channels.py's main line-up."""
+    """For build_channels.py's main line-up: index.m3u entries from abroad whose main language is Indian, and the
+    anime channels from abroad (each entry's "anime_band" says which anime genre)."""
     path = os.path.join(B.DATA, "index.m3u")
     if not os.path.exists(path):
         return []
-    return [e for e, i, d, _ in Abroad(B).abroad() if d == "main"]
+    out = []
+    for e, i, d, why in Abroad(B).abroad():
+        if d == "anime":
+            e["anime_band"] = why
+        if d in ("main", "anime"):
+            out.append(e)
+    return out
+
+
+def pluto_numbers(data):
+    """{Pluto TV channel id: {region: channel number}} from i.mjh.nz's public Pluto TV data, or {} without it."""
+    path = os.path.join(data, "plutotv_channels.json")
+    if not os.path.exists(path):
+        return {}
+    out = defaultdict(dict)
+    try:
+        for region, r in json.load(open(path, encoding="utf-8"))["regions"].items():
+            for cid, ch in r.get("channels", {}).items():
+                if isinstance(ch.get("chno"), int):
+                    out[cid][region] = ch["chno"]
+    except (ValueError, KeyError):
+        return {}
+    return out
+
+
+def pluto_number(numbers, url, cc):
+    """A Pluto TV channel's number in its own country's Pluto TV guide (as viewers there see it); None for a stream
+    that is not Pluto TV's, or one Pluto TV lists only in other countries (iptv-org files many Latin American and
+    Brazilian feeds under the US: their numbers would put them on top of the US channels)."""
+    m = re.match(r"https?://jmp2\.uk/plu-([0-9a-f]+)", url)
+    if not m:
+        return None
+    return numbers.get(m.group(1), {}).get({"UK": "gb"}.get(cc, cc.lower()))
 
 
 def regions_of(data, codes):
@@ -295,7 +356,8 @@ def main():
                      json.load(open(os.path.join(B.DATA, "countries.json"), encoding="utf-8"))}
     kept, excluded, seen_urls = [], [], set()
     for e, i, d, why in A.abroad():
-        if d == "main":
+        if d in ("main", "anime"):
+            # In the main line-up: Indian languages, and the anime genres.
             continue
         if d == "out":
             excluded.append((i["name"], country_names.get(i["cc"], i["cc"]), site(urlparse(e["url"]).hostname or ""), why))
@@ -333,9 +395,18 @@ def main():
     def country_rank(cc):
         return (ENGLISH_FIRST.index(cc), "") if cc in ENGLISH_FIRST else (len(ENGLISH_FIRST), country_names.get(cc, cc))
 
+    # Inside a country, the order its viewers see where it is known: Pluto TV's channels in Pluto TV's own numbers
+    # (i.mjh.nz's public Pluto TV data), then the other channels by name.
+    pluto = pluto_numbers(B.DATA)
+
+    def system_rank(c):
+        n = pluto_number(pluto, c["url"], c["cc"])
+        return (0, n) if n is not None else (1, 0)
+
     numbered = []
     for band, start in WORLD_START.items():
-        group = sorted((c for c in kept if c["cat"] == band), key=lambda c: (country_rank(c["cc"]), natural(c["name"])))
+        group = sorted((c for c in kept if c["cat"] == band),
+                       key=lambda c: (country_rank(c["cc"]), system_rank(c), natural(c["name"])))
         if len(group) > 9999:
             raise SystemExit(f"{band} World has {len(group)} channels, more than its ten thousand numbers")
         for n, c in enumerate(group):

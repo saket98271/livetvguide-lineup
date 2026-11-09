@@ -6,7 +6,10 @@ The weekly channel list for a private Live TV guide app on a Fire TV Stick. A Gi
 - `lineup/channels.json`: the channels, genres, languages, free stream addresses and official-app links
 - `lineup/channels.json.sig`: its signature; the app only accepts a list whose signature matches its built-in key
 - `lineup/world.json` and `lineup/world.json.sig`: the World channels from other countries (`tools/build_world.py`),
-  which the app shows only when its owner switches them on and ticks countries, numbered 10001 and up
+  which the app shows only when its owner switches them on and ticks countries, numbered 10001 and up; inside each
+  country, Pluto TV's channels in Pluto TV's own order (i.mjh.nz's public Pluto TV data), then the rest by name
+- anime channels from abroad are in `channels.json`'s three anime genres (Anime English, Anime Japanese, Anime other
+  languages; 4501, 4601, 4701 and up)
 
 When a week's list adds, drops or moves channels, the job opens an issue listing them
 (`tools/lineup_changes.py`). In the app, new channels wait in a "New" genre until the owner keeps or hides each one.
