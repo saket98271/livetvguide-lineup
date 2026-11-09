@@ -29,6 +29,8 @@ What is left out, and why:
   - streams that only play when the request pretends to come from the broadcaster's own web page
     (#EXTVLCOPT http-referrer): that is hotlink protection, and faking it gets around access control.
   - foreign OTT redistributors of Indian pay channels (Ayna).
+  - channels India does not permit: Peace TV (refused permission to telecast in India, I&B Ministry 2016; the
+    owner's choice, 2026-11-09).
 """
 import csv
 import datetime
@@ -493,7 +495,10 @@ def main():
         dom = domain(host)
 
         reason = None
-        if "http-referrer" in e["opts"]:
+        if build_world.NOT_PERMITTED.search(name):
+            # The owner's choice (2026-11-09): Peace TV Bangla and Urdu came through iptv-org's India playlist.
+            reason = "not permitted in India (Peace TV: refused permission to telecast, I&B Ministry 2016)"
+        elif "http-referrer" in e["opts"]:
             reason = "needs a faked referring page (hotlink protection)"
         elif host in pirate_hosts and is_ip(host):
             reason = "server re-broadcasts pay channels (bare IP)"
