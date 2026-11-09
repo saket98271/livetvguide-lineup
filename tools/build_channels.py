@@ -415,7 +415,9 @@ LANG_ORDER = ["Hindi", "English", "Marathi", "Bengali", "Tamil", "Telugu", "Kann
 LANG_ALIASES = {"Panjabi": "Punjabi", "Oriya (macrolanguage)": "Odia", "Oriya": "Odia",
                 "Konkani (macrolanguage)": "Konkani",
                 # Some Pluto TV feeds carry the bare code "jap" (One Piece).
-                "jap": "Japanese"}
+                "jap": "Japanese",
+                # A few feeds carry ISO 639-2 library codes iptv-org's language list does not name (World list).
+                "cze": "Czech", "arm": "Armenian", "fre": "French"}
 # Channels serving Chhattisgarh. iptv-org lists them as Hindi (their main language), so they get a region tag
 # the guide's language filter offers as "Chhattisgarhi".
 # Hindi news channels for one state or region, by the name (News18 Rajasthan, Zee UP UK, ABP Ganga ...): in News
