@@ -89,6 +89,8 @@ SOURCES = {
     "regions.json": "https://iptv-org.github.io/api/regions.json",
     # Pluto TV's channel numbers in each country (i.mjh.nz's public data): World channels follow that order.
     "plutotv_channels.json": "https://i.mjh.nz/PlutoTV/.channels.json",
+    # Which public guides list each channel (iptv-org): World channels get their listings from i.mjh.nz's files.
+    "guides.json": "https://iptv-org.github.io/api/guides.json",
 }
 LINKED = os.path.join(ROOT, "tools", "linked_channels.json")
 AIRTEL = os.path.join(ROOT, "tools", "airtel_numbers.tsv")

@@ -301,6 +301,67 @@ def indian_abroad(B):
     return out
 
 
+GUIDE_BASE = "https://i.mjh.nz/"
+# A guide file the 1 GB stick downloads (daily) and reads: bigger ones are skipped (SkyGo's is 6.6 MB).
+MAX_GUIDE_BYTES = 4 * 1024 * 1024
+_guide_checked = {}
+
+
+def guide_ok(file):
+    """True when i.mjh.nz has this guide file and it is small enough for the TV (checked once per build). Without a
+    network answer it counts as there: the TV simply skips a guide it cannot get."""
+    if file not in _guide_checked:
+        import urllib.error
+        import urllib.request
+        req = urllib.request.Request(GUIDE_BASE + file + ".xml.gz", method="HEAD",
+                                     headers={"User-Agent": "LiveTVGuide-builder"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                _guide_checked[file] = r.status == 200 and int(r.headers.get("Content-Length") or 0) <= MAX_GUIDE_BYTES
+        except urllib.error.HTTPError:
+            _guide_checked[file] = False
+        except Exception:
+            _guide_checked[file] = True
+    return _guide_checked[file]
+
+
+def mjh_guides(data):
+    """{iptv-org channel id: [(file, id in that file)]} for the channels i.mjh.nz's public XMLTV guides list
+    (Pluto TV, Plex, Roku, Samsung TV Plus, Australia's free channels ...; iptv-org's guides.json says which):
+    "PlutoTV/us#5ad8..." is the file https://i.mjh.nz/PlutoTV/us.xml.gz, channel "5ad8...". Nothing without the file."""
+    path = os.path.join(data, "guides.json")
+    out = defaultdict(list)
+    if not os.path.exists(path):
+        return out
+    for g in json.load(open(path, encoding="utf-8")):
+        if g.get("site") == "i.mjh.nz" and g.get("channel") and "#" in (g.get("site_id") or ""):
+            file, _, xid = g["site_id"].partition("#")
+            out[g["channel"]].append((file, xid))
+    return out
+
+
+def pick_guide(guides, pluto, c):
+    """(file, id) of the guide that lists channel c, or None. A Pluto TV stream takes Pluto TV's guide (its own
+    country's, else one that has it); others take a guide for their own country, then Roku's (one file for all
+    countries), then any."""
+    m = re.match(r"https?://jmp2\.uk/plu-([0-9a-f]+)", c["url"])
+    region = {"UK": "gb"}.get(c["cc"], c["cc"].lower())
+    if m and m.group(1) in pluto:
+        where = pluto[m.group(1)]
+        r = region if region in where else ("us" if "us" in where else sorted(where)[0])
+        if guide_ok(f"PlutoTV/{r}"):
+            return f"PlutoTV/{r}", m.group(1)
+    options = [o for o in guides.get(c["id"].partition("@")[0], []) if guide_ok(o[0])]
+    if not options:
+        return None
+
+    def rank(o):
+        file = o[0]
+        own = file.lower().endswith("/" + region) or ("/" + region + "/") in ("/" + file.lower() + "/")
+        return (0 if own else 1 if file == "Roku/all" else 2, file)
+    return sorted(options, key=rank)[0]
+
+
 def pluto_numbers(data):
     """{Pluto TV channel id: {region: channel number}} from i.mjh.nz's public Pluto TV data, or {} without it."""
     path = os.path.join(data, "plutotv_channels.json")
@@ -425,6 +486,17 @@ def main():
             names_in_use.add(c["name"].lower())
             numbered.append(c)
 
+    # Programme listings: the i.mjh.nz guide file that lists each channel ("gi", an index into "guides") and the
+    # channel's id there ("xt"). The guide downloads only the files its ticked countries' channels need.
+    guides, guide_files = mjh_guides(B.DATA), []
+    pluto_ids = pluto_numbers(B.DATA)
+    for c in numbered:
+        g = pick_guide(guides, pluto_ids, c)
+        if g:
+            if g[0] not in guide_files:
+                guide_files.append(g[0])
+            c["gi"] = guide_files.index(g[0])
+            c["xt"] = g[1]
     counts = Counter(c["cc"] for c in numbered)
     region = regions_of(B.DATA, counts)
     countries = sorted(({"cc": cc, "name": country_names.get(cc, cc), "region": region[cc], "n": n}
@@ -433,7 +505,8 @@ def main():
                "checked": False, "source": INDEX_URL,
                "bands": [b + WORLD_SUFFIX for b in B.BAND_DISPLAY if any(c["cat"] == b + WORLD_SUFFIX for c in numbered)],
                "regions": [name for name, _ in REGIONS if any(c["region"] == name for c in countries)],
-               "countries": countries, "channels": numbered}
+               "countries": countries, "guides": [GUIDE_BASE + f + ".xml.gz" for f in guide_files],
+               "channels": numbered}
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
@@ -449,6 +522,8 @@ def main():
         nums = [c["n"] for c in numbered if c["cat"] == band]
         print(f"  {band:20} {len(nums):5} channels  {min(nums)}-{max(nums)}")
     print("regions:", {r: sum(1 for c in countries if c["region"] == r) for r in payload["regions"]})
+    print(f"programme listings: {sum(1 for c in numbered if 'gi' in c)} of {len(numbered)} channels, "
+          f"from {len(guide_files)} i.mjh.nz guide files")
     print(f"wrote {out_path} ({os.path.getsize(out_path) / 1024:.0f} KB)")
 
 
