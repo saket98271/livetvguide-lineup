@@ -32,6 +32,10 @@ jobs:
       - name: Build the channel list
         run: python -I tools/build_channels.py --no-check --out lineup/channels.json
 
+      # The World channels (Settings > World channels on the TV), from the sources the step above downloaded.
+      - name: Build the World list
+        run: python -I tools/build_world.py --offline --main lineup/channels.json --out lineup/world.json
+
       # Only a report: if it fails, the list is still published.
       - name: What changed
         continue-on-error: true
@@ -48,6 +52,7 @@ jobs:
           umask 077
           printf '%s\n' "$LINEUP_KEY" > "$RUNNER_TEMP/key.pem"
           openssl dgst -sha256 -sign "$RUNNER_TEMP/key.pem" -out lineup/channels.json.sig lineup/channels.json
+          openssl dgst -sha256 -sign "$RUNNER_TEMP/key.pem" -out lineup/world.json.sig lineup/world.json
           rm -f "$RUNNER_TEMP/key.pem"
 
       # The app build (livetvguide-app) also pushes here (app/), so a push that lost the race is retried.
@@ -55,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lineup/channels.json lineup/channels.json.sig data/jiotv_channels.json
+          git add lineup/channels.json lineup/channels.json.sig lineup/world.json lineup/world.json.sig data/jiotv_channels.json data/world_excluded.csv
           git commit -m "Channel list $(date -u +%Y-%m-%d)" || echo "nothing new"
           for i in 1 2 3; do git push && break; sleep 5; git pull --rebase; done
 

@@ -80,6 +80,11 @@ SOURCES = {
     "samsungtvplus_in.xml.gz": "https://i.mjh.nz/SamsungTVPlus/in.xml.gz",
     # Logos for the channels the guide opens in their official apps (tools/linked_channels.json).
     "logos.json": "https://iptv-org.github.io/api/logos.json",
+    # iptv-org's whole playlist: channels from abroad in an Indian language join this list (build_world.py's
+    # rules); every other one goes to the World list (build_world.py), with countries and regions for its checklist.
+    "index.m3u": "https://iptv-org.github.io/iptv/index.m3u",
+    "countries.json": "https://iptv-org.github.io/api/countries.json",
+    "regions.json": "https://iptv-org.github.io/api/regions.json",
 }
 LINKED = os.path.join(ROOT, "tools", "linked_channels.json")
 AIRTEL = os.path.join(ROOT, "tools", "airtel_numbers.tsv")
@@ -324,13 +329,14 @@ CATEGORY_MAP = {
     "music": "Music", "kids": "Kids", "animation": "Kids", "sports": "Sports", "outdoor": "Sports",
     "documentary": "Infotainment", "education": "Infotainment", "science": "Infotainment",
     "travel": "Infotainment", "cooking": "Infotainment", "auto": "Infotainment", "weather": "News",
-    "news": "News", "business": "Business News", "religious": "Devotional", "shop": "Shopping",
+    # Shopping channels (none in the Indian list so far) are Entertainment: 10001 and up are the World channels'.
+    "news": "News", "business": "Business News", "religious": "Devotional", "shop": "Entertainment",
 }
 BAND_ORDER = ["Entertainment", "Movies", "Music", "Kids", "Sports", "Infotainment", "News", "Business News",
-              "Devotional", "Shopping"]
+              "Devotional"]
 # The genre list's order on screen (the owner's), which differs from the number order of BAND_START.
 BAND_DISPLAY = ["Entertainment", "Movies", "News", "Music", "Sports", "Kids", "Infotainment", "Devotional",
-                "Business News", "Shopping"]
+                "Business News"]
 LANGUAGE_FIRST_BANDS = {"Entertainment", "Movies", "News"}
 # Every channel was checked on 2026-11-03 (the owner asked for it): channels JioTV carries against what their
 # programmes are (JioTV's guide gives each programme a category, genre and language), the Samsung TV Plus channels
@@ -381,11 +387,15 @@ CAT_FIXES = {
     "MH One": "Music", "DD Mizoram": "Entertainment",
     # From the owner's own research (2026-11-04).
     "Calvary TV": "Devotional", "Shekinah TV": "Devotional", "Peppers TV": "Entertainment",
+    # From abroad (2026-11-09): Gurdwara Dukh Nivaran Sahib's live Gurbani kirtan (SikhNet lists it).
+    "Dukh Nivaran": "Devotional",
 }
 # A thousand numbers per genre (the owner's choice: Movies outgrew 401-500 and would have renumbered every genre
 # after it).
 BAND_START = {"Entertainment": 1001, "Movies": 2001, "Music": 3001, "Kids": 4001, "Sports": 5001,
-              "Infotainment": 6001, "News": 7001, "Business News": 8001, "Devotional": 9001, "Shopping": 10001}
+              "Infotainment": 6001, "News": 7001, "Business News": 8001, "Devotional": 9001}
+# The World channels (build_world.py) are numbered 10001 and up: Indian channels must stay below.
+WORLD_FIRST_NUMBER = 10001
 LANG_ORDER = ["Hindi", "English", "Marathi", "Bengali", "Tamil", "Telugu", "Kannada", "Malayalam", "Gujarati",
               "Punjabi", "Odia", "Assamese", "Bhojpuri", "Urdu"]
 LANG_ALIASES = {"Panjabi": "Punjabi", "Oriya (macrolanguage)": "Odia", "Oriya": "Odia",
@@ -444,6 +454,16 @@ def parse_m3u(path):
 def main():
     fetch("--offline" in sys.argv)
     entries = parse_m3u(os.path.join(DATA, "in.m3u"))
+    # Channels from abroad in an Indian language (Nepal's, Bangladesh's, Sri Lankan Tamil, the UK's and Canada's
+    # Bengali, Punjabi, Malayalam ...), passed by build_world.py's rules, join this list; the guide holds them in
+    # New until kept. (Run with -I, Python does not look in this folder by itself.)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import build_world
+    abroad = [] if "--no-abroad" in sys.argv else build_world.indian_abroad(sys.modules[__name__])
+    print(f"channels from abroad in an Indian language: {len(abroad)}")
+    for e in abroad:
+        e["abroad"] = 1
+    entries += abroad
     channels = {c["id"]: c for c in json.load(open(os.path.join(DATA, "channels.json"), encoding="utf-8"))}
     feeds = defaultdict(list)
     for f in json.load(open(os.path.join(DATA, "feeds.json"), encoding="utf-8")):
@@ -517,6 +537,8 @@ def main():
         jio = jio_id(name, jio_ids, lang)
         if jio:
             c["jio"] = jio
+        if e.get("abroad"):
+            c["_abroad"] = 1
         kept.append(c)
 
     if "--no-check" not in sys.argv:
@@ -585,6 +607,10 @@ def main():
         return (1,) + lang_rank(c["lang"])
 
     def order(c):
+        # Channels from abroad come after India's in every genre, so adding them moves no Indian channel's number.
+        return (c.get("_abroad", 0),) + order_in_india(c)
+
+    def order_in_india(c):
         n = airtel_number(c["name"], airtel)
         hd = 1 if re.search(r"\bhd\b", c["name"], re.I) else 0
         linked_first = 0 if "links" in c else 1
@@ -610,9 +636,12 @@ def main():
         start = max(BAND_START[band], next_free)
         for i, c in enumerate(group):
             c["n"] = start + i
+            c.pop("_abroad", None)
             numbered.append(c)
         if group:
             next_free = ((start + len(group) - 1) // 1000 + 1) * 1000 + 1
+    if any(c["n"] >= WORLD_FIRST_NUMBER for c in numbered):
+        raise SystemExit(f"an Indian genre reached {WORLD_FIRST_NUMBER}, where the World channels start")
 
     # Listings for channels JioTV does not carry, from a public XMLTV file (no special headers): the Samsung TV
     # Plus India guide as i.mjh.nz publishes it. The app downloads it and matches programmes on "xt".
