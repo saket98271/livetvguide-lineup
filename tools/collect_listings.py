@@ -7,9 +7,15 @@ ahead. tools/build_world.py points those channels at their country's file ("gi")
 
     python -I tools/collect_listings.py plan <world.json> <folder with guides.json, feeds.json, SITES.md> <out.channels.xml>
         the grabber's channel list: a listings site per channel, and a second one where there is one
+        [--plan lineup/listings_plan.json]: also tools/listing_sources.py's finds for both lists
+    python -I tools/collect_listings.py cablecast <listings_plan.json> <out.xml>
+        the plan's Cablecast channels, from each station's own public schedule
+    python -I tools/collect_listings.py epgshare <listings_plan.json> <out.xml>
+        the plan's channels whose first source is an epgshare01 file (each file streamed once)
     python -I tools/collect_listings.py pack <world.json> <grabbed.xml> <out folder> [--previous <folder>]
-        one file per country from the grabber's output; a channel the grabber got nothing for today keeps the
-        programmes it still has ahead in yesterday's file (--previous)
+            [--main channels.json] [--also cablecast.xml]
+        one file per country from the grabber's output (the Indian list's channels: in.xml.gz); a channel the
+        grabber got nothing for today keeps the programmes it still has ahead in yesterday's file (--previous)
 
 Only Python's standard library: the job runs it on a plain runner. The grabber's output is read as data only.
 """
@@ -38,6 +44,8 @@ KEEP_BEFORE_H, KEEP_AHEAD_H = 1, 50
 MAX_TITLE = 160
 # The grabber's id for a channel's second site (plan), read only when its first site gave nothing (pack).
 BACKUP = "|2"
+EPGSHARE_SITE = "epgshare01.online"
+EPGSHARE_URL = "https://epgshare01.online/epgshare01/epg_ripper_{}.xml.gz"
 
 
 def working_sites(sites_md):
@@ -92,14 +100,21 @@ def ours(world):
             yield c, urls[gi][len(LISTINGS_BASE):]
 
 
-def plan(world_path, folder, out_path):
+def plan(world_path, folder, out_path, plan_path=None):
     world = json.load(open(world_path, encoding="utf-8"))
     src = Sources(folder)
+    extra = json.load(open(plan_path, encoding="utf-8")) if plan_path and os.path.exists(plan_path) else {}
     wanted = {}
     for c, _ in ours(world):
+        if c["xt"] in extra:
+            continue
         cands = src.candidates(c)
         if cands and c["xt"] not in wanted:
             wanted[c["xt"]] = cands
+    # tools/listing_sources.py's finds (both lists): their sites in its order; Cablecast is fetched separately.
+    for k, how in extra.items():
+        if how.get("sites"):
+            wanted[k] = how["sites"]
     # Among equally good entries, the site that serves the most of these channels: fewer sites, fewer failures.
     popular = collections.Counter(g["site"] for cands in wanted.values() for g in {g["site"]: g for g in cands}.values())
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', "<channels>"]
@@ -113,11 +128,13 @@ def plan(world_path, folder, out_path):
     for k, cands in sorted(wanted.items()):
         best = cands[0]
         top = [g for g in cands if (g.get("feed") or "", g.get("lang")) == (best.get("feed") or "", best.get("lang"))]
-        g = sorted(top, key=lambda g: (-popular[g["site"]], g["site"], g["site_id"]))[0]
+        g = best if k in extra else sorted(top, key=lambda g: (-popular[g["site"]], g["site"], g["site_id"]))[0]
         sites[g["site"]] += 1
-        lines.append(entry(g, k))
+        # epgshare01's big files are read by the "epgshare" step, not the grabber (it runs out of memory on them).
+        if g["site"] != EPGSHARE_SITE:
+            lines.append(entry(g, k))
         # A second site, if there is one, under its own id: used only when the first gives nothing.
-        other = [o for o in cands if o["site"] != g["site"]]
+        other = [o for o in cands if o["site"] not in (g["site"], EPGSHARE_SITE)]
         if other:
             lines.append(entry(other[0], k + BACKUP))
             backups += 1
@@ -126,6 +143,92 @@ def plan(world_path, folder, out_path):
         f.write("\n".join(lines) + "\n")
     print(f"plan: {len(wanted)} channels from {len(sites)} sites ({backups} with a second site); "
           f"most: {sites.most_common(8)}")
+
+
+def cablecast(plan_path, out_path, now=None):
+    """XMLTV for the plan's Cablecast channels, from each station's own public schedule (two days ahead)."""
+    import urllib.request
+    plan = json.load(open(plan_path, encoding="utf-8")) if os.path.exists(plan_path) else {}
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    start, end = now - datetime.timedelta(hours=2), now + datetime.timedelta(hours=KEEP_AHEAD_H)
+    body, got = [], 0
+    for k, how in sorted(plan.items()):
+        if not how.get("cablecast"):
+            continue
+        host, channel = how["cablecast"]
+        url = (f"https://{host}/cablecastapi/v1/scheduleitems?channel={channel}&start={start:%Y-%m-%dT%H:%M:%S}"
+               f"&end={end:%Y-%m-%dT%H:%M:%S}&include=show&page_size=500")
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "LiveTVGuide-listings", "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read())
+        except Exception as e:
+            print(f"  cablecast {host} {channel}: {e}")
+            continue
+        shows = {s["id"]: clean(s.get("cgTitle") or s.get("title")) for s in data.get("shows", [])}
+        items = []
+        for it in data.get("scheduleItems", []):
+            if it.get("deleted"):
+                continue
+            t = it.get("runDateTimeUtc") or ""
+            try:
+                at = datetime.datetime.strptime(t[:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=datetime.timezone.utc)
+            except ValueError:
+                continue
+            if shows.get(it.get("show")):
+                items.append((at, shows[it["show"]]))
+        items.sort()
+        n = 0
+        for i, (at, title) in enumerate(items):
+            stop = items[i + 1][0] if i + 1 < len(items) else at + datetime.timedelta(hours=1)
+            if stop <= at:
+                continue
+            body.append(f"<programme start={quoteattr(fmt(at))} stop={quoteattr(fmt(stop))} channel={quoteattr(k)}>"
+                        f"<title>{escape(title)}</title></programme>")
+            n += 1
+        got += n > 0
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n' + "\n".join(body) + "\n</tv>\n")
+    print(f"cablecast: {got} of {sum(1 for h in plan.values() if h.get('cablecast'))} channels with programmes")
+
+
+def epgshare(plan_path, out_path, now=None):
+    """XMLTV for the plan's channels whose first source is epgshare01: each needed file is streamed once and only
+    those channels' programmes (an hour back to two days ahead) are kept."""
+    import urllib.request
+    plan_ = json.load(open(plan_path, encoding="utf-8")) if os.path.exists(plan_path) else {}
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    lo, hi = now - datetime.timedelta(hours=2), now + datetime.timedelta(hours=KEEP_AHEAD_H)
+    by_tag = collections.defaultdict(dict)   # tag -> {epgshare01 id: [our keys]}
+    for k, how in plan_.items():
+        s = (how.get("sites") or [{}])[0]
+        if s.get("site") == EPGSHARE_SITE:
+            tag, _, cid = s["site_id"].partition("#")
+            by_tag[tag].setdefault(cid, []).append(k)
+    got = set()
+    with open(out_path, "w", encoding="utf-8") as out:
+        out.write('<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n')
+        for tag, ids in sorted(by_tag.items()):
+            try:
+                req = urllib.request.Request(EPGSHARE_URL.format(tag), headers={"User-Agent": "LiveTVGuide-listings"})
+                with urllib.request.urlopen(req, timeout=300) as r, gzip.GzipFile(fileobj=r) as f:
+                    for _, el in ET.iterparse(f, events=("end",)):
+                        if el.tag == "programme":
+                            keys = ids.get(el.get("channel") or "")
+                            start, stop = parse_time(el.get("start")), parse_time(el.get("stop"))
+                            title = clean(el.findtext("title"))
+                            if keys and start and stop and stop > lo and start < hi and stop > start and title:
+                                for k in keys:
+                                    out.write(f"<programme start={quoteattr(fmt(start))} stop={quoteattr(fmt(stop))} "
+                                              f"channel={quoteattr(k)}><title>{escape(title)}</title></programme>\n")
+                                    got.add(k)
+                        if el.tag in ("programme", "channel"):
+                            el.clear()
+            except Exception as e:
+                print(f"  epgshare01 {tag}: {e}")
+        out.write("</tv>\n")
+    print(f"epgshare01: {len(got)} of {sum(len(v) for ids in by_tag.values() for v in ids.values())} channels "
+          f"with programmes, from {len(by_tag)} files")
 
 
 def parse_time(v):
@@ -165,18 +268,19 @@ def fmt(t):
     return t.strftime("%Y%m%d%H%M%S +0000")
 
 
-def pack(world_path, grabbed, out_dir, previous=None, now=None):
-    world = json.load(open(world_path, encoding="utf-8"))
+def pack(world_path, grabbed, out_dir, previous=None, now=None, main_path=None, also=()):
     files = collections.defaultdict(set)   # country file -> keys
-    for c, file in ours(world):
-        files[file].add(c["xt"].lower())
+    for path in [world_path] + ([main_path] if main_path else []):
+        for c, file in ours(json.load(open(path, encoding="utf-8"))):
+            files[file].add(c["xt"].lower())
     keys = set().union(*files.values()) if files else set()
     now = now or datetime.datetime.now(datetime.timezone.utc)
     lo, hi = now - datetime.timedelta(hours=KEEP_BEFORE_H), now + datetime.timedelta(hours=KEEP_AHEAD_H)
 
     today = collections.defaultdict(list)
-    if os.path.exists(grabbed):
-        read_programmes(grabbed, keys | {k + BACKUP for k in keys}, today)
+    for path in [grabbed] + list(also):
+        if path and os.path.exists(path):
+            read_programmes(path, keys | {k + BACKUP for k in keys}, today)
     backup_used = 0
     for k in keys:
         if not any(stop > now for _, stop, _ in today.get(k, ())) and today.get(k + BACKUP):
@@ -221,12 +325,20 @@ def pack(world_path, grabbed, out_dir, previous=None, now=None):
     return summary
 
 
+def option(name):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None
+
+
 def main():
     if len(sys.argv) >= 5 and sys.argv[1] == "plan":
-        plan(sys.argv[2], sys.argv[3], sys.argv[4])
+        plan(sys.argv[2], sys.argv[3], sys.argv[4], option("--plan"))
+    elif len(sys.argv) >= 4 and sys.argv[1] == "cablecast":
+        cablecast(sys.argv[2], sys.argv[3])
+    elif len(sys.argv) >= 4 and sys.argv[1] == "epgshare":
+        epgshare(sys.argv[2], sys.argv[3])
     elif len(sys.argv) >= 5 and sys.argv[1] == "pack":
-        prev = sys.argv[sys.argv.index("--previous") + 1] if "--previous" in sys.argv else None
-        pack(sys.argv[2], sys.argv[3], sys.argv[4], prev)
+        also = [p for i, p in enumerate(sys.argv) if i and sys.argv[i - 1] == "--also"]
+        pack(sys.argv[2], sys.argv[3], sys.argv[4], option("--previous"), main_path=option("--main"), also=also)
     else:
         raise SystemExit(__doc__)
 

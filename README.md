@@ -14,6 +14,13 @@ The weekly channel list for a private Live TV guide app on a Fire TV Stick. A Gi
   ahead), rebuilt every day by `.github/workflows/listings.yml`, which runs iptv-org's open-source grabber
   ([iptv-org/epg](https://github.com/iptv-org/epg)) for the World channels it can collect from a working site
   (`tools/collect_listings.py`); a channel the grabber missed keeps the programmes still ahead from the day before
+- more listing sources for the channels still without (`tools/listing_sources.py`, run by the weekly job, which
+  writes `lineup/listings_plan.json`): i.mjh.nz's files by a stream's own link id (Pluto TV, Roku, Samsung, ABC
+  Australia) and PBS by call sign; community stations' own public Cablecast schedules (matched by the stream's own
+  address); epgshare01.online's public guide files (US local stations by call sign, else an exact name in the
+  channel's own country or FAST service); and the TV-guide sites iptv-org/epg supports, by exact name with the
+  country agreeing. The daily job fetches the Cablecast schedules and reads the epgshare01 files itself (streamed, a
+  file at a time) and puts the main list's channels in `listings/in.xml.gz`
 - anime channels from abroad (and seven English ones from Pluto TV US that iptv-org does not list,
   `tools/build_world.py` EXTRA_ANIME) are in `channels.json`'s three anime genres
 - channels iptv-org does not list, from licensed free services through i.mjh.nz's public data: Pluto TV's US, UK and

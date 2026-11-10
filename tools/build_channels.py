@@ -224,7 +224,10 @@ JIO_ALIASES = {"sonyentertainmenttelevision": "set", "sonysportsten1": "sonyten1
 # JioTV ids by our name where matching picks the wrong one: iptv-org/epg's older copy of JioTV's list still calls
 # 1263 "Total Tv Haryana", an id JioTV has since given to BRK News; Total TV Haryana's programmes ("Total Haryana",
 # "Haryana Prime") are on "Total TV".
-JIO_FIXED = {"Total TV Haryana": 855}
+JIO_FIXED = {"Total TV Haryana": 855,
+             # Checked by hand, 10 Nov 2026: the same channel under JioTV's own spelling.
+             "Adhyatm TV": 1901, "Mangalmay TV": 1794, "YRF Music Nepal": 2753, "Zoom (India) Nepal": 592,
+             "Prudent Media": 966}
 # Our name's key -> the key in the Samsung TV Plus guide.
 XMLTV_ALIASES = {"zcomedynation": "zeecomedynation", "zdilse": "zeedilse", "zhorrornights": "zeehorrornights"}
 
@@ -294,7 +297,7 @@ def xmltv_key(name):
 
 
 # Channels whose stream is Samsung TV Plus India's own feed under another name than its guide's.
-SAMSUNG_GUIDE_NAMES = {"Animax Asia India": "Animax"}
+SAMSUNG_GUIDE_NAMES = {"Animax Asia India": "Animax", "KCM India": "KCM"}
 
 
 def load_samsung_ids():

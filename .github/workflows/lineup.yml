@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -35,6 +35,20 @@ jobs:
       # The World channels (Settings > World channels on the TV), from the sources the step above downloaded.
       - name: Build the World list
         run: python -I tools/build_world.py --offline --main lineup/channels.json --out lineup/world.json
+
+      # More programme-listing sources for the channels still without (tools/listing_sources.py): it reads the
+      # TV-guide sites' channel lists in iptv-org/epg (files only, nothing of it runs here). If it fails, both lists
+      # go out as built.
+      - uses: actions/checkout@v4
+        with:
+          repository: iptv-org/epg
+          path: epg
+          sparse-checkout: sites
+          persist-credentials: false
+
+      - name: More listing sources
+        continue-on-error: true
+        run: python -I tools/listing_sources.py assign lineup/channels.json lineup/world.json data epg lineup/listings_plan.json
 
       # Only a report: if it fails, the list is still published.
       - name: What changed
@@ -61,6 +75,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add lineup/channels.json lineup/channels.json.sig lineup/world.json lineup/world.json.sig data/jiotv_channels.json data/world_excluded.csv
+          if [ -f lineup/listings_plan.json ]; then git add lineup/listings_plan.json; fi
           git commit -m "Channel list $(date -u +%Y-%m-%d)" || echo "nothing new"
           for i in 1 2 3; do git push && break; sleep 5; git pull --rebase; done
 

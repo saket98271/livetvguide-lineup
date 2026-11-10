@@ -38,7 +38,18 @@ jobs:
           curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/guides.json" https://iptv-org.github.io/api/guides.json
           curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/feeds.json" https://iptv-org.github.io/api/feeds.json
           curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/SITES.md" https://raw.githubusercontent.com/iptv-org/epg/master/SITES.md
-          python -I lineup/tools/collect_listings.py plan lineup/lineup/world.json "$RUNNER_TEMP/src" "$RUNNER_TEMP/listings.channels.xml"
+          python -I lineup/tools/collect_listings.py plan lineup/lineup/world.json "$RUNNER_TEMP/src" "$RUNNER_TEMP/listings.channels.xml" \
+            --plan lineup/lineup/listings_plan.json
+
+      # Community-TV stations' own public schedules (Cablecast servers), for the channels the plan names.
+      - name: Cablecast schedules
+        continue-on-error: true
+        run: python -I lineup/tools/collect_listings.py cablecast lineup/lineup/listings_plan.json "$RUNNER_TEMP/out/cablecast.xml"
+
+      # epgshare01's public guide files, streamed once each (the grabber runs out of memory on the big ones).
+      - name: epgshare01 files
+        continue-on-error: true
+        run: python -I lineup/tools/collect_listings.py epgshare lineup/lineup/listings_plan.json "$RUNNER_TEMP/out/epgshare.xml"
 
       - uses: actions/checkout@v4
         with:
@@ -53,6 +64,8 @@ jobs:
       # A site that fails gives nothing today; its channels keep yesterday's programmes that are still ahead.
       - name: Collect
         working-directory: epg
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
         run: |
           npm ci --no-audit --no-fund
           npm run grab --- --channels="$RUNNER_TEMP/listings.channels.xml" --output="$RUNNER_TEMP/out/grabbed.xml" \
@@ -90,7 +103,8 @@ jobs:
           mkdir -p "$RUNNER_TEMP/previous" "$RUNNER_TEMP/listings"
           if git fetch -q --depth 1 origin listings; then git archive FETCH_HEAD | tar -x -C "$RUNNER_TEMP/previous"; fi
           python -I tools/collect_listings.py pack lineup/world.json "$RUNNER_TEMP/in/grabbed.xml" \
-            "$RUNNER_TEMP/listings" --previous "$RUNNER_TEMP/previous"
+            "$RUNNER_TEMP/listings" --previous "$RUNNER_TEMP/previous" --main lineup/channels.json \
+            --also "$RUNNER_TEMP/in/cablecast.xml" --also "$RUNNER_TEMP/in/epgshare.xml"
           printf '%s\n' "Programme listings for the Live TV guide's World channels: titles and times only, collected" \
             "daily with iptv-org's grabber (tools/collect_listings.py, .github/workflows/listings.yml)." \
             > "$RUNNER_TEMP/listings/README.md"

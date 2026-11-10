@@ -358,8 +358,9 @@ EXTRA_ANIME = [("Ani-Monsters", "6aaadf258cc64f2b2b7dbe3c"), ("Big A Anime", "6a
 # than Wheel World are in Hindi); Foodxp as its sister Travelxp HD's Samsung feed (Hindi). Not confirmed anywhere,
 # taken as Hindi for Indian-made channels: Dishoom Films, Auto Live, Cook & Bake. Left out: channels the list has under
 # another name (News State MP CG / PUN HAR HIM / UP UK, News24 MP CG, News18 Keralam / Punjab Haryana, The Pet
-# Collective, WeatherSpy, Animax, India Daily 24x7, Malai Murasu Seithikal), and Bollywood Masala and @K-MUSIC (their
-# streams did not play). A channel Samsung drops leaves by itself (only its current India line-up's are added).
+# Collective, WeatherSpy, Animax, KCM = KCM India, India Daily 24x7, Malai Murasu Seithikal), and Bollywood Masala and
+# @K-MUSIC (their streams did not play). A channel Samsung drops leaves by itself (only its current India line-up's
+# are added).
 SAMSUNG_IN = {
     # Hindi, added on the second look
     "IN3600005NF": ("Entertainment", "Hindi"),   # Korean TV (Korean dramas in Hindi)
@@ -424,7 +425,6 @@ SAMSUNG_IN = {
     "INBA5100031R2": ("Entertainment", "English"),   # People are Awesome
     "IN39000260R": ("Entertainment", "English"),     # TheSorryGirls TV
     "IN3300001P5": ("Entertainment", "English"),     # Time2Rlx
-    "IN1600011DE": ("Entertainment", "English"),     # KCM (series and true-crime documentaries)
     "IN4000517J": ("Movies", "English"),             # Best Action TV
     "IN330000528": ("Movies", "English"),            # WedoTV Movies
     "IN400054UF": ("Infotainment", "English"),       # Automotions
