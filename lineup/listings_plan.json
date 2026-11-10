@@ -1,0 +1,6464 @@
+{
+"3catinfo.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#3CatInfo.es",
+"site_name": "3CatInfo.es"
+},
+{
+"lang": "es",
+"site": "orangetv.orange.es",
+"site_id": "11188",
+"site_name": "3CatInfo"
+}
+]
+},
+"4tvnews.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "774",
+"site_name": "4tv News"
+}
+]
+},
+"7info.ci~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ci#180829",
+"site_name": "7INFO"
+}
+]
+},
+"aagaaztimes.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1795",
+"site_name": "Aagaaz Times"
+}
+]
+},
+"aaseervathamtv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_AASEERVATHAM_TV",
+"site_name": "Aaseervatham TV"
+}
+]
+},
+"aasthatamil.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#Aastha.Tamil.in",
+"site_name": "Aastha.Tamil.in"
+}
+]
+},
+"abc.us~kaal": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KAAL-DT.us_locals1",
+"site_name": "KAAL-DT.us_locals1"
+}
+]
+},
+"abc.us~kerotv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KERO-DT.us_locals1",
+"site_name": "KERO-DT.us_locals1"
+}
+]
+},
+"abc.us~kgtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KGTV-DT.us_locals1",
+"site_name": "KGTV-DT.us_locals1"
+}
+]
+},
+"abc.us~kguntv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KGUN-DT.us_locals1",
+"site_name": "KGUN-DT.us_locals1"
+}
+]
+},
+"abc.us~kitv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KITV-DT.us_locals1",
+"site_name": "KITV-DT.us_locals1"
+}
+]
+},
+"abc.us~kmghtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KMGH-DT.us_locals1",
+"site_name": "KMGH-DT.us_locals1"
+}
+]
+},
+"abc.us~koattv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KOAT-DT.us_locals1",
+"site_name": "KOAT-DT.us_locals1"
+}
+]
+},
+"abc.us~krgvtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KRGV-DT.us_locals1",
+"site_name": "KRGV-DT.us_locals1"
+}
+]
+},
+"abc.us~kstptv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSTP-DT.us_locals1",
+"site_name": "KSTP-DT.us_locals1"
+}
+]
+},
+"abc.us~kxxv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KXXV-DT.us_locals1",
+"site_name": "KXXV-DT.us_locals1"
+}
+]
+},
+"abc.us~wbbjtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WBBJ-DT.us_locals1",
+"site_name": "WBBJ-DT.us_locals1"
+}
+]
+},
+"abc.us~wbrztv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WBRZ-DT.us_locals1",
+"site_name": "WBRZ-DT.us_locals1"
+}
+]
+},
+"abc.us~wdiodt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WDIO-DT.us_locals1",
+"site_name": "WDIO-DT.us_locals1"
+}
+]
+},
+"abc.us~wftv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WFTV-DT.us_locals1",
+"site_name": "WFTV-DT.us_locals1"
+}
+]
+},
+"abc.us~wisntv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WISN-DT.us_locals1",
+"site_name": "WISN-DT.us_locals1"
+}
+]
+},
+"abc.us~wjlatv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJLA-DT.us_locals1",
+"site_name": "WJLA-DT.us_locals1"
+}
+]
+},
+"abc.us~wlos": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WLOS-DT.us_locals1",
+"site_name": "WLOS-DT.us_locals1"
+}
+]
+},
+"abc.us~wmartv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WMAR-DT.us_locals1",
+"site_name": "WMAR-DT.us_locals1"
+}
+]
+},
+"abc.us~wmurtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WMUR-DT.us_locals1",
+"site_name": "WMUR-DT.us_locals1"
+}
+]
+},
+"abc.us~wpdetv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WPDE-DT.us_locals1",
+"site_name": "WPDE-DT.us_locals1"
+}
+]
+},
+"abc.us~wsoctv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WSOC-DT.us_locals1",
+"site_name": "WSOC-DT.us_locals1"
+}
+]
+},
+"abc.us~wsyx": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WSYX-DT.us_locals1",
+"site_name": "WSYX-DT.us_locals1"
+}
+]
+},
+"abc.us~wtnh": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTNH-DT.us_locals1",
+"site_name": "WTNH-DT.us_locals1"
+}
+]
+},
+"abc.us~wtvqdt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTVQ-DT.us_locals1",
+"site_name": "WTVQ-DT.us_locals1"
+}
+]
+},
+"abc.us~wtxltv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTXL-DT.us_locals1",
+"site_name": "WTXL-DT.us_locals1"
+}
+]
+},
+"abc.us~wway": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WWAY-DT.us_locals1",
+"site_name": "WWAY-DT.us_locals1"
+}
+]
+},
+"abnandhrajyoti.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142517",
+"site_name": "ABN Andhra Jyothy"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "225",
+"site_name": "ABN Andhra Jyothy"
+}
+]
+},
+"access19.us~sd": {
+"cablecast": [
+"reflect-montgomerycommunitymedia.cablecast.tv",
+1
+]
+},
+"access4pac.us~sd": {
+"cablecast": [
+"reflect-channel18vod-springfield-il-us.cablecast.tv",
+1
+]
+},
+"accesssacramentochannel17.us~sd": {
+"cablecast": [
+"reflect-access-sacramento.cablecast.tv",
+2
+]
+},
+"accesstuolumne.us~sd": {
+"cablecast": [
+"reflect-tuolumne.cablecast.tv",
+1
+]
+},
+"acetv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#ACE.TV.us2",
+"site_name": "ACE.TV.us2"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/in#IN400056QQ",
+"site_name": "Ace TV"
+}
+]
+},
+"action24.gr~sd": {
+"sites": [
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "action24",
+"site_name": "Action 24"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5000",
+"site_name": "ACTION 24"
+}
+]
+},
+"adn40.mx~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "mx#proyecto-40",
+"site_name": "adn40"
+}
+]
+},
+"afrikinfotv.gn~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "gn#180083",
+"site_name": "AFRIKINFO TV"
+}
+]
+},
+"ajmantv.ae~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "AE1#Ajman.TV.HD.ae",
+"site_name": "Ajman.TV.HD.ae"
+}
+]
+},
+"akdcalcuttanews.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142725",
+"site_name": "Calcutta News"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "648",
+"site_name": "Calcutta News"
+}
+]
+},
+"akilikids.ke~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KE1#[311].Akili.Kids.ke",
+"site_name": "[311].Akili.Kids.ke"
+}
+]
+},
+"alephbusiness.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#Aleph.Business.HD.ro",
+"site_name": "Aleph.Business.HD.ro"
+},
+{
+"lang": "ro",
+"site": "programetv.ro",
+"site_id": "aleph-business-hd",
+"site_name": "Aleph Business HD"
+}
+]
+},
+"alltimemovies.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ALL_TIME_MOVIES",
+"site_name": "ALL TIME MOVIES"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "160750",
+"site_name": "All Time Movies"
+}
+]
+},
+"almashhad.ae~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "AE1#Al.Mashhad.ae",
+"site_name": "Al.Mashhad.ae"
+}
+]
+},
+"amazingfactstv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:AMAZING-FACTS-TV",
+"site_name": "Amazing Facts TV"
+},
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#1714036864/amazing-facts-tv",
+"site_name": "Amazing Facts TV"
+}
+]
+},
+"amgatv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#1775526541/amga-tv",
+"site_name": "AMGA TV"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "amga-tv-armenian/13328",
+"site_name": "amga TV (Armenian)"
+}
+]
+},
+"amgtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#AMG.TV.us2",
+"site_name": "AMG.TV.us2"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "amg-tv/6836",
+"site_name": "AMG-TV"
+}
+]
+},
+"anandtv.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#Anand.TV.in",
+"site_name": "Anand.TV.in"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1486",
+"site_name": "Anand TV"
+}
+]
+},
+"aparttv.lu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LU1#Apart.TV.lu",
+"site_name": "Apart.TV.lu"
+},
+{
+"lang": "lb",
+"site": "tv.post.lu",
+"site_id": "69c13430-8096-11e9-b5ca-f345a2ed0fbe",
+"site_name": "Apart TV"
+}
+]
+},
+"aradanatv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ARADANA",
+"site_name": "ARADANA"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142649",
+"site_name": "Aradana TV"
+}
+]
+},
+"arirangradio.kr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KR1#Arirang.Radio.kr",
+"site_name": "Arirang.Radio.kr"
+}
+]
+},
+"arttv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#ART.TV.gr",
+"site_name": "ART.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5450",
+"site_name": "ART TV"
+}
+]
+},
+"aspiretvlife.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#1890",
+"site_name": "AspireTV Life"
+}
+]
+},
+"astratv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#ASTRA.TV.gr",
+"site_name": "ASTRA.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "4680",
+"site_name": "ASTRA TV"
+}
+]
+},
+"atnsamachar.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#ATN.Samachar.in",
+"site_name": "ATN.Samachar.in"
+}
+]
+},
+"atvspirit.hu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HU1#ATV.SPIRIT.hu",
+"site_name": "ATV.SPIRIT.hu"
+},
+{
+"lang": "hu",
+"site": "tvmusor.hu",
+"site_id": "317",
+"site_name": "ATV Spirit"
+}
+]
+},
+"aweplus.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#AWE.Plus.us2",
+"site_name": "AWE.Plus.us2"
+},
+{
+"lang": "en",
+"site": "distro.tv",
+"site_id": "34009",
+"site_name": "AWE Plus"
+}
+]
+},
+"aztecahonduras.hn~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "hn#azteca-honduras",
+"site_name": "Azteca Honduras"
+}
+]
+},
+"balapan.kz~hd": {
+"sites": [
+{
+"lang": "kk",
+"site": "galamtv.kz",
+"site_id": "636e55468a8f73bae8244f47",
+"site_name": "Balapan"
+}
+]
+},
+"ballcasterz.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#Ballcasterz.cz",
+"site_name": "Ballcasterz.cz"
+}
+]
+},
+"barktv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "WHALETVPLUS1#Bark.TV.us",
+"site_name": "Bark.TV.us"
+},
+{
+"lang": "en",
+"site": "watch.whaletvplus.com",
+"site_id": "942280082834594506",
+"site_name": "Bark TV"
+}
+]
+},
+"batv.us~sd": {
+"cablecast": [
+"reflect-batv.cablecast.tv",
+1
+]
+},
+"batvgovernmenttv.us~sd": {
+"cablecast": [
+"reflect-batv.cablecast.tv",
+3
+]
+},
+"beachtvpanamacity.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:BEACH-TV-PANAMA-CITY",
+"site_name": "Beach TV Panama City"
+}
+]
+},
+"benietv.ci~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ci#180325",
+"site_name": "BENIE TV"
+}
+]
+},
+"berkscommunitytv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "berks-community-tv-hd/34185",
+"site_name": "Berks Community TV HD"
+}
+]
+},
+"bhakthitv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142709",
+"site_name": "Bhakti TV"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "290",
+"site_name": "Bhakti TV"
+}
+]
+},
+"bigcivicchannel.us~sd": {
+"cablecast": [
+"reflect-brookline-interactive-group.cablecast.tv",
+2
+]
+},
+"bigcommunitychannel.us~sd": {
+"cablecast": [
+"reflect-brookline-interactive-group.cablecast.tv",
+1
+]
+},
+"biztv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#Biz.TV.us2",
+"site_name": "Biz.TV.us2"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "biz-tv/10755",
+"site_name": "Biz-TV"
+}
+]
+},
+"blacknewschannel.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "BNC",
+"site_name": "Black News Channel"
+}
+]
+},
+"breinholts.se~dk": {
+"sites": [
+{
+"lang": "da",
+"site": "pluto.tv",
+"site_id": "660d6c0094db140008fe2f74",
+"site_name": "Breinholts"
+},
+{
+"lang": "da",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#660d6c0094db140008fe2f74",
+"site_name": "Breinholts"
+}
+]
+},
+"brionnaistv.fr~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "chaines-tv.orange.fr",
+"site_id": "90375",
+"site_name": "BRIONNAIS TV"
+}
+]
+},
+"btntv.rw~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "rw#180753",
+"site_name": "BTN TV"
+}
+]
+},
+"buzzfeedunsolved.pl~fast": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/ca#CA2600003M4",
+"site_name": "BuzzFeed Unsolved"
+}
+]
+},
+"bxarts.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+3
+]
+},
+"bxculture.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+4
+]
+},
+"bxinform.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+5
+]
+},
+"bxinspire.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+6
+]
+},
+"bxomni.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+1
+]
+},
+"canal27.gt~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "gt#canal-27",
+"site_name": "Canal27"
+}
+]
+},
+"canal7televalencia.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Canal.7.Televalencia.es",
+"site_name": "Canal.7.Televalencia.es"
+}
+]
+},
+"canalchd.co~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "co#canal-c",
+"site_name": "Canal C"
+}
+]
+},
+"canaldocriador.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch6285",
+"site_name": "Canal do Criador"
+}
+]
+},
+"canalextremadura.es~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "orangetv.orange.es",
+"site_id": "11211",
+"site_name": "Canal Extremadura"
+}
+]
+},
+"canalfdr.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "mi.tv",
+"site_id": "br#tv-o-povo-hd",
+"site_name": "Canal FDR HD"
+}
+]
+},
+"canalonce.mx~hd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "mx#xeipn-canal-11",
+"site_name": "Canal Once"
+}
+]
+},
+"canaluol.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "clarotvmais.com.br",
+"site_id": "352",
+"site_name": "CANAL UOL"
+}
+]
+},
+"carcityadventures.pl~sd": {
+"sites": [
+{
+"lang": "de",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/at#AT1900003VW",
+"site_name": "CAR CITY ADVENTURES"
+}
+]
+},
+"catholicfaithnetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvinsider.com",
+"site_id": "catholic-faith-network",
+"site_name": "Catholic Faith Network"
+},
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#69036463/catholic-faith-network",
+"site_name": "Catholic Faith Network"
+}
+]
+},
+"catholictv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#69022309/catholic-tv",
+"site_name": "Catholic TV"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "catholic-tv/15026",
+"site_name": "Catholic TV"
+}
+]
+},
+"cbs.us~kcci": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KCCI-DT.us_locals1",
+"site_name": "KCCI-DT.us_locals1"
+}
+]
+},
+"cbs.us~kirotv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KIRO-DT.us_locals1",
+"site_name": "KIRO-DT.us_locals1"
+}
+]
+},
+"cbs.us~kmtvtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KMTV-DT.us_locals1",
+"site_name": "KMTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~kutv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KUTV-DT.us_locals1",
+"site_name": "KUTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~kwtvdt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KWTV-DT.us_locals1",
+"site_name": "KWTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~kztv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KZTV-DT.us_locals1",
+"site_name": "KZTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~wcbitv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCBI-DT.us_locals1",
+"site_name": "WCBI-DT.us_locals1"
+}
+]
+},
+"cbs.us~wdeftv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WDEF-DT.us_locals1",
+"site_name": "WDEF-DT.us_locals1"
+}
+]
+},
+"cbs.us~whiotv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WHIO-DT.us_locals1",
+"site_name": "WHIO-DT.us_locals1"
+}
+]
+},
+"cbs.us~wjaxtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJAX-DT.us_locals1",
+"site_name": "WJAX-DT.us_locals1"
+}
+]
+},
+"cbs.us~wkrctv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKRC-DT.us_locals1",
+"site_name": "WKRC-DT.us_locals1"
+}
+]
+},
+"cbs.us~wpec": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WPEC-DT.us_locals1",
+"site_name": "WPEC-DT.us_locals1"
+}
+]
+},
+"cbs.us~wtvrtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTVR-DT.us_locals1",
+"site_name": "WTVR-DT.us_locals1"
+}
+]
+},
+"cbs.us~wwmt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WWMT-DT.us_locals1",
+"site_name": "WWMT-DT.us_locals1"
+}
+]
+},
+"ccx1.us~sd": {
+"cablecast": [
+"reflect-ccx.cablecast.tv",
+6
+]
+},
+"centertv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#CENTER.TV.gr",
+"site_name": "CENTER.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "4090",
+"site_name": "CENTER TV"
+}
+]
+},
+"chacratv.ar~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "directv.com.ar",
+"site_id": "4718#CHTV",
+"site_name": "Chacra TV"
+}
+]
+},
+"channel18gac.us~sd": {
+"cablecast": [
+"reflect-channel18vod-springfield-il-us.cablecast.tv",
+2
+]
+},
+"channel9.mm~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "au/Brisbane/epg#mjh-channel-9-gold-coast",
+"site_name": "Channel 9 (Gold Coast)"
+}
+]
+},
+"channeldivya.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143010",
+"site_name": "Divya"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "775",
+"site_name": "DIVYA"
+}
+]
+},
+"chithiram.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142738",
+"site_name": "Chithiram"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1166",
+"site_name": "CHITHIRAM"
+}
+]
+},
+"cindietv.br~hd": {
+"sites": [
+{
+"lang": "es",
+"site": "i.mjh.nz",
+"site_id": "Plex/mx#608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7",
+"site_name": "Cindie TV"
+},
+{
+"lang": "es",
+"site": "plex.tv",
+"site_id": "6685abbe59703916799193a7",
+"site_name": "Cindie TV"
+}
+]
+},
+"cityoflovelandtv.us~sd": {
+"cablecast": [
+"reflect-cityofloveland-co.cablecast.tv",
+1
+]
+},
+"cityofmonroegovernmentchannel.us~sd": {
+"cablecast": [
+"reflect-monroe-mi-ci.cablecast.tv",
+1
+]
+},
+"cmac1.us~sd": {
+"cablecast": [
+"reflect-vod-cmac.cablecast.tv",
+1
+]
+},
+"cmac2.us~sd": {
+"cablecast": [
+"reflect-vod-cmac.cablecast.tv",
+2
+]
+},
+"cmac3.us~sd": {
+"cablecast": [
+"reflect-vod-cmac.cablecast.tv",
+3
+]
+},
+"combrasil.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch5576",
+"site_name": "COM Brasil"
+}
+]
+},
+"cornerstonetv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#69022555/cornerstone-tv",
+"site_name": "Cornerstone TV"
+}
+]
+},
+"create.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#Create.us2",
+"site_name": "Create.us2"
+},
+{
+"lang": "en",
+"site": "tvinsider.com",
+"site_id": "create",
+"site_name": "Create"
+}
+]
+},
+"create.us~wmpt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WMPT-DT.us_locals1",
+"site_name": "WMPT-DT.us_locals1"
+}
+]
+},
+"creatvchannel15.us~sd": {
+"cablecast": [
+"reflect-creatv.cablecast.tv",
+1
+]
+},
+"creatvchannel27.us~sd": {
+"cablecast": [
+"reflect-creatv.cablecast.tv",
+4
+]
+},
+"creatvchannel28.us~sd": {
+"cablecast": [
+"reflect-creatv.cablecast.tv",
+5
+]
+},
+"creatvchannel30.us~sd": {
+"cablecast": [
+"reflect-creatv.cablecast.tv",
+6
+]
+},
+"crtvnews.cm~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "cm#180668",
+"site_name": "CRTV NEWS"
+}
+]
+},
+"cruztv.us~sd": {
+"cablecast": [
+"reflect-communitytv.cablecast.tv",
+2
+]
+},
+"dangal2.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#Dangal.2.in",
+"site_name": "Dangal.2.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DANGAL_2",
+"site_name": "Dangal 2"
+}
+]
+},
+"darshanatv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142774",
+"site_name": "Darshana TV"
+}
+]
+},
+"ddassam.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_NORTH_EAST",
+"site_name": "DD Assam"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142777",
+"site_name": "DD Assam"
+}
+]
+},
+"ddchhattisgarh.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1216",
+"site_name": "DD Chhattisgarh"
+}
+]
+},
+"ddgoa.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142783",
+"site_name": "DD GOA"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1215",
+"site_name": "DD Goa"
+}
+]
+},
+"ddharyana.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142784",
+"site_name": "DD Haryana"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1212",
+"site_name": "DD Haryana"
+}
+]
+},
+"ddhimachalpradesh.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_SHIMLA",
+"site_name": "DD Himachal"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1217",
+"site_name": "DD Himachal"
+}
+]
+},
+"ddjharkhand.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1188",
+"site_name": "DD Jharkhand"
+}
+]
+},
+"ddmanipur.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_IMPHAL",
+"site_name": "DD Manipur"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142792",
+"site_name": "DD Manipur"
+}
+]
+},
+"ddmeghalaya.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_SHILLONG",
+"site_name": "DD Meghalaya"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142793",
+"site_name": "DD MEGHALAYA"
+}
+]
+},
+"ddmizoram.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142794",
+"site_name": "DD MIZORAM"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1211",
+"site_name": "DD Mizoram"
+}
+]
+},
+"ddnagaland.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142795",
+"site_name": "DD NAGALAND"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1214",
+"site_name": "DD Nagaland"
+}
+]
+},
+"ddodia.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#DD.ODIA.in",
+"site_name": "DD.ODIA.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_ORIYA",
+"site_name": "DD ODIA"
+}
+]
+},
+"ddrajasthan.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#DD.Rajasthan.(Jaipur).in",
+"site_name": "DD.Rajasthan.(Jaipur).in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_RAJASTHAN",
+"site_name": "DD Rajasthan"
+}
+]
+},
+"ddsahyadri.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#DD.SAHYADRI.in",
+"site_name": "DD.SAHYADRI.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_SAHYADRI",
+"site_name": "DD Sahyadri"
+}
+]
+},
+"ddtripura.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DD_TRIPURA",
+"site_name": "DD Tripura"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1210",
+"site_name": "DD Tripura"
+}
+]
+},
+"dduttarakhand.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142809",
+"site_name": "DD Uttrakhand"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1213",
+"site_name": "DD Uttarakhand"
+}
+]
+},
+"deentv.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#1235",
+"site_name": "Deen TV"
+}
+]
+},
+"detroitchannel10.us~sd": {
+"cablecast": [
+"reflect-detroit-vod.cablecast.tv",
+1
+]
+},
+"detroitchannel21.us~sd": {
+"cablecast": [
+"reflect-detroit-vod.cablecast.tv",
+3
+]
+},
+"detroitchannel22.us~sd": {
+"cablecast": [
+"reflect-detroit-vod.cablecast.tv",
+2
+]
+},
+"detroitchannel68.us~sd": {
+"cablecast": [
+"reflect-detroit-vod.cablecast.tv",
+4
+]
+},
+"detseneshowmedchristianfuhlendorff.se~dk": {
+"sites": [
+{
+"lang": "da",
+"site": "pluto.tv",
+"site_id": "660d6bc10cd4630008f4a25a",
+"site_name": "Det sene show med Christian Fuhlendorff"
+},
+{
+"lang": "da",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#660d6bc10cd4630008f4a25a",
+"site_name": "Det sene show med Christian Fuhlendorff"
+}
+]
+},
+"dharmsandesh.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DHARM_SANDESH",
+"site_name": "Dharm Sandesh"
+}
+]
+},
+"dhoommusic.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#DHOOM.MUSIC.in",
+"site_name": "DHOOM.MUSIC.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_DHOOM_MUSIC",
+"site_name": "Dhoom Music"
+}
+]
+},
+"diadoratv.hr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HR1#Diadora.TV.hr",
+"site_name": "Diadora.TV.hr"
+},
+{
+"lang": "hr",
+"site": "mojmaxtv.hrvatskitelekom.hr",
+"site_id": "338263080036",
+"site_name": "Diadora TV"
+}
+]
+},
+"districtofcolumbianetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#69028304/district-of-columbia-network",
+"site_name": "District of Columbia Network"
+}
+]
+},
+"distritotv.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Distrito.TV.es",
+"site_name": "Distrito.TV.es"
+}
+]
+},
+"diyatv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "diya-tv/15229",
+"site_name": "DIYA TV"
+}
+]
+},
+"dosttv.tr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "TR3#DOST.TV.tr",
+"site_name": "DOST.TV.tr"
+}
+]
+},
+"dramachannel.th~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Singtel/epg#5618",
+"site_name": "Drama Channel"
+}
+]
+},
+"drgmedicalexaminer.pl~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PLEX1#plex.tv.Dr..G:.Medical.Examiner.plex",
+"site_name": "plex.tv.Dr..G:.Medical.Examiner.plex"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Roku/all#845b77875b6056d192401e10949948d2",
+"site_name": "Dr. G: Medical Examiner"
+}
+]
+},
+"drtv.dk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "DK1#DRTV.dk",
+"site_name": "DRTV.dk"
+}
+]
+},
+"dudelangetv.lu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LU1#Dudelange.TV.lu",
+"site_name": "Dudelange.TV.lu"
+}
+]
+},
+"dvtvextra.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#DVTV.Extra.cz",
+"site_name": "DVTV.Extra.cz"
+},
+{
+"lang": "cs",
+"site": "m.tv.sms.cz",
+"site_id": "DVTV+Extra",
+"site_name": "DVTV Extra"
+}
+]
+},
+"ebsenglish.kr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KR1#EBS.English.kr",
+"site_name": "EBS.English.kr"
+},
+{
+"lang": "ko",
+"site": "skylife.co.kr",
+"site_id": "4012#777",
+"site_name": "EBS English"
+}
+]
+},
+"ecclesiatv.ci~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ci#180974",
+"site_name": "ECCLESIA TV"
+}
+]
+},
+"edentv.bj~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "bj#180107",
+"site_name": "EDEN TV"
+}
+]
+},
+"elche7tv.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Elche.7.TV.es",
+"site_name": "Elche.7.TV.es"
+}
+]
+},
+"elevationchurchnetwork.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "distro.tv",
+"site_id": "140685",
+"site_name": "Elevation Church Network"
+},
+{
+"lang": "en",
+"site": "xumo.tv",
+"site_id": "300#99951543",
+"site_name": "Elevation Church Network"
+}
+]
+},
+"elrey.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:ELREY:341",
+"site_name": "El Rey"
+},
+{
+"lang": "en",
+"site": "tvinsider.com",
+"site_id": "el-rey",
+"site_name": "El Rey"
+}
+]
+},
+"elsiete.ar~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "directv.com.ar",
+"site_id": "4341#SIETE",
+"site_name": "EL SIETE"
+}
+]
+},
+"enachannel.gr~sd": {
+"sites": [
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "enachannel",
+"site_name": "ENA Channel"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "4040",
+"site_name": "ENA CHANNEL"
+}
+]
+},
+"enterr10bangla.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ENTERR10_BANGLA",
+"site_name": "Enterr10 Bangla"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143018",
+"site_name": "Enterr10 Bangla"
+}
+]
+},
+"ertcosmos.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#ERT.COSMOS.gr",
+"site_name": "ERT.COSMOS.gr"
+}
+]
+},
+"euronews.pl~fast": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PLEX1#plex.tv.Euronews.plex",
+"site_name": "plex.tv.Euronews.plex"
+},
+{
+"lang": "es",
+"site": "pluto.tv",
+"site_id": "60d3583ef310610007fb02b1",
+"site_name": "Euronews"
+}
+]
+},
+"euronewsgeorgia.ge~sd": {
+"sites": [
+{
+"lang": "ka",
+"site": "magticom.ge",
+"site_id": "68002",
+"site_name": "Euronews Georgia"
+}
+]
+},
+"evasiontv.gn~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "gn#180398",
+"site_name": "EVASION TV"
+}
+]
+},
+"faithtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#2980",
+"site_name": "Faith TV"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "faithtv-hd/31608",
+"site_name": "FaithTV HD"
+}
+]
+},
+"faithuk.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tv24.co.uk",
+"site_id": "faith-uk",
+"site_name": "Faith UK"
+}
+]
+},
+"fashiontv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "227",
+"site_name": "Fashion TV"
+}
+]
+},
+"fcpublicmedia.us~sd": {
+"cablecast": [
+"reflect-fcpublicmedia.cablecast.tv",
+1
+]
+},
+"fctv.us~sd": {
+"cablecast": [
+"reflect-vod-fcgov.cablecast.tv",
+1
+]
+},
+"fibwi.es~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "orangetv.orange.es",
+"site_id": "11250",
+"site_name": "Fibwi"
+}
+]
+},
+"foryoutv.cm~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "cm#180264",
+"site_name": "FOR YOU TV"
+}
+]
+},
+"fox.us~kbsi": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KBSI-DT.us_locals1",
+"site_name": "KBSI-DT.us_locals1"
+}
+]
+},
+"fox.us~kcpq": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KCPQ-DT.us_locals1",
+"site_name": "KCPQ-DT.us_locals1"
+}
+]
+},
+"fox.us~kdfw": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KDFW-DT.us_locals1",
+"site_name": "KDFW-DT.us_locals1"
+}
+]
+},
+"fox.us~kmphtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KMPH-DT.us_locals1",
+"site_name": "KMPH-DT.us_locals1"
+}
+]
+},
+"fox.us~kokhtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KOKH-DT.us_locals1",
+"site_name": "KOKH-DT.us_locals1"
+}
+]
+},
+"fox.us~kriv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KRIV-DT.us_locals1",
+"site_name": "KRIV-DT.us_locals1"
+}
+]
+},
+"fox.us~ksaztv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSAZ-DT.us_locals1",
+"site_name": "KSAZ-DT.us_locals1"
+}
+]
+},
+"fox.us~ktbc": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTBC-DT.us_locals1",
+"site_name": "KTBC-DT.us_locals1"
+}
+]
+},
+"fox.us~kttv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTTV-DT.us_locals1",
+"site_name": "KTTV-DT.us_locals1"
+}
+]
+},
+"fox.us~wbff": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WBFF-DT.us_locals1",
+"site_name": "WBFF-DT.us_locals1"
+}
+]
+},
+"fox.us~wftxtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WFTX-DT.us_locals1",
+"site_name": "WFTX-DT.us_locals1"
+}
+]
+},
+"fox.us~whbqtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WHBQ-DT.us_locals1",
+"site_name": "WHBQ-DT.us_locals1"
+}
+]
+},
+"fox.us~witi": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WITI-DT.us_locals1",
+"site_name": "WITI-DT.us_locals1"
+}
+]
+},
+"fox.us~wjbk": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJBK-DT.us_locals1",
+"site_name": "WJBK-DT.us_locals1"
+}
+]
+},
+"fox.us~wnyw": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WNYW-DT.us_locals1",
+"site_name": "WNYW-DT.us_locals1"
+}
+]
+},
+"fox.us~wttg": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTTG-DT.us_locals1",
+"site_name": "WTTG-DT.us_locals1"
+}
+]
+},
+"fox.us~wtvt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTVT-DT.us_locals1",
+"site_name": "WTVT-DT.us_locals1"
+}
+]
+},
+"fox.us~wtxftv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTXF-DT.us_locals1",
+"site_name": "WTXF-DT.us_locals1"
+}
+]
+},
+"fox.us~wxxvtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WXXV-DT.us_locals1",
+"site_name": "WXXV-DT.us_locals1"
+}
+]
+},
+"freespeechtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#Free.Speech.TV.us2",
+"site_name": "Free.Speech.TV.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:FSTV:348",
+"site_name": "Free Speech TV"
+}
+]
+},
+"funroads.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#Fun.Roads.us2",
+"site_name": "Fun.Roads.us2"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "fun-roads/36572",
+"site_name": "Fun Roads"
+}
+]
+},
+"g10tv.us~sd": {
+"cablecast": [
+"reflect-jacksonville.cablecast.tv",
+1
+]
+},
+"gcotv.us~sd": {
+"cablecast": [
+"reflect-golden-co.cablecast.tv",
+1
+]
+},
+"gemshoppingnetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:GEM:228",
+"site_name": "GEM Shopping Network"
+},
+{
+"lang": "en",
+"site": "directv.com",
+"site_id": "e499c4cf-6b9b-483f-b1fa-cbd0d79a81bf",
+"site_name": "GEM Shopping Network"
+}
+]
+},
+"gialaitv.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#Gia.Lai.TV.vn",
+"site_name": "Gia.Lai.TV.vn"
+}
+]
+},
+"globotv.hn~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "hn#globo-tv",
+"site_name": "Globo TV"
+}
+]
+},
+"gnomitv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#GNOMI.TV.gr",
+"site_name": "GNOMI.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "4290",
+"site_name": "GNOMI TV"
+}
+]
+},
+"godslearningchannel.us~kpcbdt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KPCB-DT.us_locals1",
+"site_name": "KPCB-DT.us_locals1"
+}
+]
+},
+"goldmines.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_GOLDMINES",
+"site_name": "Goldmines"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143087",
+"site_name": "Goldmines"
+}
+]
+},
+"goldminesbollywood.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143089",
+"site_name": "Goldmines Bollywood"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1050",
+"site_name": "Goldmines Bollywood"
+}
+]
+},
+"goldminesmovies.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142881",
+"site_name": "Goldmines Movies"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1499",
+"site_name": "Goldmines Movies"
+}
+]
+},
+"goodnewstv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_GOODNEWS_TV",
+"site_name": "Goodnews TV"
+}
+]
+},
+"goodtv.kr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KR1#GOODTV.kr",
+"site_name": "GOODTV.kr"
+},
+{
+"lang": "ko",
+"site": "skylife.co.kr",
+"site_id": "4014#293",
+"site_name": "GOODTV"
+}
+]
+},
+"grjngo.pl~sd": {
+"sites": [
+{
+"lang": "de",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/at#ATAJ0500455A",
+"site_name": "Grjngo"
+}
+]
+},
+"guadatv.es~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "orangetv.orange.es",
+"site_id": "11237",
+"site_name": "GuadaTV"
+}
+]
+},
+"gujaratfirst.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143096",
+"site_name": "Gujarat First"
+}
+]
+},
+"halatv.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "PT63",
+"site_name": "HALA TV"
+}
+]
+},
+"harvesttv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7",
+"site_name": "Harvest TV 24x7"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "348",
+"site_name": "Harvest TV 24x7"
+}
+]
+},
+"hbtv.us~sd": {
+"cablecast": [
+"reflect-huntingtonbeach.cablecast.tv",
+1
+]
+},
+"hctveducationalaccesschannel.us~sd": {
+"cablecast": [
+"reflect-hudsonctv.cablecast.tv",
+2
+]
+},
+"hctvgovernmentchannel.us~sd": {
+"cablecast": [
+"reflect-hudsonctv.cablecast.tv",
+3
+]
+},
+"hctvpublicaccesschannel.us~sd": {
+"cablecast": [
+"reflect-hudsonctv.cablecast.tv",
+1
+]
+},
+"headlinestripura.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "821",
+"site_name": "Headlines Tripura"
+}
+]
+},
+"hidabroot.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "PT30",
+"site_name": "Hidabroot"
+}
+]
+},
+"hightv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#HIGH.TV.gr",
+"site_name": "HIGH.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5010",
+"site_name": "HIGH TV"
+}
+]
+},
+"himlentv7.fi~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "FI1#Himlen.TV7.fi",
+"site_name": "Himlen.TV7.fi"
+},
+{
+"lang": "fi",
+"site": "iltalehti.fi",
+"site_id": "26fb0b75-f5c3-4b25-94b7-61d2e996b2bd#3336",
+"site_name": "Himlen TV7"
+}
+]
+},
+"historia.es~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/us#US2600019IC",
+"site_name": "Historia"
+}
+]
+},
+"hmongtvnetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "hmong-tv-network/34084",
+"site_name": "Hmong TV Network"
+}
+]
+},
+"htv3.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#HTV3.HD.vn",
+"site_name": "HTV3.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "uRY9Lhx566fKPuaLWcjs55wo_u2yIAkDFcE7F7J6",
+"site_name": "HTV3"
+}
+]
+},
+"htv7.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#HTV7.HD.vn",
+"site_name": "HTV7.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "pPDPKS9_I8LucOy_DFvOqRuqqmsd7BGuWYsJHHhV",
+"site_name": "HTV7"
+}
+]
+},
+"htv9.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#HTV9.HD.vn",
+"site_name": "HTV9.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "4o9U0OncN2xNqG4W_gqjfKxy4foQxWVzwOQWDTr4",
+"site_name": "HTV9"
+}
+]
+},
+"huelvatv.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Huelva.TV.es",
+"site_name": "Huelva.TV.es"
+}
+]
+},
+"idjtv.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#IDJTV.HD.rs",
+"site_name": "IDJTV.HD.rs"
+}
+]
+},
+"impactnetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#Impact.Network.us2",
+"site_name": "Impact.Network.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "IMPACSD",
+"site_name": "Impact Network (SD Feed)"
+}
+]
+},
+"impacttv.bf~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "bf#180386",
+"site_name": "IMPACT TV"
+}
+]
+},
+"indianewsgujarati.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "654",
+"site_name": "India News Gujarat"
+}
+]
+},
+"indianewsmadhyapradeshchhattisgarh.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "222",
+"site_name": "India News MP CG"
+}
+]
+},
+"indianewspunjabhimachal.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "366",
+"site_name": "India News Punjab"
+}
+]
+},
+"inoorotv.ke~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KE1#[269].Inooro.TV.ke",
+"site_name": "[269].Inooro.TV.ke"
+}
+]
+},
+"ioniantv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#Ionian.TV.gr",
+"site_name": "Ionian.TV.gr"
+}
+]
+},
+"iontv.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#4461",
+"site_name": "iON TV"
+}
+]
+},
+"iqratv.uk~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "chaines-tv.orange.fr",
+"site_id": "90515",
+"site_name": "IQRAA"
+},
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#6754",
+"site_name": "IQRA TV"
+}
+]
+},
+"iraninternational.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tv24.co.uk",
+"site_id": "iran-international-hd",
+"site_name": "Iran International HD"
+}
+]
+},
+"isaiaruvi.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#ISAI.ARUVI.in",
+"site_name": "ISAI.ARUVI.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ISAI_ARUVI",
+"site_name": "Isai Aruvi"
+}
+]
+},
+"ishwarbhaktitv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ISHWAR_TV",
+"site_name": "Ishwar Bhakti"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143213",
+"site_name": "Ishwar TV"
+}
+]
+},
+"isibotv.rw~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "rw#180123",
+"site_name": "ISIBO TV"
+}
+]
+},
+"jibekjoly.kz~hd": {
+"sites": [
+{
+"lang": "kk",
+"site": "galamtv.kz",
+"site_id": "559d41b978d7270195008a67",
+"site_name": "Jibek Joly"
+}
+]
+},
+"jinvanichannel.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143230",
+"site_name": "Jinvani"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "373",
+"site_name": "Jinvani Channel"
+}
+]
+},
+"jobtv.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#Job.TV.ro",
+"site_name": "Job.TV.ro"
+},
+{
+"lang": "ro",
+"site": "programetv.ro",
+"site_id": "job-tv",
+"site_name": "Job TV"
+}
+]
+},
+"kalactv.gn~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "gn#180640",
+"site_name": "KALAC TV"
+}
+]
+},
+"kalaignarmurasu.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_MURASU",
+"site_name": "Murasu"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "411",
+"site_name": "Murasu TV"
+}
+]
+},
+"kanal6.ba~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "BA1#Kanal.6.ba",
+"site_name": "Kanal.6.ba"
+},
+{
+"lang": "hr",
+"site": "epg.telemach.ba",
+"site_id": "475",
+"site_name": "Kanal 6"
+}
+]
+},
+"kanald2.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO2#Kanal.D2.(HD).ro",
+"site_name": "Kanal.D2.(HD).ro"
+}
+]
+},
+"kanshitv.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#3753",
+"site_name": "Kanshi TV"
+}
+]
+},
+"kasstv.ke~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "KE1#[266].KASS.TV.ke",
+"site_name": "[266].KASS.TV.ke"
+}
+]
+},
+"kbri8.us~sd": {
+"cablecast": [
+"brightonco.cablecast.tv",
+1
+]
+},
+"kcat.us~sd": {
+"cablecast": [
+"reflect-kcat-live.cablecast.tv",
+1
+]
+},
+"kcontentbycjenm.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#1940",
+"site_name": "K-Content by CJ ENM"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/gb#GB17000066A",
+"site_name": "K-Content by CJ ENM"
+}
+]
+},
+"kentuckyeducationaltelevision.us~wkmjtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKMJ-DT.us_locals1",
+"site_name": "WKMJ-DT.us_locals1"
+}
+]
+},
+"kentuckyeducationaltelevision.us~wkpctv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKPC-DT.us_locals1",
+"site_name": "WKPC-DT.us_locals1"
+}
+]
+},
+"khabrainabhitak.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143262",
+"site_name": "Khabrain Abhi Tak"
+}
+]
+},
+"khushboobangla.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_KHUSHBOO_BANGLA",
+"site_name": "Khushboo Bangla"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143265",
+"site_name": "Khushboo Bangla"
+}
+]
+},
+"kmcttv391.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KMCT-DT.us_locals1",
+"site_name": "KMCT-DT.us_locals1"
+}
+]
+},
+"kostv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#KOS.TV.gr",
+"site_name": "KOS.TV.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5750",
+"site_name": "KOS TV"
+}
+]
+},
+"ksce381.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSCE-DT.us_locals1",
+"site_name": "KSCE-DT.us_locals1"
+}
+]
+},
+"ksce383.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSCE-DT.us_locals1",
+"site_name": "KSCE-DT.us_locals1"
+}
+]
+},
+"ktoo360tv.us~ktootv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTOO-DT.us_locals1",
+"site_name": "KTOO-DT.us_locals1"
+}
+]
+},
+"kuriakoscine.pt~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PT1#Kuriakos.Cine.pt",
+"site_name": "Kuriakos.Cine.pt"
+}
+]
+},
+"kvifftv.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#KVIFF.TV.cz",
+"site_name": "KVIFF.TV.cz"
+}
+]
+},
+"kvtndt251.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KVTN-DT.us_locals1",
+"site_name": "KVTN-DT.us_locals1"
+}
+]
+},
+"la1canarias.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#La.1.Canarias.es",
+"site_name": "La.1.Canarias.es"
+}
+]
+},
+"la1catalunya.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#La.1.Catalunya.es",
+"site_name": "La.1.Catalunya.es"
+}
+]
+},
+"la2canarias.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#La.2.Canarias.es",
+"site_name": "La.2.Canarias.es"
+}
+]
+},
+"la2catalunya.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#La.2.Catalunya.es",
+"site_name": "La.2.Catalunya.es"
+}
+]
+},
+"la36.us~sd": {
+"cablecast": [
+"reflect-channel36-la.cablecast.tv",
+1
+]
+},
+"lakefronttv.us~sd": {
+"cablecast": [
+"reflect-lakefront-leesburgflorida.cablecast.tv",
+6
+]
+},
+"laziostylechannel.it~hd": {
+"sites": [
+{
+"lang": "it",
+"site": "superguidatv.it",
+"site_id": "lazio-style-channel/sky-sport/58",
+"site_name": "Lazio Style Channel"
+}
+]
+},
+"legochannel.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/ca#CABC230001363",
+"site_name": "LEGO Channel"
+}
+]
+},
+"libertastv.hr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HR1#Libertas.TV.hr",
+"site_name": "Libertas.TV.hr"
+},
+{
+"lang": "hr",
+"site": "mojmaxtv.hrvatskitelekom.hr",
+"site_id": "338264616135",
+"site_name": "Libertas TV"
+}
+]
+},
+"lifetv.sk~sd": {
+"sites": [
+{
+"lang": "sk",
+"site": "webtv.sk",
+"site_id": "life_tv",
+"site_name": "Life TV"
+}
+]
+},
+"linetv.tr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "TR1#LINETV.tr",
+"site_name": "LINETV.tr"
+}
+]
+},
+"livingfaithtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:LIVING-FAITH-TV",
+"site_name": "Living Faith Tv"
+}
+]
+},
+"llbnhislight.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:LLBN-HIS-LIGHT",
+"site_name": "LLBN His Light"
+}
+]
+},
+"magictv.bg~sd": {
+"sites": [
+{
+"lang": "bg",
+"site": "tv.dir.bg",
+"site_id": "75",
+"site_name": "Magic TV"
+}
+]
+},
+"mahuakhabar.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#Mahua.Khabar.in",
+"site_name": "Mahua.Khabar.in"
+}
+]
+},
+"manoranjangrand.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143302",
+"site_name": "Manoranjan Grand"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "965",
+"site_name": "Manoranjan Grand"
+}
+]
+},
+"manoranjanmovies.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN2#Manoranjan.Movies.in2",
+"site_name": "Manoranjan.Movies.in2"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143303",
+"site_name": "Manoranjan Movies"
+}
+]
+},
+"manoranjanprime.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "154892",
+"site_name": "Manoranjan Prime"
+}
+]
+},
+"manoranjantv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_MANORANJAN_TV",
+"site_name": "Manoranjan Tv"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143304",
+"site_name": "Manoranjan TV"
+}
+]
+},
+"mbcamerica.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#MBC.America.us2",
+"site_name": "MBC.America.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "MBCKOR",
+"site_name": "MBC America"
+}
+]
+},
+"megatv.us~wsbstv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WSBS-DT.us_locals1",
+"site_name": "WSBS-DT.us_locals1"
+}
+]
+},
+"meritstreet.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvinsider.com",
+"site_id": "merit-street",
+"site_name": "Merit Street"
+}
+]
+},
+"metropolatv.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO2#Metropola.TV.ro",
+"site_name": "Metropola.TV.ro"
+},
+{
+"lang": "ro",
+"site": "programetv.ro",
+"site_id": "metropola-tv",
+"site_name": "Metropola TV"
+}
+]
+},
+"metvtoons.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#MeTV.Toons.us2",
+"site_name": "MeTV.Toons.us2"
+},
+{
+"lang": "en",
+"site": "directv.com",
+"site_id": "c919b444-d041-4a55-aeff-44e681878ae4",
+"site_name": "MeTV Toons"
+}
+]
+},
+"mh1news.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_MH_ONE_NEWS",
+"site_name": "MH ONE NEWS"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143540",
+"site_name": "MH1 News"
+}
+]
+},
+"mhone.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN2#Mh.One.in2",
+"site_name": "Mh.One.in2"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "399",
+"site_name": "MH One"
+}
+]
+},
+"mierschtv.lu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LU1#Miersch.TV.lu",
+"site_name": "Miersch.TV.lu"
+}
+]
+},
+"miracletvplus.ci~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ci#180582",
+"site_name": "MIRACLE TV+"
+}
+]
+},
+"mnethd.mk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "DStv/za#101.dstv_com",
+"site_name": "M-Net HD"
+}
+]
+},
+"mnt.us~wciv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCIV-DT.us_locals1",
+"site_name": "WCIV-DT.us_locals1"
+}
+]
+},
+"mnt.us~wfld": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WFLD-DT.us_locals1",
+"site_name": "WFLD-DT.us_locals1"
+}
+]
+},
+"mnt.us~woio": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WOIO-DT.us_locals1",
+"site_name": "WOIO-DT.us_locals1"
+}
+]
+},
+"moconomy.pl~sd": {
+"sites": [
+{
+"lang": "de",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/at#ATBA15000088F",
+"site_name": "Moconomy"
+}
+]
+},
+"monroecommunitymediaeducationchannel.us~sd": {
+"cablecast": [
+"reflect-monroe-public-access.cablecast.tv",
+2
+]
+},
+"monroecommunitymediapublicaccesschannel.us~sd": {
+"cablecast": [
+"reflect-monroe-public-access.cablecast.tv",
+1
+]
+},
+"montgomerychannel.us~sd": {
+"cablecast": [
+"reflect-montgomerycommunitymedia.cablecast.tv",
+2
+]
+},
+"moretvscifi.de~gb": {
+"sites": [
+{
+"lang": "en",
+"site": "pluto.tv",
+"site_id": "645e00d5d3fdde000829463a",
+"site_name": "More TV Sci-fi"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/gb#645e00d5d3fdde000829463a",
+"site_name": "More TV Sci-fi"
+}
+]
+},
+"moviespheregold.us~wfxt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WFXT-DT.us_locals1",
+"site_name": "WFXT-DT.us_locals1"
+}
+]
+},
+"mstv.us~sd": {
+"cablecast": [
+"reflect-mcsb-vod.cablecast.tv",
+1
+]
+},
+"mta1world.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#3202",
+"site_name": "MTA1 World HD"
+}
+]
+},
+"mtvgeordies.de~es": {
+"sites": [
+{
+"lang": "es",
+"site": "pluto.tv",
+"site_id": "627d3176d7dfa500077042f1",
+"site_name": "MTV Geordies"
+},
+{
+"lang": "es",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/es#627d3176d7dfa500077042f1",
+"site_name": "MTV Geordies"
+}
+]
+},
+"mytimemovienetwork.mx~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PLEX1#plex.tv.MyTime.Movie.Network.plex",
+"site_name": "plex.tv.MyTime.Movie.Network.plex"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Roku/all#be3c81de355c56f89cbf99301735cfd2",
+"site_name": "My Time Movie Network"
+}
+]
+},
+"naftemporikitv.gr~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#Naftemporiki.TV.gr",
+"site_name": "Naftemporiki.TV.gr"
+}
+]
+},
+"nbc.us~kntv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KNTV-DT.us_locals1",
+"site_name": "KNTV-DT.us_locals1"
+}
+]
+},
+"nbc.us~kristv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KRIS-DT.us_locals1",
+"site_name": "KRIS-DT.us_locals1"
+}
+]
+},
+"nbc.us~ksbw": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSBW-DT.us_locals1",
+"site_name": "KSBW-DT.us_locals1"
+}
+]
+},
+"nbc.us~ksby": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSBY-DT.us_locals1",
+"site_name": "KSBY-DT.us_locals1"
+}
+]
+},
+"nbc.us~kshbtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSHB-DT.us_locals1",
+"site_name": "KSHB-DT.us_locals1"
+}
+]
+},
+"nbc.us~ksnv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSNV-DT.us_locals1",
+"site_name": "KSNV-DT.us_locals1"
+}
+]
+},
+"nbc.us~kxastv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KXAS-DT.us_locals1",
+"site_name": "KXAS-DT.us_locals1"
+}
+]
+},
+"nbc.us~wbaltv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WBAL-DT.us_locals1",
+"site_name": "WBAL-DT.us_locals1"
+}
+]
+},
+"nbc.us~wgal": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WGAL-DT.us_locals1",
+"site_name": "WGAL-DT.us_locals1"
+}
+]
+},
+"nbc.us~wgbatv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WGBA-DT.us_locals1",
+"site_name": "WGBA-DT.us_locals1"
+}
+]
+},
+"nbc.us~whectv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WHEC-DT.us_locals1",
+"site_name": "WHEC-DT.us_locals1"
+}
+]
+},
+"nbc.us~wjactv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJAC-DT.us_locals1",
+"site_name": "WJAC-DT.us_locals1"
+}
+]
+},
+"nbc.us~wjar": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJAR-DT.us_locals1",
+"site_name": "WJAR-DT.us_locals1"
+}
+]
+},
+"nbc.us~wkyc": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKYC-DT.us_locals1",
+"site_name": "WKYC-DT.us_locals1"
+}
+]
+},
+"nbc.us~wlio": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WLIO-DT.us_locals1",
+"site_name": "WLIO-DT.us_locals1"
+}
+]
+},
+"nbc.us~wmaqtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WMAQ-DT.us_locals1",
+"site_name": "WMAQ-DT.us_locals1"
+}
+]
+},
+"nbc.us~wmgttv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WMGT-DT.us_locals1",
+"site_name": "WMGT-DT.us_locals1"
+}
+]
+},
+"nbc.us~wnyt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WNYT-DT.us_locals1",
+"site_name": "WNYT-DT.us_locals1"
+}
+]
+},
+"nbc.us~woaitv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WOAI-DT.us_locals1",
+"site_name": "WOAI-DT.us_locals1"
+}
+]
+},
+"nbc.us~wptvtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WPTV-DT.us_locals1",
+"site_name": "WPTV-DT.us_locals1"
+}
+]
+},
+"nbc.us~wpxi": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WPXI-DT.us_locals1",
+"site_name": "WPXI-DT.us_locals1"
+}
+]
+},
+"nbc.us~wtmjtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTMJ-DT.us_locals1",
+"site_name": "WTMJ-DT.us_locals1"
+}
+]
+},
+"nbc.us~wtovtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTOV-DT.us_locals1",
+"site_name": "WTOV-DT.us_locals1"
+}
+]
+},
+"nbc.us~wtvj": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTVJ-DT.us_locals1",
+"site_name": "WTVJ-DT.us_locals1"
+}
+]
+},
+"nbc.us~wvit": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WVIT-DT.us_locals1",
+"site_name": "WVIT-DT.us_locals1"
+}
+]
+},
+"ncmeducationalkidschannel.us~sd": {
+"cablecast": [
+"reflect-npa.cablecast.tv",
+2
+]
+},
+"ncmgovernmentpoliticschannel.us~sd": {
+"cablecast": [
+"reflect-npa.cablecast.tv",
+3
+]
+},
+"ncmmainchannel.us~sd": {
+"cablecast": [
+"reflect-npa.cablecast.tv",
+1
+]
+},
+"news18assamnortheast.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_NEWS18_ASSAM_NORTHSYMHYPEAST",
+"site_name": "News18 Assam North-East"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143606",
+"site_name": "News18 Assam North East"
+}
+]
+},
+"news1st.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143587",
+"site_name": "News 1st Kannada"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "913",
+"site_name": "News 1st Kannada"
+}
+]
+},
+"news24.al~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/in#IN3900001YE",
+"site_name": "News24"
+}
+]
+},
+"newsmalayalam24x7.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#NEWS.MALAYALAM.24X7.in",
+"site_name": "NEWS.MALAYALAM.24X7.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_NEWS_MALAYALAM_24X7",
+"site_name": "NEWS MALAYALAM 24 X 7"
+}
+]
+},
+"newsmaxbalkans.ba~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mtel.ba",
+"site_id": "iptv#ch-newsmax-balkans-hd",
+"site_name": "Newsmax Balkans HD"
+}
+]
+},
+"niederbayerntv.de~sd": {
+"sites": [
+{
+"lang": "de",
+"site": "sky.com",
+"site_id": "DE#5807",
+"site_name": "NIEDERBAYERN TV HD"
+}
+]
+},
+"nireekshanatv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1378",
+"site_name": "Nireekshana TV"
+}
+]
+},
+"nktv24x7.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "894",
+"site_name": "NKTV PLUS"
+}
+]
+},
+"noortv.uk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "sky.com",
+"site_id": "GB#3715",
+"site_name": "Noor TV"
+}
+]
+},
+"nrbtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#NRB.TV.us2",
+"site_name": "NRB.TV.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:HTTPS://WWW.TIKILIVE.COM/CHANNEL/NRBTV",
+"site_name": "NRBTV"
+}
+]
+},
+"nsc9news.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1824",
+"site_name": "NSC9"
+}
+]
+},
+"nsports.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "clarotvmais.com.br",
+"site_id": "329",
+"site_name": "Nsports HD"
+},
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch6995",
+"site_name": "NSports"
+}
+]
+},
+"ntvtelugu.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "154897",
+"site_name": "NTV"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "160",
+"site_name": "NTV Telugu"
+}
+]
+},
+"nyxt.us~sd": {
+"cablecast": [
+"reflect-stream-bronxnet.cablecast.tv",
+7
+]
+},
+"okto.at~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "AT1#OKTO.at",
+"site_name": "OKTO.at"
+}
+]
+},
+"olelo49.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#3639355215/olelo-49",
+"site_name": "OLELO 49"
+}
+]
+},
+"olelo53.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#3639356023/olelo-53",
+"site_name": "OLELO 53"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "olelo-53/6028",
+"site_name": "OLELO 53"
+}
+]
+},
+"olelo54.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#3639356119/olelo-54",
+"site_name": "OLELO 54"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "olelo-54/6029",
+"site_name": "OLELO 54"
+}
+]
+},
+"olelo55.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#3639356120/olelo-55",
+"site_name": "OLELO 55"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "olelo-55/6027",
+"site_name": "OLELO 55"
+}
+]
+},
+"omroepgelderland.nl~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "NL1#Omroep.Gelderland.nl",
+"site_name": "Omroep.Gelderland.nl"
+},
+{
+"lang": "nl",
+"site": "tvgids.nl",
+"site_id": "gelderland",
+"site_name": "Omroep Gelderland"
+}
+]
+},
+"one31.th~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "TH1#ONE31.HD.th",
+"site_name": "ONE31.HD.th"
+},
+{
+"lang": "th",
+"site": "gigatv.3bbtv.co.th",
+"site_id": "31",
+"site_name": "ONE31 HD"
+}
+]
+},
+"onetv.cd~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "cd#180404",
+"site_name": "ONE TV"
+}
+]
+},
+"onlybharat.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_AMV_NETWORK",
+"site_name": "ONLY BHARAT"
+}
+]
+},
+"onnitv.fi~sd": {
+"sites": [
+{
+"lang": "fi",
+"site": "dna.fi",
+"site_id": "ch-8761536",
+"site_name": "onniTV"
+}
+]
+},
+"oscarmoviesbhojpuri.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143638",
+"site_name": "Oscar Movies Bhojpuri"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "431",
+"site_name": "Oscar Movies Bhojpuri"
+}
+]
+},
+"outlaw.us~wggstv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WGGS-DT.us_locals1",
+"site_name": "WGGS-DT.us_locals1"
+}
+]
+},
+"paniktv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#Panik.TV.gr",
+"site_name": "Panik.TV.gr"
+},
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "panikhd",
+"site_name": "Panik TV"
+}
+]
+},
+"parasgold.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_PARAS_GOLD_ONE",
+"site_name": "Paras Gold One"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143642",
+"site_name": "Paras Gold One"
+}
+]
+},
+"pbs.us~wjxt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WJXT-DT.us_locals1",
+"site_name": "WJXT-DT.us_locals1"
+}
+]
+},
+"peartv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1352",
+"site_name": "Pear TV"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_PEARS_TV",
+"site_name": "PEAR TV"
+}
+]
+},
+"pellatv.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#PELLA.TV.gr",
+"site_name": "PELLA.TV.gr"
+}
+]
+},
+"pink.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Pink.HD.rs",
+"site_name": "Pink.HD.rs"
+}
+]
+},
+"pirineustv.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Pirineus.TV.es",
+"site_name": "Pirineus.TV.es"
+}
+]
+},
+"plutotvlaughsinspanish.de~dach": {
+"sites": [
+{
+"lang": "de",
+"site": "pluto.tv",
+"site_id": "69a554179a3f3bb488c7d2be",
+"site_name": "Pluto TV Laughs in Spanish"
+},
+{
+"lang": "de",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/de#69a554179a3f3bb488c7d2be",
+"site_name": "Pluto TV Laughs in Spanish"
+}
+]
+},
+"plutotvweihnachtenimsommer.de~dach": {
+"sites": [
+{
+"lang": "de",
+"site": "pluto.tv",
+"site_id": "642ad072283aa4000806148c",
+"site_name": "Pluto TV Weihnachten im Sommer"
+},
+{
+"lang": "de",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/de#642ad072283aa4000806148c",
+"site_name": "Pluto TV Weihnachten im Sommer"
+}
+]
+},
+"pocketwatch.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#3190",
+"site_name": "pocket.watch"
+}
+]
+},
+"pomonainternetstreamingchannel.us~sd": {
+"cablecast": [
+"reflect-pomona.cablecast.tv",
+1
+]
+},
+"powerhitradio.lt~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LT1#Power.Hit.Radio.lt",
+"site_name": "Power.Hit.Radio.lt"
+}
+]
+},
+"prime.sy~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "xmltv/guide#15",
+"site_name": "PRIME"
+}
+]
+},
+"prvafiles.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Prva.Files.rs",
+"site_name": "Prva.Files.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "prva_files",
+"site_name": "Prva Files"
+}
+]
+},
+"prvalife.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Prva.Life.rs",
+"site_name": "Prva.Life.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "prva_life",
+"site_name": "Prva Life"
+}
+]
+},
+"prvamax.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Prva.MAX.rs",
+"site_name": "Prva.MAX.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "Prva%20MAX",
+"site_name": "Prva MAX"
+}
+]
+},
+"puthiyathalaimurai.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#PUTHIYA.THALAIMURAI.in",
+"site_name": "PUTHIYA.THALAIMURAI.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_PUTHIYA_THALAIMURAI",
+"site_name": "Puthiya Thalaimurai"
+}
+]
+},
+"qpvn.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#QPVN.(HD).vn",
+"site_name": "QPVN.(HD).vn"
+}
+]
+},
+"qvc3.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#QVC3.us2",
+"site_name": "QVC3.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:QVC3:318",
+"site_name": "QVC3"
+}
+]
+},
+"qvczwei.de~sd": {
+"sites": [
+{
+"lang": "de",
+"site": "web.magentatv.de",
+"site_id": "6686",
+"site_name": "QVC ZWEI"
+},
+{
+"lang": "de",
+"site": "sky.com",
+"site_id": "DE#5504",
+"site_name": "QVC ZWEI HD"
+}
+]
+},
+"racernetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#RACER.Network.HD.us2",
+"site_name": "RACER.Network.HD.us2"
+},
+{
+"lang": "en",
+"site": "directv.com",
+"site_id": "21e41317-1a4e-4302-b43e-b916fa1e7534",
+"site_name": "RACER Network"
+}
+]
+},
+"radionumberone.it~sd": {
+"sites": [
+{
+"lang": "it",
+"site": "sky.com",
+"site_id": "IT#8865",
+"site_name": "Radio Number One"
+}
+]
+},
+"radioswhtv.lv~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LV1#Radio.SWH.TV.lv",
+"site_name": "Radio.SWH.TV.lv"
+}
+]
+},
+"radiotvseriea.it~sd": {
+"sites": [
+{
+"lang": "it",
+"site": "dazn.com",
+"site_id": "it#1daica1elq2701s7zajjchy47s",
+"site_name": "Radio TV Serie A"
+}
+]
+},
+"rajmusixkannada.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#RAJ.MUSIX.KANNADA.in",
+"site_name": "RAJ.MUSIX.KANNADA.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RAJ_MUSIX_KANNADA",
+"site_name": "Raj Musix Kannada"
+}
+]
+},
+"rajmusixmalayalam.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#RAJ.MUSIX.MALAYALAM.in",
+"site_name": "RAJ.MUSIX.MALAYALAM.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RAJ_MUSIX_MALAYALAM",
+"site_name": "Raj Musix Malayalam"
+}
+]
+},
+"rajmusixtamil.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#RAJ.MUSIX.TAMIL.in",
+"site_name": "RAJ.MUSIX.TAMIL.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TAMIL",
+"site_name": "Raj Musix Tamil"
+}
+]
+},
+"rajmusixtelugu.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#RAJ.MUSIX.TELUGU.in",
+"site_name": "RAJ.MUSIX.TELUGU.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TELUGU",
+"site_name": "Raj Musix Telugu"
+}
+]
+},
+"rallytv.us~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "pluto.tv",
+"site_id": "696e02423b9ce349c90edef9",
+"site_name": "Rally TV"
+},
+{
+"lang": "en",
+"site": "dazn.com",
+"site_id": "us#zsree6bzeiaa1a8v4xo3j7bc4",
+"site_name": "Rally TV"
+}
+]
+},
+"realitychannel.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CH72",
+"site_name": "Reality Channel (Reshet)"
+}
+]
+},
+"redengt.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "mi.tv",
+"site_id": "br#rede-ngt-nova-geracao-de-televisao",
+"site_name": "Rede NGT"
+}
+]
+},
+"reflettv.ci~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ci#180085",
+"site_name": "REFLET TV"
+}
+]
+},
+"republicbangla.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RSYMDOT_BANGLA",
+"site_name": "Republic Bangla"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143697",
+"site_name": "R. Bangla"
+}
+]
+},
+"retrocrush.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Plex/ca#647f8d22a2fc3fadb4721685-5ef4e1b40d9ad000423c442a",
+"site_name": "RetroCrush"
+},
+{
+"lang": "en",
+"site": "plex.tv",
+"site_id": "5ef4e1b40d9ad000423c442a",
+"site_name": "RetroCrush"
+}
+]
+},
+"rfdtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#RFD.TV.HD.us2",
+"site_name": "RFD.TV.HD.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:RFDTV:345",
+"site_name": "RFD-TV"
+}
+]
+},
+"rittv.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "claro.com.br",
+"site_id": "1_896",
+"site_name": "RIT TV"
+}
+]
+},
+"roar.us~kokitv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KOKI-DT.us_locals1",
+"site_name": "KOKI-DT.us_locals1"
+}
+]
+},
+"roar.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#4456429102/roar",
+"site_name": "ROAR"
+}
+]
+},
+"roar.us~wkef": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKEF-DT.us_locals1",
+"site_name": "WKEF-DT.us_locals1"
+}
+]
+},
+"roar.us~wsbttv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WSBT-DT.us_locals1",
+"site_name": "WSBT-DT.us_locals1"
+}
+]
+},
+"rocktv.mk~sd": {
+"sites": [
+{
+"lang": "it",
+"site": "watch.whaletvplus.com",
+"site_id": "647962207393027704",
+"site_name": "Rock TV"
+},
+{
+"lang": "it",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/it#ITBC1100011RK",
+"site_name": "Rock TV"
+}
+]
+},
+"rozanaspokesman.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ROZANA_SPOKSMAN",
+"site_name": "ROZANA SPOKESMAN"
+}
+]
+},
+"rrinet.id~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ID1#RRI.NET.id",
+"site_name": "RRI.NET.id"
+}
+]
+},
+"rtb3.bf~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "bf#180258",
+"site_name": "RTB 3"
+}
+]
+},
+"rtsdrama.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rts_drama",
+"site_name": "RTS Drama"
+}
+]
+},
+"rtskolo.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rts_kolo",
+"site_name": "RTS Kolo"
+}
+]
+},
+"rtsmuzika.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rts_muzika",
+"site_name": "RTS Muzika"
+}
+]
+},
+"rtspoletarac.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rts_poletarac",
+"site_name": "RTS Poletarac"
+}
+]
+},
+"rtstrezor.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rts_trezor",
+"site_name": "RTS Trezor"
+}
+]
+},
+"rtvhb.ba~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "BA1#RTVHB.HD.ba",
+"site_name": "RTVHB.HD.ba"
+},
+{
+"lang": "bs",
+"site": "mtel.ba",
+"site_id": "iptv#ch-rtv-hb-hd",
+"site_name": "RTV HB HD"
+}
+]
+},
+"rtvnovipazar.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "rtv_novi_pazar",
+"site_name": "RTV Novi Pazar"
+}
+]
+},
+"rtvzenica.ba~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "BA1#RTV.Zenica.HD.ba",
+"site_name": "RTV.Zenica.HD.ba"
+},
+{
+"lang": "bs",
+"site": "mtel.ba",
+"site_id": "iptv#ch-rtv-zenica-hd",
+"site_name": "RTV Zenica HD"
+}
+]
+},
+"rupasibangla.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#RUPASI.BANGLA.in",
+"site_name": "RUPASI.BANGLA.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_RUPOSHI_BANGLA_TV",
+"site_name": "Ruposhi Bangla TV"
+}
+]
+},
+"sabtv.pk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Singtel/epg#5648",
+"site_name": "SAB TV"
+}
+]
+},
+"sandzaktv.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Sandzak.TV.rs",
+"site_name": "Sandzak.TV.rs"
+}
+]
+},
+"sankaratv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "477",
+"site_name": "Sri Sankara TV"
+}
+]
+},
+"savanetv.bf~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "bf#180664",
+"site_name": "SAVANE TV"
+}
+]
+},
+"sbtinterior.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch3165",
+"site_name": "SBT Interior HD"
+}
+]
+},
+"sbtnews.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch7196",
+"site_name": "SBT News"
+}
+]
+},
+"sbtv.hr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HR1#SBTV.hr",
+"site_name": "SBTV.hr"
+},
+{
+"lang": "hr",
+"site": "mojmaxtv.hrvatskitelekom.hr",
+"site_id": "338262567998",
+"site_name": "SBTV"
+}
+]
+},
+"sccurrents.us~sd": {
+"cablecast": [
+"reflect-communitytv.cablecast.tv",
+3
+]
+},
+"scientologynetwork.us~kscntv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSCN-DT.us_locals1",
+"site_name": "KSCN-DT.us_locals1"
+}
+]
+},
+"scientologynetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:SCNTV:320",
+"site_name": "Scientology Network"
+},
+{
+"lang": "en",
+"site": "directv.com",
+"site_id": "336feaf4-0c3f-4b91-b903-81d2694ba296",
+"site_name": "Scientology Network"
+}
+]
+},
+"scientologynetwork.us~wftttv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WFTT-DT.us_locals1",
+"site_name": "WFTT-DT.us_locals1"
+}
+]
+},
+"scorpion.de~gb": {
+"sites": [
+{
+"lang": "sv",
+"site": "pluto.tv",
+"site_id": "63a1c9c2847a090007f248da",
+"site_name": "Scorpion"
+},
+{
+"lang": "da",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#63a1caefc8d285000799e8af",
+"site_name": "Scorpion"
+}
+]
+},
+"sctv11.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV11.vn",
+"site_name": "SCTV11.vn"
+}
+]
+},
+"sctv12.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV12.vn",
+"site_name": "SCTV12.vn"
+}
+]
+},
+"sctv13.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV13.vn",
+"site_name": "SCTV13.vn"
+}
+]
+},
+"sctv14.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV14.vn",
+"site_name": "SCTV14.vn"
+}
+]
+},
+"sctv16.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV16.vn",
+"site_name": "SCTV16.vn"
+}
+]
+},
+"sctv18.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV18.vn",
+"site_name": "SCTV18.vn"
+}
+]
+},
+"sctv19.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV19.vn",
+"site_name": "SCTV19.vn"
+}
+]
+},
+"sctv20.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV20.vn",
+"site_name": "SCTV20.vn"
+}
+]
+},
+"sctv3.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV3.vn",
+"site_name": "SCTV3.vn"
+}
+]
+},
+"sctv4.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV4.vn",
+"site_name": "SCTV4.vn"
+}
+]
+},
+"sctv6.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV6.vn",
+"site_name": "SCTV6.vn"
+}
+]
+},
+"sctv7.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV7.vn",
+"site_name": "SCTV7.vn"
+}
+]
+},
+"sctv9.vn~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#SCTV9.vn",
+"site_name": "SCTV9.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "He1HcrKA62AEEmNQyFy8dFa2zEY4JOuHe4JhwDcl",
+"site_name": "SCTV9"
+}
+]
+},
+"scvtv.us~sd": {
+"cablecast": [
+"reflect-scvtv.cablecast.tv",
+1
+]
+},
+"senstv.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#Sens.TV.ro",
+"site_name": "Sens.TV.ro"
+}
+]
+},
+"sfcommons29.us~sd": {
+"cablecast": [
+"reflect-bayarea.cablecast.tv",
+1
+]
+},
+"sfcommons76.us~sd": {
+"cablecast": [
+"reflect-bayarea.cablecast.tv",
+2
+]
+},
+"sfgovtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#69043475/sfgov-tv",
+"site_name": "SFGOV TV"
+}
+]
+},
+"shalomworld.us~northamerica": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:SHALOM-WORLD",
+"site_name": "Shalom World"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "shalom-world/32663",
+"site_name": "Shalom World"
+}
+]
+},
+"shemaroojosh.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_CHUMBAK_TV",
+"site_name": "SHEMAROO JOSH"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "158861",
+"site_name": "Shemaroo Josh"
+}
+]
+},
+"sirikannadaalltime.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#SIRI.KANNADA-ALL.TIME.in",
+"site_name": "SIRI.KANNADA-ALL.TIME.in"
+},
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "940",
+"site_name": "SIRIKANNADA Alltime"
+}
+]
+},
+"sirippolitv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_SIRIPPOLI",
+"site_name": "Sirippoli"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143791",
+"site_name": "Sirippoli"
+}
+]
+},
+"smartlifestyletv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:SMART-LIFESTYLE-TV",
+"site_name": "Smart Lifestyle TV"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "smart-lifestyle-tv/33137",
+"site_name": "Smart Lifestyle TV"
+}
+]
+},
+"smurftv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/gb#GBBD1300001WA",
+"site_name": "Smurf TV"
+},
+{
+"lang": "en",
+"site": "plex.tv",
+"site_id": "639b8d803f4612cc150a5721",
+"site_name": "Smurf TV"
+}
+]
+},
+"soltv.pe~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "tv.movistar.com.pe",
+"site_id": "lch6473",
+"site_name": "SOL TV"
+}
+]
+},
+"sosdocteurtv.tg~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "tg#180976",
+"site_name": "SOS DOCTEUR TV"
+}
+]
+},
+"soskanalplus.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#SOS.Kanal.Plus.rs",
+"site_name": "SOS.Kanal.Plus.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "sos_kanal_plus",
+"site_name": "SOS Kanal Plus"
+}
+]
+},
+"sportytv.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#Sporty.TV.cz",
+"site_name": "Sporty.TV.cz"
+},
+{
+"lang": "cs",
+"site": "m.tv.sms.cz",
+"site_id": "Sporty+TV",
+"site_name": "Sporty TV"
+}
+]
+},
+"startrekvoyager.de~es": {
+"sites": [
+{
+"lang": "es",
+"site": "pluto.tv",
+"site_id": "65787f2eb228b7000843fa5c",
+"site_name": "Star Trek: Voyager"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/us#634dacf51d90320007fcd5fa",
+"site_name": "Star Trek: Voyager"
+}
+]
+},
+"stingraycityscapes.ca~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "watch.whaletvplus.com",
+"site_id": "1004498718126777093",
+"site_name": "Stingray Cityscapes"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Roku/all#73991aa61267bcc005a855c7b6303afc",
+"site_name": "Stingray Cityscapes"
+}
+]
+},
+"stingraycozycafe.ca~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Roku/all#f8f717f72440fb688192f83faa71a8ab",
+"site_name": "Stingray Cozy Cafe"
+}
+]
+},
+"stluciepublicschools.us~sd": {
+"cablecast": [
+"reflect-stlucie-ps-fl.cablecast.tv",
+1
+]
+},
+"storytelevision.us~wciutv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCIU-DT.us_locals1",
+"site_name": "WCIU-DT.us_locals1"
+}
+]
+},
+"stryktv.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#3679680801/stryk-tv",
+"site_name": "Stryk TV"
+}
+]
+},
+"subhavaarthatv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_SUBHAVAARTHA",
+"site_name": "Subhavaartha"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "143869",
+"site_name": "Subhavaartha"
+}
+]
+},
+"summerofmovies.us~ca": {
+"sites": [
+{
+"lang": "en",
+"site": "pluto.tv",
+"site_id": "6654adb1f99922000854388c",
+"site_name": "Summer of Movies"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/ca#6654adb1f99922000854388c",
+"site_name": "Summer of Movies"
+}
+]
+},
+"suriyantv.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "1384",
+"site_name": "SURIYAN TV"
+}
+]
+},
+"suyapatv.hn~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "hn#suyapa-tv",
+"site_name": "Suyapa TV"
+}
+]
+},
+"swarajexpresssmbc.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "577",
+"site_name": "Swaraj Express SMBC"
+}
+]
+},
+"syrostv1.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#SYROS.TV1.gr",
+"site_name": "SYROS.TV1.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5850",
+"site_name": "SYROS TV1"
+}
+]
+},
+"tbninspire.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#TBN.Inspire.us2",
+"site_name": "TBN.Inspire.us2"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "INSPIRE",
+"site_name": "TBN Inspire"
+}
+]
+},
+"teleelx.es~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "ES1#Tele.Elx.es",
+"site_name": "Tele.Elx.es"
+}
+]
+},
+"telemundo.us~easthd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:TELe:406",
+"site_name": "Telemundo East (103A)"
+},
+{
+"lang": "en",
+"site": "directv.com",
+"site_id": "81eb963b-d26c-4a45-a525-1bdcd7655dda",
+"site_name": "Telemundo East"
+}
+]
+},
+"telemundo.us~knsd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KNSD-DT.us_locals1",
+"site_name": "KNSD-DT.us_locals1"
+}
+]
+},
+"telemundo.us~wcau": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCAU-DT.us_locals1",
+"site_name": "WCAU-DT.us_locals1"
+}
+]
+},
+"telemundo.us~wkaqtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WKAQ-DT.us_locals1",
+"site_name": "WKAQ-DT.us_locals1"
+}
+]
+},
+"telemusiksenegal.sn~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "sn#180088",
+"site_name": "TELEMUSIK SENEGAL"
+}
+]
+},
+"telepaks.hu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HU1#Telepaks.hu",
+"site_name": "Telepaks.hu"
+},
+{
+"lang": "hu",
+"site": "tvmustra.hu",
+"site_id": "TELEPAKS",
+"site_name": "Telepaks"
+}
+]
+},
+"telesahel.ne~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "ne#180274",
+"site_name": "TELE SAHEL"
+}
+]
+},
+"telestar1.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#Telestar.1.ro",
+"site_name": "Telestar.1.ro"
+}
+]
+},
+"televizijam.ba~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mtel.ba",
+"site_id": "iptv#ch-televizija-m",
+"site_name": "Televizija M"
+}
+]
+},
+"temeculatv.us~sd": {
+"cablecast": [
+"reflect-temecula.cablecast.tv",
+1
+]
+},
+"thearchive.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US2#The.Archive.us2",
+"site_name": "The.Archive.us2"
+}
+]
+},
+"thecountrynetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "CLIKIA:THE-COUNTRY-NETWORK",
+"site_name": "THE COUNTRY NETWORK"
+},
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "the-country-network-kzak-ld6/35604",
+"site_name": "The Country Network (KZAK-LD6)"
+}
+]
+},
+"theexplorers.ru~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "watch.whaletvplus.com",
+"site_id": "1034986045911343820",
+"site_name": "The Explorers (ES)"
+}
+]
+},
+"thenownetwork.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "TIKI:THE-NOW-NETWORK",
+"site_name": "The Now Network"
+}
+]
+},
+"theqindia.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "144002",
+"site_name": "TheQ"
+}
+]
+},
+"thevoice.bg~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "BG1#The.Voice.bg",
+"site_name": "The.Voice.bg"
+}
+]
+},
+"thewalktv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "the-walk-tv/11028",
+"site_name": "The Walk TV"
+}
+]
+},
+"theyellowcouchwithjeremylynch.de~gb": {
+"sites": [
+{
+"lang": "en",
+"site": "pluto.tv",
+"site_id": "68e8ffee9d1d49e672fe790f",
+"site_name": "The Yellow Couch with Jeremy Lynch"
+},
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/gb#68e8ffee9d1d49e672fe790f",
+"site_name": "The Yellow Couch with Jeremy Lynch"
+}
+]
+},
+"thornton8.us~sd": {
+"cablecast": [
+"reflect-thornton.cablecast.tv",
+1
+]
+},
+"tiroltv.at~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "AT1#TIROL.TV.at",
+"site_name": "TIROL.TV.at"
+}
+]
+},
+"todayradio.lu~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "LU1#Today.Radio.lu",
+"site_name": "Today.Radio.lu"
+}
+]
+},
+"topchannel.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#TOP.CHANNEL.gr",
+"site_name": "TOP.CHANNEL.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5350",
+"site_name": "TOP CHANNEL"
+}
+]
+},
+"tracengoma.fr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "DStv/za#326.dstv_com",
+"site_name": "Trace Ngoma"
+}
+]
+},
+"transformerstv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "pluto.tv",
+"site_id": "60fb053712f22a0007ff14d2",
+"site_name": "Transformers TV"
+},
+{
+"lang": "en",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#3130",
+"site_name": "Transformers TV"
+}
+]
+},
+"traveltv.bg~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "BG1#Travel.TV.bg",
+"site_name": "Travel.TV.bg"
+}
+]
+},
+"travelxp.in~4khdr": {
+"sites": [
+{
+"lang": "en",
+"site": "tataplay.com",
+"site_id": "923",
+"site_name": "TravelXP 4K HDR"
+}
+]
+},
+"truecrimenetwork.us~wcvbtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCVB-DT.us_locals1",
+"site_name": "WCVB-DT.us_locals1"
+}
+]
+},
+"tv10.rw~sd": {
+"sites": [
+{
+"lang": "fr",
+"site": "canalplus.com",
+"site_id": "rw#180326",
+"site_name": "TV10"
+}
+]
+},
+"tv100.gr~sd": {
+"sites": [
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "tv100",
+"site_name": "TV100"
+}
+]
+},
+"tv2bornholm.dk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "DK1#TV.2/Bornholm.dk",
+"site_name": "TV.2/Bornholm.dk"
+},
+{
+"lang": "da",
+"site": "allente.dk",
+"site_id": "30042",
+"site_name": "TV 2 / Bornholm"
+}
+]
+},
+"tv42.tr~sd": {
+"sites": [
+{
+"lang": "tr",
+"site": "turksatkablo.com.tr",
+"site_id": "1802",
+"site_name": "TV 42"
+}
+]
+},
+"tv5kannada.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#TV.5.Kannada.in",
+"site_name": "TV.5.Kannada.in"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "144024",
+"site_name": "TV5 Kannada"
+}
+]
+},
+"tv5news.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN1#TV.5.News.in",
+"site_name": "TV.5.News.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_TV5_TELUGU",
+"site_name": "TV5 Telugu"
+}
+]
+},
+"tvaldeia.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "mi.tv",
+"site_id": "br#tv-aldeia",
+"site_name": "TV Aldeia"
+}
+]
+},
+"tvarapuan.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "mi.tv",
+"site_id": "br#tv-arapuan",
+"site_name": "TV Arapuan"
+}
+]
+},
+"tvbrno1.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#TV.Brno.1.cz",
+"site_name": "TV.Brno.1.cz"
+},
+{
+"lang": "cs",
+"site": "m.tv.sms.cz",
+"site_id": "TV+Brno+1",
+"site_name": "TV Brno 1"
+}
+]
+},
+"tvcreta.gr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "GR1#TV.CRETA.gr",
+"site_name": "TV.CRETA.gr"
+},
+{
+"lang": "el",
+"site": "digea.gr",
+"site_id": "5610",
+"site_name": "TV CRETA"
+}
+]
+},
+"tvfronteira.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "mi.tv",
+"site_id": "br#tv-fronteira",
+"site_name": "TV Fronteira"
+}
+]
+},
+"tvhram.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#TV.Hram.rs",
+"site_name": "TV.Hram.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "tv_hram",
+"site_name": "TV Hram"
+}
+]
+},
+"tvlocall.sk~sd": {
+"sites": [
+{
+"lang": "sk",
+"site": "webtv.sk",
+"site_id": "locall",
+"site_name": "TV LocAll"
+}
+]
+},
+"tvnova.hr~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HR1#TV.Nova.hr",
+"site_name": "TV.Nova.hr"
+},
+{
+"lang": "hr",
+"site": "mojmaxtv.hrvatskitelekom.hr",
+"site_id": "338261544444",
+"site_name": "TV Nova"
+}
+]
+},
+"tvnrsr.sk~sd": {
+"sites": [
+{
+"lang": "sk",
+"site": "webtv.sk",
+"site_id": "nrsr_tv",
+"site_name": "tv NRSR"
+}
+]
+},
+"tvpikanal.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#TV.PI.kanal.rs",
+"site_name": "TV.PI.kanal.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "tv_pi_kanal",
+"site_name": "TV PI kanal"
+}
+]
+},
+"tvpirot.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#TV.Pirot.rs",
+"site_name": "TV.Pirot.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "tv_pirot",
+"site_name": "TV Pirot"
+}
+]
+},
+"tvpuls.pl~hd": {
+"sites": [
+{
+"lang": "pl",
+"site": "programtv.onet.pl",
+"site_id": "tv-puls-332",
+"site_name": "TV Puls"
+}
+]
+},
+"tvquisqueya.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "tv-quisqueya/35594",
+"site_name": "TV Quisqueya"
+}
+]
+},
+"tvrcultural.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#TVR.Cultural.ro",
+"site_name": "TVR.Cultural.ro"
+}
+]
+},
+"tvrfolclor.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#TVR.Folclor.ro",
+"site_name": "TVR.Folclor.ro"
+}
+]
+},
+"tvrinfo.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#TVR.Info.ro",
+"site_name": "TVR.Info.ro"
+},
+{
+"lang": "ro",
+"site": "programetv.ro",
+"site_id": "tvr-info",
+"site_name": "TVR Info"
+}
+]
+},
+"tvrsport.ro~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RO1#TVR.Sport.HD.ro",
+"site_name": "TVR.Sport.HD.ro"
+}
+]
+},
+"tvthathi.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch1316",
+"site_name": "TV Thathi"
+}
+]
+},
+"tvvilareal.br~sd": {
+"sites": [
+{
+"lang": "pt",
+"site": "vivoplay.com.br",
+"site_id": "lch3809",
+"site_name": "TV Vila Real"
+}
+]
+},
+"twojatv.pl~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PL1#Twoja.TV.pl",
+"site_name": "Twoja.TV.pl"
+},
+{
+"lang": "pl",
+"site": "programtv.onet.pl",
+"site_id": "twoja-tv-514",
+"site_name": "Twoja.TV"
+}
+]
+},
+"unimas.us~kuvndt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KUVN-DT.us_locals1",
+"site_name": "KUVN-DT.us_locals1"
+}
+]
+},
+"unimas.us~wxtvdt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WXTV-DT.us_locals1",
+"site_name": "WXTV-DT.us_locals1"
+}
+]
+},
+"unitel.pe~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "mi.tv",
+"site_id": "pe#unitel",
+"site_name": "Unitel"
+}
+]
+},
+"vacationchannel.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CH97",
+"site_name": "Vacation Channel"
+}
+]
+},
+"videomixtv.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "tvpassport.com",
+"site_id": "video-mix-tv/17423",
+"site_name": "Video Mix TV"
+}
+]
+},
+"vietnamtoday.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#Vietnam.Today.vn",
+"site_name": "Vietnam.Today.vn"
+}
+]
+},
+"viutv.hk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "HK1#ViuTV.hk",
+"site_name": "ViuTV.hk"
+}
+]
+},
+"vivetv.ar~hd": {
+"sites": [
+{
+"lang": "es",
+"site": "reportv.com.ar",
+"site_id": "407",
+"site_name": "VIVE TV"
+}
+]
+},
+"vsctv.us~sd": {
+"cablecast": [
+"reflect-vsctv.cablecast.tv",
+1
+]
+},
+"vtv1.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV1.HD.vn",
+"site_name": "VTV1.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "WBSb0vxfNmLVmW814CFu_4CAeEukAj5QxKHd9JwV",
+"site_name": "VTV1"
+}
+]
+},
+"vtv10.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV10.(HD).vn",
+"site_name": "VTV10.(HD).vn"
+}
+]
+},
+"vtv2.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV2.HD.vn",
+"site_name": "VTV2.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "3wtIVGSgCa6oIbO4Q6VSCk4Bjj2vYFzr7HTB_GmH",
+"site_name": "VTV2"
+}
+]
+},
+"vtv3.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV3.HD.vn",
+"site_name": "VTV3.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "dDmD0toCd6WBZ9_JIh--ksBTHtpKRN7lVfb-3eHw",
+"site_name": "VTV3"
+}
+]
+},
+"vtv4.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV4.HD.vn",
+"site_name": "VTV4.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "6VMeiOd9rCVDO7s3lbKzKExXcHZSqbrSerbDIoYi",
+"site_name": "VTV4"
+}
+]
+},
+"vtv5.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV5.HD.vn",
+"site_name": "VTV5.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "_NqZMIGgqqTheZvG1hQooIwl_TFgBJObPxcXKI8k",
+"site_name": "VTV5"
+}
+]
+},
+"vtv7.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV7.HD.vn",
+"site_name": "VTV7.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "Yo93e3168WOgzSKHGc3Vv19xpVcAvZaMtvILHtfe",
+"site_name": "VTV7"
+}
+]
+},
+"vtv8.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV8.HD.vn",
+"site_name": "VTV8.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "CVIhugmChcVcfi1CqIVdsOpNIMHKA67KxhDjqb0F",
+"site_name": "VTV8"
+}
+]
+},
+"vtv9.vn~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "VN1#VTV9.HD.vn",
+"site_name": "VTV9.HD.vn"
+},
+{
+"lang": "vi",
+"site": "xem.kplus.vn",
+"site_id": "6FnSMBX5EDN7jL149tXn2MMf4dJRJLg5STfs8vEt",
+"site_name": "VTV9"
+}
+]
+},
+"vtvnews.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#VTV.NEWS.in",
+"site_name": "VTV.NEWS.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_VTV_GUJARATI",
+"site_name": "VTV Gujarati"
+}
+]
+},
+"wacx551.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WACX-DT.us_locals1",
+"site_name": "WACX-DT.us_locals1"
+}
+]
+},
+"watcdt572.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WATC-DT.us_locals1",
+"site_name": "WATC-DT.us_locals1"
+}
+]
+},
+"weatherspy.au~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PLEX1#plex.tv.WeatherSpy.plex",
+"site_name": "plex.tv.WeatherSpy.plex"
+},
+{
+"lang": "en",
+"site": "watch.whaletvplus.com",
+"site_id": "411588870569207033",
+"site_name": "Weather Spy"
+}
+]
+},
+"weatherspy.mx~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "PLEX1#plex.tv.WeatherSpy.plex",
+"site_name": "plex.tv.WeatherSpy.plex"
+},
+{
+"lang": "en",
+"site": "watch.whaletvplus.com",
+"site_id": "411588870569207033",
+"site_name": "Weather Spy"
+}
+]
+},
+"wedotvamor.ch~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "watch.whaletvplus.com",
+"site_id": "878875545159867257",
+"site_name": "wedotv Amor"
+}
+]
+},
+"wggstv161.us~hd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WGGS-DT.us_locals1",
+"site_name": "WGGS-DT.us_locals1"
+}
+]
+},
+"willamettefallsmediacenter.us~sd": {
+"cablecast": [
+"reflect-greater-clackamas-county-tv.cablecast.tv",
+2
+]
+},
+"witn22.us~sd": {
+"cablecast": [
+"witn.cablecast.tv",
+1
+]
+},
+"yachtingtv.cz~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "CZ1#Yachting.TV.cz",
+"site_name": "Yachting.TV.cz"
+},
+{
+"lang": "cs",
+"site": "m.tv.sms.cz",
+"site_id": "Yachting+TV",
+"site_name": "Yachting TV"
+}
+]
+},
+"youdotgov.us~sd": {
+"cablecast": [
+"reflect-communitytv.cablecast.tv",
+1
+]
+},
+"yugioh.us~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "i.mjh.nz",
+"site_id": "Plex/us#5e20b730f2f8d5003d739db7-6617f52f0049fcb8e2b0d5b8",
+"site_name": "Yu-Gi-Oh!"
+},
+{
+"lang": "en",
+"site": "plex.tv",
+"site_id": "6617f52f0049fcb8e2b0d5b8",
+"site_name": "Yu-Gi-Oh!"
+}
+]
+},
+"yugiohenespanol.us~sd": {
+"sites": [
+{
+"lang": "es",
+"site": "watch.whaletvplus.com",
+"site_id": "756082902361969311",
+"site_name": "Yu-Gi-Oh! (ES)"
+}
+]
+},
+"zeepunjabharyanahimachal.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IN4#ZEE.PUNJAB.HARYANA.HIMACHAL.in",
+"site_name": "ZEE.PUNJAB.HARYANA.HIMACHAL.in"
+},
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_ZEE_PUNJAB_HARYANA_HIMACHAL",
+"site_name": "Zee Punjab Haryana Himachal"
+}
+]
+}
+}
