@@ -299,6 +299,35 @@ def xmltv_key(name):
 # Channels whose stream is Samsung TV Plus India's own feed under another name than its guide's.
 SAMSUNG_GUIDE_NAMES = {"Animax Asia India": "Animax", "KCM India": "KCM"}
 
+# Channels the list had only in ZEE5 that Samsung TV Plus India (a licensed free service; jmp2.uk "stvp-" links)
+# carries as well: the owner asked to be independent of the ZEE5 app (10 Nov 2026, "1 and 2"). Each played from India
+# that day, unencrypted, up to 1080p. The channel keeps its name and its place (ZEE5's own name: "Z Comedy Nation")
+# and plays in the guide. The owner then kept ZEE5 only for its temple darshans and Zee Anmol, so these have no app
+# fallback. Four were already listed free under iptv-org's names (1053-1055 Zee Comedy Nation, Zee Dil Se, Zee Horror
+# Nights; 7116 News9Live): those stay too. {name: (Samsung TV Plus India id, genre, language)}
+FREE_FEEDS = {
+    "Z Comedy Nation": ("IN2100002GD", "Entertainment", "Hindi"),
+    "Z Dil Se": ("IN2100003OJ", "Entertainment", "Hindi"),
+    "Z Horror Nights": ("IN2100004C4", "Entertainment", "Hindi"),
+    "NDTV 24x7": ("INBC2800001D8", "News", "English"),
+    "WION": ("INBD4000058T", "News", "English"),
+    "News9": ("INBD25000021N", "News", "English"),
+    "NDTV Marathi": ("IN800013RB", "News", "Marathi"),
+    "Zee 24 Ghanta": ("INBD400003GE", "News", "Bengali"),
+}
+
+
+def free_feed_entries():
+    """FREE_FEEDS as playlist entries, with the logo Samsung TV Plus India's line-up has (i.mjh.nz's public data)."""
+    path = os.path.join(DATA, "samsungtvplus_channels.json")
+    samsung = json.load(open(path, encoding="utf-8"))["regions"]["in"]["channels"] if os.path.exists(path) else {}
+    out = []
+    for name, (sid, band, lang) in FREE_FEEDS.items():
+        logo = (samsung.get(sid) or {}).get("logo")
+        out.append({"title": name, "url": f"https://jmp2.uk/stvp-{sid}", "attrs": {"tvg-logo": logo} if logo else {},
+                    "opts": {}, "band": band, "lang": lang, "xt": sid, "free_feed": 1})
+    return out
+
 
 def load_samsung_ids():
     """{xmltv_key(name): channel id} from the Samsung TV Plus India XMLTV guide (data/samsungtvplus_in.xml.gz)."""
@@ -492,7 +521,8 @@ def main():
         if not e.get("india"):   # build_world.SAMSUNG_IN's are Indian
             e["abroad"] = 1
     entries += abroad
-    channels = {c["id"]: c for c in json.load(open(os.path.join(DATA, "channels.json"), encoding="utf-8"))}
+    entries += free_feed_entries()
+    channels ={c["id"]: c for c in json.load(open(os.path.join(DATA, "channels.json"), encoding="utf-8"))}
     feeds = defaultdict(list)
     for f in json.load(open(os.path.join(DATA, "feeds.json"), encoding="utf-8")):
         feeds[f["channel"]].append(f)
@@ -576,6 +606,8 @@ def main():
             c["_extra"] = 1
         if e.get("xt"):
             c["_xt"] = e["xt"]
+        if e.get("free_feed"):
+            c["_free_feed"] = 1
         kept.append(c)
 
     if "--no-check" not in sys.argv:
@@ -651,7 +683,8 @@ def main():
     def order_in_india(c):
         n = airtel_number(c["name"], airtel)
         hd = 1 if re.search(r"\bhd\b", c["name"], re.I) else 0
-        linked_first = 0 if "links" in c else 1
+        # A FREE_FEEDS channel keeps the place it had as a ZEE5 channel, so no number moves.
+        linked_first = 0 if "links" in c or c.get("_free_feed") else 1
         if c["cat"] in LANGUAGE_FIRST_BANDS:
             g = language_group(c)
             return (g, 0, n, hd, 0, natural(c["name"])) if n else (g, 1, 0, 0, linked_first, natural(c["name"]))
@@ -676,6 +709,7 @@ def main():
             c["n"] = start + i
             c.pop("_abroad", None)
             c.pop("_extra", None)
+            c.pop("_free_feed", None)
             numbered.append(c)
         if group:
             next_free = ((start + len(group) - 1) // 1000 + 1) * 1000 + 1
@@ -693,6 +727,7 @@ def main():
             c["n"] = start + i
             c.pop("_abroad", None)
             c.pop("_extra", None)
+            c.pop("_free_feed", None)
             numbered.append(c)
     if any(c["n"] >= WORLD_FIRST_NUMBER for c in numbered):
         raise SystemExit(f"an Indian genre reached {WORLD_FIRST_NUMBER}, where the World channels start")
