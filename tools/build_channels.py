@@ -91,6 +91,8 @@ SOURCES = {
     "plutotv_channels.json": "https://i.mjh.nz/PlutoTV/.channels.json",
     # Which public guides list each channel (iptv-org): World channels get their listings from i.mjh.nz's files.
     "guides.json": "https://iptv-org.github.io/api/guides.json",
+    # Samsung TV Plus's line-ups (i.mjh.nz's public data): names and logos of build_world.SAMSUNG_IN's India channels.
+    "samsungtvplus_channels.json": "https://i.mjh.nz/SamsungTVPlus/.channels.json",
 }
 LINKED = os.path.join(ROOT, "tools", "linked_channels.json")
 AIRTEL = os.path.join(ROOT, "tools", "airtel_numbers.tsv")
@@ -291,6 +293,10 @@ def xmltv_key(name):
     return XMLTV_ALIASES.get(k, k)
 
 
+# Channels whose stream is Samsung TV Plus India's own feed under another name than its guide's.
+SAMSUNG_GUIDE_NAMES = {"Animax Asia India": "Animax"}
+
+
 def load_samsung_ids():
     """{xmltv_key(name): channel id} from the Samsung TV Plus India XMLTV guide (data/samsungtvplus_in.xml.gz)."""
     path = os.path.join(DATA, "samsungtvplus_in.xml.gz")
@@ -480,7 +486,8 @@ def main():
     abroad = [] if "--no-abroad" in sys.argv else build_world.indian_abroad(sys.modules[__name__])
     print(f"channels from abroad (Indian languages, anime): {len(abroad)}")
     for e in abroad:
-        e["abroad"] = 1
+        if not e.get("india"):   # build_world.SAMSUNG_IN's are Indian
+            e["abroad"] = 1
     entries += abroad
     channels = {c["id"]: c for c in json.load(open(os.path.join(DATA, "channels.json"), encoding="utf-8"))}
     feeds = defaultdict(list)
@@ -538,11 +545,13 @@ def main():
         ch = channels.get(cid, {})
         cats = [c.lower() for c in (ch.get("categories") or [])] or \
                [g.strip().lower() for g in e["attrs"].get("group-title", "undefined").split(";")]
-        band = e.get("anime_band") or next((CATEGORY_MAP[c] for c in cats if c in CATEGORY_MAP), "Entertainment")
+        band = e.get("band") or e.get("anime_band") or \
+            next((CATEGORY_MAP[c] for c in cats if c in CATEGORY_MAP), "Entertainment")
         feed = next((f for f in feeds.get(cid, []) if f["id"] == feed_id), None) or \
             next((f for f in feeds.get(cid, []) if f.get("is_main")), None)
         langs = [LANG_ALIASES.get(n, n) for n in (lang_names.get(code, code) for code in (feed or {}).get("languages", []))]
-        lang = next((l for l in LANG_ORDER if l in langs), langs[0] if langs else "Other")
+        # An entry may say its language itself (build_world.EXTRA_ANIME, not in iptv-org's database).
+        lang = e.get("lang") or next((l for l in LANG_ORDER if l in langs), langs[0] if langs else "Other")
 
         c = {"name": name, "cat": band, "lang": lang, "url": e["url"], "id": tvg}
         if quality:
@@ -560,6 +569,10 @@ def main():
             c["jio"] = jio
         if e.get("abroad"):
             c["_abroad"] = 1
+        if e.get("extra"):
+            c["_extra"] = 1
+        if e.get("xt"):
+            c["_xt"] = e["xt"]
         kept.append(c)
 
     if "--no-check" not in sys.argv:
@@ -628,8 +641,9 @@ def main():
         return (1,) + lang_rank(c["lang"])
 
     def order(c):
-        # Channels from abroad come after India's in every genre, so adding them moves no Indian channel's number.
-        return (c.get("_abroad", 0),) + order_in_india(c)
+        # Channels from abroad come after India's in every genre, so adding them moves no Indian channel's number;
+        # the channels added by hand (build_world.EXTRA_ANIME, SAMSUNG_IN) come last, for the same reason.
+        return (c.get("_extra", 0), c.get("_abroad", 0)) + order_in_india(c)
 
     def order_in_india(c):
         n = airtel_number(c["name"], airtel)
@@ -658,6 +672,7 @@ def main():
         for i, c in enumerate(group):
             c["n"] = start + i
             c.pop("_abroad", None)
+            c.pop("_extra", None)
             numbered.append(c)
         if group:
             next_free = ((start + len(group) - 1) // 1000 + 1) * 1000 + 1
@@ -674,6 +689,7 @@ def main():
         for i, c in enumerate(group):
             c["n"] = start + i
             c.pop("_abroad", None)
+            c.pop("_extra", None)
             numbered.append(c)
     if any(c["n"] >= WORLD_FIRST_NUMBER for c in numbered):
         raise SystemExit(f"an Indian genre reached {WORLD_FIRST_NUMBER}, where the World channels start")
@@ -681,11 +697,35 @@ def main():
     # Listings for channels JioTV does not carry, from a public XMLTV file (no special headers): the Samsung TV
     # Plus India guide as i.mjh.nz publishes it. The app downloads it and matches programmes on "xt".
     samsung = load_samsung_ids()
+    samsung_ids = set(samsung.values())
     for c in numbered:
-        if not c.get("jio") and xmltv_key(c["name"]) in samsung:
-            c["xt"] = samsung[xmltv_key(c["name"])]
+        own = c.pop("_xt", None)   # build_world.SAMSUNG_IN: Samsung's own id
+        key = xmltv_key(SAMSUNG_GUIDE_NAMES.get(c["name"], c["name"]))
+        if not c.get("jio") and own in samsung_ids:
+            c["xt"] = own
+        elif not c.get("jio") and key in samsung:
+            c["xt"] = samsung[key]
         if short_name(c["name"]):
             c["sn"] = short_name(c["name"])
+
+    # Pluto TV channels here (the anime genres; build_world.EXTRA_ANIME, STREAM_SWAPS): Now / Next from Pluto TV's
+    # public guide of a line-up that has them (i.mjh.nz), as the World list does: "gi" indexes "guides", "xt" is
+    # the Pluto TV id. App 1.7 and later read it; older ones ignore "guides" and show no listings for them, as before.
+    pluto = build_world.pluto_numbers(DATA)
+    guides = []
+    for c in numbered:
+        m = re.match(r"https?://jmp2\.uk/plu-([0-9a-f]+)", c.get("url", ""))
+        if not m or "xt" in c or m.group(1) not in pluto:
+            continue
+        regions = pluto[m.group(1)]
+        for r in (["us"] if "us" in regions else []) + sorted(regions):
+            if build_world.guide_ok(f"PlutoTV/{r}"):
+                url = build_world.GUIDE_BASE + f"PlutoTV/{r}.xml.gz"
+                if url not in guides:
+                    guides.append(url)
+                c["gi"] = guides.index(url)
+                c["xt"] = m.group(1)
+                break
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     # "version" orders line-ups (the guide takes a downloaded one only if it is newer than the one it has);
@@ -693,8 +733,10 @@ def main():
     payload = {"generated": datetime.date.today().isoformat(), "version": int(datetime.datetime.now().timestamp()),
                "checked": "--no-check" not in sys.argv, "source": SOURCES["in.m3u"],
                "bands": [b for b in BAND_DISPLAY if any(c["cat"] == b for c in numbered)], "channels": numbered}
-    if any("xt" in c for c in numbered):
+    if any("xt" in c and "gi" not in c for c in numbered):
         payload["xmltv"] = SAMSUNG_GUIDE
+    if guides:
+        payload["guides"] = guides
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     # Channels that show "No programme information": neither JioTV nor the Samsung TV Plus guide lists them.

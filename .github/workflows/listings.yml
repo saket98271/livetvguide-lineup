@@ -1,0 +1,108 @@
+# Programme listings for the World channels that no public guide file covers (the owner's choice, 10 Nov 2026).
+# Every day iptv-org's open-source grabber (https://github.com/iptv-org/epg) collects them from the TV-guide sites it
+# supports; tools/collect_listings.py keeps only titles and times and writes one small file per country (<cc>.xml.gz)
+# to the "listings" branch, which the guide on the TV downloads for the countries ticked there.
+name: Daily listings
+
+on:
+  schedule:
+    - cron: "40 0 * * *"   # 06:10 India time
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: listings
+  cancel-in-progress: false
+
+jobs:
+  # The grabber is other people's code: this job has read-only access and no secrets.
+  grab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: lineup
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # One working site per channel (iptv-org's list of sites and which of them work).
+      - name: Which channels, from which sites
+        run: |
+          mkdir -p "$RUNNER_TEMP/src" "$RUNNER_TEMP/out"
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/guides.json" https://iptv-org.github.io/api/guides.json
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/feeds.json" https://iptv-org.github.io/api/feeds.json
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/src/SITES.md" https://raw.githubusercontent.com/iptv-org/epg/master/SITES.md
+          python -I lineup/tools/collect_listings.py plan lineup/lineup/world.json "$RUNNER_TEMP/src" "$RUNNER_TEMP/listings.channels.xml"
+
+      - uses: actions/checkout@v4
+        with:
+          repository: iptv-org/epg
+          path: epg
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # A site that fails gives nothing today; its channels keep yesterday's programmes that are still ahead.
+      - name: Collect
+        working-directory: epg
+        run: |
+          npm ci --no-audit --no-fund
+          npm run grab --- --channels="$RUNNER_TEMP/listings.channels.xml" --output="$RUNNER_TEMP/out/grabbed.xml" \
+            --days=2 --maxConnections=8 --timeout=20000 > "$RUNNER_TEMP/out/grab.log" 2>&1 || true
+          tail -n 25 "$RUNNER_TEMP/out/grab.log"
+          test -s "$RUNNER_TEMP/out/grabbed.xml"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: grabbed
+          path: ${{ runner.temp }}/out/
+          retention-days: 3
+
+  # Only this repository's own Python, with write access to publish the files.
+  publish:
+    needs: grab
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: grabbed
+          path: ${{ runner.temp }}/in
+
+      - name: Pack
+        run: |
+          mkdir -p "$RUNNER_TEMP/previous" "$RUNNER_TEMP/listings"
+          if git fetch -q --depth 1 origin listings; then git archive FETCH_HEAD | tar -x -C "$RUNNER_TEMP/previous"; fi
+          python -I tools/collect_listings.py pack lineup/world.json "$RUNNER_TEMP/in/grabbed.xml" \
+            "$RUNNER_TEMP/listings" --previous "$RUNNER_TEMP/previous"
+          printf '%s\n' "Programme listings for the Live TV guide's World channels: titles and times only, collected" \
+            "daily with iptv-org's grabber (tools/collect_listings.py, .github/workflows/listings.yml)." \
+            > "$RUNNER_TEMP/listings/README.md"
+          { echo '```'; cat "$RUNNER_TEMP/listings/report.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      # The branch holds only today's files (one commit), so the repository does not grow day by day.
+      - name: Publish
+        run: |
+          git checkout -q --orphan listings-today
+          git rm -rf -q .
+          cp "$RUNNER_TEMP/listings"/* .
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Listings $(date -u +%Y-%m-%d)"
+          git push -q -f origin HEAD:refs/heads/listings

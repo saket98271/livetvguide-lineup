@@ -9,7 +9,17 @@ The weekly channel list for a private Live TV guide app on a Fire TV Stick. A Gi
   which the app shows only when its owner switches them on and ticks countries, numbered 10001 and up; inside each
   country, Pluto TV's channels in Pluto TV's own order (i.mjh.nz's public Pluto TV data), then the rest by name;
   channels that i.mjh.nz's public XMLTV guides list carry their guide file and id there, for Now / Next
-- anime channels from abroad are in `channels.json`'s three anime genres (Anime English, Anime Japanese, Anime other
+- programme listings for more World channels: i.mjh.nz's files by a channel's exact name in its own country, and
+  the `listings` branch: one small file per country (`<cc>.xml.gz`, titles and times only, an hour back to two days
+  ahead), rebuilt every day by `.github/workflows/listings.yml`, which runs iptv-org's open-source grabber
+  ([iptv-org/epg](https://github.com/iptv-org/epg)) for the World channels it can collect from a working site
+  (`tools/collect_listings.py`); a channel the grabber missed keeps the programmes still ahead from the day before
+- anime channels from abroad (and seven English ones from Pluto TV US that iptv-org does not list,
+  `tools/build_world.py` EXTRA_ANIME) are in `channels.json`'s three anime genres
+- channels iptv-org does not list, from licensed free services through i.mjh.nz's public data: Pluto TV's US, UK and
+  Canadian channels with English audio (World list), and Samsung TV Plus India channels by a hand-checked table of
+  genre and language (`tools/build_world.py` SAMSUNG_IN, main list); `channels.json` "guides" holds Pluto TV's guide
+  files for its Pluto TV channels (Anime English, Anime Japanese, Anime other
   languages; 4501, 4601, 4701 and up)
 
 When a week's list adds, drops or moves channels, the job opens an issue listing them

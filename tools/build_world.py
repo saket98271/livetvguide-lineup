@@ -26,6 +26,10 @@ Left out, each with its reason in data/world_excluded.csv:
   - a second stream of the same channel from the same country (the first, best quality, stays).
 The weekly build does not test the streams (its machines are outside India); the guide tests the ticked
 countries' streams on the TV (StreamCheck.java).
+
+Programme listings ("gi": an index into "guides", "xt": the channel's id in that file): i.mjh.nz's public guide
+files where iptv-org links a channel to one, then more of them by exact name (NAMED_GUIDES), then this repository's
+own daily listings for channels iptv-org's grabber can collect (tools/collect_listings.py).
 """
 import csv
 import datetime
@@ -36,7 +40,26 @@ import sys
 from collections import Counter, defaultdict
 from urllib.parse import urlparse
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import collect_listings as L  # noqa: E402  (this folder; Python's standard library only)
+
 INDEX_URL = "https://iptv-org.github.io/iptv/index.m3u"
+# Which of iptv-org's grabber sites work (green), for the daily listings.
+SITES_MD_URL = "https://raw.githubusercontent.com/iptv-org/epg/master/SITES.md"
+
+
+def fetch_to(url, path):
+    """Downloads url to path; without a network answer the last copy stays (an error only if there is none)."""
+    import urllib.request
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "LiveTVGuide-builder"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            body = r.read()
+        with open(path, "wb") as f:
+            f.write(body)
+    except Exception:
+        if not os.path.exists(path):
+            raise
 WORLD_SUFFIX = " World"
 # Ten thousand numbers per genre, in the Indian list's number order; Shopping channels go to Entertainment World.
 WORLD_START = {"Entertainment": 10001, "Movies": 20001, "Music": 30001, "Kids": 40001, "Sports": 50001,
@@ -144,6 +167,25 @@ def country_of(tvg_id):
     return cid.rsplit(".", 1)[-1].upper() if "." in cid else ""
 
 
+# A channel whose own stream cannot be watched from India, by iptv-org's tvg-id: the same channel on a licensed free
+# platform that can (checked from India, every video piece downloading).
+STREAM_SWAPS = {
+    # Anime English 4503 Naruto: VIZ's own feed (d21vn5eki5qsdi.cloudfront.net) sends its playlist but refuses every
+    # video piece outside the US (403 from a CloudFront function, 10 Nov 2026). Pluto TV's official Naruto channel
+    # (US, its channel 4020) plays. Owner, 10 Nov 2026: "make the channel number 4503 work".
+    "Naruto.us@US": "https://jmp2.uk/plu-5da0c85bd2c9c10009370984.m3u8",
+}
+
+
+# Entries iptv-org files wrongly, by tvg-id: (name, language). They go after their genre's own channels, so the
+# fewest numbers move.
+ENTRY_FIXES = {
+    # Our 4602 "One Piece" (Anime Japanese, iptv-org: US, Japanese) is Pluto TV Italy's channel (its 700; the stream's
+    # audio LANGUAGE="it"). Owner, 10 Nov 2026: "4602 - other language".
+    "OnePiece.us@US": ("One Piece Italy", "Italian"),
+}
+
+
 class Abroad:
     """index.m3u with iptv-org's data, and the decision for every entry from abroad."""
 
@@ -151,6 +193,14 @@ class Abroad:
         self.B = B
         data = B.DATA
         self.entries = B.parse_m3u(os.path.join(data, "index.m3u"))
+        for e in self.entries:
+            swap = STREAM_SWAPS.get(e["attrs"].get("tvg-id", ""))
+            if swap:
+                e["url"] = swap
+                e["title"] = re.sub(r"\s*\(\d{3,4}[pi]\)", "", e["title"])   # the old feed's quality
+            fix = ENTRY_FIXES.get(e["attrs"].get("tvg-id", ""))
+            if fix:
+                e["title"], e["lang"], e["extra"] = fix[0], fix[1], 1
         self.channels = {c["id"]: c for c in json.load(open(os.path.join(data, "channels.json"), encoding="utf-8"))}
         self.feeds = defaultdict(list)
         for f in json.load(open(os.path.join(data, "feeds.json"), encoding="utf-8")):
@@ -203,6 +253,7 @@ class Abroad:
         for pattern, language in NAME_LANGUAGE:
             if pattern.search(name):
                 main = language
+        main = e.get("lang") or main   # ENTRY_FIXES
         cats = [c.lower() for c in (ch.get("categories") or [])] or \
                [g.strip().lower() for g in e["attrs"].get("group-title", "undefined").split(";")]
         band = next((self.B.CATEGORY_MAP[c] for c in cats if c in self.B.CATEGORY_MAP), "Entertainment")
@@ -286,9 +337,178 @@ class Abroad:
             yield e, i, d, why
 
 
+# English anime channels iptv-org's playlist does not list (owner, 10 Nov 2026: "Any more anime channels (English
+# audio) ... in any possible way"): Pluto TV US channels (a licensed free platform, through i.mjh.nz's jmp2.uk like
+# the others) whose stream plays in India with an English audio track, checked from India on 10 Nov 2026 (playlist,
+# video pieces, the master playlist's LANGUAGE="en"). They follow the playlist's own anime channels, so no number
+# given before moves. Left out: Boruto (Japanese audio), Samsung TV Plus's anime channels (refused in India, except
+# Anime All Day, whose language could not be confirmed), Plex's (need a Plex token).
+EXTRA_ANIME = [("Ani-Monsters", "6aaadf258cc64f2b2b7dbe3c"), ("Big A Anime", "6a3c5fa46276c42ac6726b27"),
+               ("Inuyasha", "67c63b90a20c0399a381b816"), ("It's Anime", "6a4fda4538f47f0af402bdb0"),
+               ("One Piece (English)", "5f7790b3ed0c88000720b241"), ("Pokémon", "6675c7868768aa0008d7f1c7"),
+               ("Sailor Moon", "637e55347427a40007fac703")]
+
+
+# Samsung TV Plus India (a licensed free service in India; through i.mjh.nz's jmp2.uk "stvp-" links) channels the
+# Indian list lacks (owner, 10 Nov 2026: "add more channels ... as much as possible in Hindi/chhattisgarhi/English
+# ... on their respective genre", then "Why leaving the Korean and regional channels, put them in its respective
+# genre and language by researching thoroughly"): {Samsung id: (genre, language)}. Each played from India on
+# 10 Nov 2026. Languages from Samsung's descriptions ("Korean TV ... Hindi languages", "Hollywood Desi ... dubbed in
+# Hindi"), its guide's programme titles and descriptions, and Samsung's own news (its four Warner Bros. channels other
+# than Wheel World are in Hindi); Foodxp as its sister Travelxp HD's Samsung feed (Hindi). Not confirmed anywhere,
+# taken as Hindi for Indian-made channels: Dishoom Films, Auto Live, Cook & Bake. Left out: channels the list has under
+# another name (News State MP CG / PUN HAR HIM / UP UK, News24 MP CG, News18 Keralam / Punjab Haryana, The Pet
+# Collective, WeatherSpy, Animax, India Daily 24x7, Malai Murasu Seithikal), and Bollywood Masala and @K-MUSIC (their
+# streams did not play). A channel Samsung drops leaves by itself (only its current India line-up's are added).
+SAMSUNG_IN = {
+    # Hindi, added on the second look
+    "IN3600005NF": ("Entertainment", "Hindi"),   # Korean TV (Korean dramas in Hindi)
+    "IN3800010SH": ("Movies", "Hindi"),          # Hollywood Desi (dubbed in Hindi)
+    "IN460001727": ("Movies", "Hindi"),          # Dishoom Films (not confirmed)
+    "IN3600007DC": ("Infotainment", "Hindi"),    # Auto Live (not confirmed)
+    "IN46000105Q": ("Infotainment", "Hindi"),    # Cook & Bake (not confirmed)
+    "IN3000003QJ": ("Infotainment", "Hindi"),    # Foodxp
+    "IN460000313": ("Infotainment", "Hindi"),    # Foodie Hub (Warner Bros.)
+    # Korean, Japanese
+    "IN49000103E": ("Entertainment", "Korean"),  # CJ ENM K-Reality
+    "IN4600019L1": ("Entertainment", "Korean"),  # Series K BY MBC
+    "IN490000951": ("Infotainment", "Korean"),   # CJ ENM K-Food & Travel
+    "IN3800006RD": ("Music", "Korean"),          # CJ ENM K-POP
+    "IN4900008ZP": ("Music", "Korean"),          # SMTOWN
+    "IN400057EZ": ("Sports", "Japanese"),        # Golf Network
+    # Other Indian languages
+    "IN800016BA": ("Entertainment", "Gujarati"),   # JOJO TV
+    "IN4600016DM": ("Entertainment", "Marathi"),   # Rangmanch
+    "IN39000282A": ("Movies", "Tamil"),            # Thalaivar Hits
+    "INBD2500016OR": ("News", "Bengali"),          # R Bangla
+    # Hindi
+    "IN4600011RZ": ("Devotional", "Hindi"),      # Bhakti Play
+    "IN30009003": ("Devotional", "Hindi"),       # Dharma Live (ABP)
+    "IN26000170D": ("Devotional", "Hindi"),      # Astro Tak
+    "IN3900027S7": ("Entertainment", "Hindi"),   # Aashirwad TV
+    "IN3600006RT": ("Entertainment", "Hindi"),   # Comedy King
+    "IN2600015OO": ("Entertainment", "Hindi"),   # Crime Tak
+    "IN400000830": ("Entertainment", "Hindi"),   # ENT Live (ABP)
+    "IN8000171I": ("Entertainment", "Hindi"),    # Epic Crimes
+    "IN2600020H9": ("Entertainment", "Hindi"),   # India TV Aap ki Adalat
+    "IN46000184H": ("Entertainment", "Hindi"),   # Kings Of Comedy
+    "IN300091WU": ("Entertainment", "Hindi"),    # Sansani Live (ABP)
+    "IN3800002VK": ("Entertainment", "Hindi"),   # The Lallantop
+    "IN300085JT": ("News", "Hindi"),             # News State BR JH
+    "IN3900001YE": ("News", "Hindi"),            # News24
+    "INBA490002119": ("News", "Hindi"),          # Republic Bharat
+    "IN2600021ED": ("Infotainment", "Hindi"),    # India TV Yoga
+    "IN4600009F9": ("Kids", "Hindi"),            # Hooray Kids
+    "IN4600008T4": ("Kids", "Hindi"),            # KidDo MATIX
+    "IN3900016WI": ("Movies", "Hindi"),          # B4U Movies
+    "IN8000196E": ("Music", "Hindi"),            # Epic Music
+    "IN3000899C": ("Sports", "Hindi"),           # Sports Live (ABP)
+    # English
+    "INBA5100021WP": ("Business News", "English"),   # Bloomberg TV
+    "INBA5100022O4": ("Business News", "English"),   # Bloomberg Originals
+    "INBA4900020A5": ("News", "English"),            # Republic TV
+    "IN3600009O8": ("Entertainment", "English"),     # Challenge Accepted
+    "IN24000030L": ("Entertainment", "English"),     # Crime Scene TV
+    "INBA5100030AO": ("Entertainment", "English"),   # FailArmy
+    "IN3000022R9": ("Entertainment", "English"),     # Fifth Gear
+    "IN4600004HW": ("Entertainment", "Hindi"),       # House of Crime (Warner Bros., Hindi)
+    "IN3900022KR": ("Entertainment", "English"),     # Mark Rober TV
+    "IN2200004MX": ("Entertainment", "English"),     # Midsomer Murders
+    "IN24000052F": ("Entertainment", "English"),     # Star Central
+    "IN2200002GZ": ("Entertainment", "English"),     # The Cube
+    "IN390002534": ("Entertainment", "English"),     # The Try Guys
+    "IN39000216A": ("Entertainment", "English"),     # Epic Gardening TV
+    "IN22000018J": ("Entertainment", "English"),     # Homes Under the Hammer
+    "IN22000039Q": ("Entertainment", "English"),     # Inside Outside
+    "IN2400001L0": ("Entertainment", "English"),     # Life+Style
+    "INBA5100031R2": ("Entertainment", "English"),   # People are Awesome
+    "IN39000260R": ("Entertainment", "English"),     # TheSorryGirls TV
+    "IN3300001P5": ("Entertainment", "English"),     # Time2Rlx
+    "IN1600011DE": ("Entertainment", "English"),     # KCM (series and true-crime documentaries)
+    "IN4000517J": ("Movies", "English"),             # Best Action TV
+    "IN330000528": ("Movies", "English"),            # WedoTV Movies
+    "IN400054UF": ("Infotainment", "English"),       # Automotions
+    "IN3600008TY": ("Infotainment", "English"),      # Brave Wilderness
+    "IN2400002A3": ("Infotainment", "English"),      # Go Wild
+    "INBA4900024R1": ("Infotainment", "English"),    # Jack Hanna
+    "IN2100014K1": ("Infotainment", "English"),      # NatureTime
+    "IN3300006TC": ("Infotainment", "English"),      # WedoTV Big Stories
+    "IN3300003TW": ("Infotainment", "English"),      # WedoTV Get Factual
+    "IN460000250": ("Infotainment", "English"),      # Wheel World
+    "IN460000585": ("Infotainment", "Hindi"),        # Wild Flix (Warner Bros., Hindi)
+    "IN800006BS": ("Infotainment", "English"),       # Wild Stuff
+    "IN46000011Q": ("Infotainment", "Hindi"),        # XXTreme Jobs (Warner Bros., Hindi)
+    "INBA4900023QJ": ("Infotainment", "English"),    # Xplore
+    "IN2400004WL": ("Infotainment", "English"),      # Bon Voyage
+    "INBA5100020HQ": ("Infotainment", "English"),    # Gusto TV
+    "IN400053KM": ("Infotainment", "English"),       # HD Travel
+    "IN4000526Y": ("Infotainment", "English"),       # Heritage+
+    "IN4900012F9": ("Kids", "English"),              # BABY SHARK TV
+    "IN4600007TC": ("Kids", "English"),              # Hooray Rhymes
+    "IN2500003JW": ("Kids", "English"),              # PowerKids TV
+    "INBA4900026FJ": ("Kids", "English"),            # Toon Goggles
+    "IN800005S8": ("Music", "English"),              # Concerto
+    "INBA4900001DL": ("Music", "English"),           # Qwest TV
+    "IN800007SR": ("Music", "English"),              # TRACE Urban
+    "IN800001OD": ("Music", "English"),              # That's 70s
+    "IN8000027E": ("Music", "English"),              # That's 80s
+    "IN800004YV": ("Music", "English"),              # That's 90s00s
+    "IN800003JE": ("Music", "English"),              # That's ROCK
+    "IN400056QQ": ("Sports", "English"),             # Ace TV
+    "IN1300001NN": ("Sports", "English"),            # Cricket Gold
+    "IN270000230": ("Sports", "English"),            # FIFA+
+    "IN300086YL": ("Sports", "English"),             # Fight TV
+    "INBA49000067X": ("Sports", "English"),          # INTROUBLE
+    "INBD4700014DU": ("Sports", "English"),          # MAVTV Motorsports
+    "IN4600020Q3": ("Sports", "English"),            # Pickleball Now
+    "IN8000085E": ("Sports", "English"),             # TRACE Sport Stars
+    "IN3300004EI": ("Sports", "English"),            # WedoTV Cars
+    "IN2100015RL": ("Sports", "English"),            # WedoTV Sports
+}
+
+
+def extra_samsung_in(data):
+    """SAMSUNG_IN as playlist entries for build_channels.py, named and with logos as Samsung's India line-up has them
+    (i.mjh.nz's public data); none without that data."""
+    path = os.path.join(data, "samsungtvplus_channels.json")
+    if not os.path.exists(path):
+        return []
+    india = json.load(open(path, encoding="utf-8"))["regions"].get("in", {}).get("channels", {})
+    out = []
+    for cid, (band, lang) in SAMSUNG_IN.items():
+        ch = india.get(cid)
+        if not ch or not ch.get("name"):
+            continue
+        attrs = {"tvg-id": "", "group-title": band.lower()}
+        if ch.get("logo"):
+            attrs["tvg-logo"] = ch["logo"]
+        # "xt": Samsung's India guide names channels by the same id (build_channels keeps it if the guide has it).
+        out.append({"title": ch["name"], "url": f"https://jmp2.uk/stvp-{cid}", "attrs": attrs, "opts": {},
+                    "band": band, "lang": lang, "extra": 1, "india": 1, "xt": cid})
+    return out
+
+
+def extra_anime(data):
+    """EXTRA_ANIME as playlist entries for build_channels.py (Anime English, English), with Pluto TV's logos."""
+    logos = {}
+    path = os.path.join(data, "plutotv_channels.json")
+    if os.path.exists(path):
+        us = json.load(open(path, encoding="utf-8"))["regions"].get("us", {}).get("channels", {})
+        logos = {cid: ch.get("logo") for cid, ch in us.items()}
+    out = []
+    for name, cid in EXTRA_ANIME:
+        attrs = {"tvg-id": "", "group-title": "Animation"}
+        if logos.get(cid):
+            attrs["tvg-logo"] = logos[cid]
+        out.append({"title": name, "url": f"https://jmp2.uk/plu-{cid}.m3u8", "attrs": attrs, "opts": {},
+                    "anime_band": ANIME_BANDS[0], "lang": "English", "extra": 1})
+    return out
+
+
 def indian_abroad(B):
     """For build_channels.py's main line-up: index.m3u entries from abroad whose main language is Indian, and the
-    anime channels from abroad (each entry's "anime_band" says which anime genre)."""
+    anime channels from abroad (each entry's "anime_band" says which anime genre), then EXTRA_ANIME, then the
+    SAMSUNG_IN channels (Indian, "india": 1, with their own "band" and "lang")."""
     path = os.path.join(B.DATA, "index.m3u")
     if not os.path.exists(path):
         return []
@@ -298,7 +518,7 @@ def indian_abroad(B):
             e["anime_band"] = why
         if d in ("main", "anime"):
             out.append(e)
-    return out
+    return out + extra_anime(B.DATA) + extra_samsung_in(B.DATA)
 
 
 GUIDE_BASE = "https://i.mjh.nz/"
@@ -360,6 +580,135 @@ def pick_guide(guides, pluto, c):
         own = file.lower().endswith("/" + region) or ("/" + region + "/") in ("/" + file.lower() + "/")
         return (0 if own else 1 if file == "Roku/all" else 2, file)
     return sorted(options, key=rank)[0]
+
+
+# More of i.mjh.nz's public guide files, by country, for channels iptv-org's guides.json does not link to one: a
+# channel is matched by its exact name (spaces, punctuation and a trailing "HD" aside) in its own country's files,
+# in this order, and only where one file names one channel so (owner's choice "A", 2026-11-10).
+NAMED_GUIDES = {
+    "US": ("SamsungTVPlus/us", "Plex/us", "PlutoTV/us", "Roku/all", "PBS/all"),
+    "UK": ("SamsungTVPlus/gb", "Plex/gb", "PlutoTV/gb"),
+    "CA": ("SamsungTVPlus/ca", "Plex/ca", "PlutoTV/ca"),
+    "AU": ("Plex/au", "au/Sydney/epg"), "NZ": ("Plex/nz", "nz/epg"), "ZA": ("DStv/za",),
+    "DE": ("SamsungTVPlus/de", "PlutoTV/de"), "AT": ("SamsungTVPlus/at",), "CH": ("SamsungTVPlus/ch",),
+    "FR": ("SamsungTVPlus/fr", "Plex/fr", "PlutoTV/fr"), "ES": ("SamsungTVPlus/es", "Plex/es", "PlutoTV/es"),
+    "IT": ("SamsungTVPlus/it", "PlutoTV/it"), "KR": ("SamsungTVPlus/kr",), "MX": ("Plex/mx", "PlutoTV/mx"),
+    "BR": ("PlutoTV/br",), "AR": ("PlutoTV/ar",), "DK": ("PlutoTV/dk",), "SE": ("PlutoTV/se",),
+    "NO": ("PlutoTV/no",),
+}
+
+
+def name_key(name):
+    """"¡Hola! Play" and "HOLA! Play" alike; a trailing "HD" does not count."""
+    k = re.sub(r"[\W_]+", "", name.lower().replace("&", "and").replace("+", "plus"))
+    return k[:-2] if k.endswith("hd") and len(k) > 5 else k
+
+
+def guide_names(file):
+    """{name key: {channel id}} for the channels with programmes in one i.mjh.nz guide file; {} without it."""
+    import gzip
+    import html
+    import urllib.request
+    try:
+        req = urllib.request.Request(GUIDE_BASE + file + ".xml.gz", headers={"User-Agent": "LiveTVGuide-builder"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            body = r.read()
+        if len(body) > MAX_GUIDE_BYTES:
+            return {}
+        xml = gzip.decompress(body).decode("utf-8", "replace")
+    except Exception as e:
+        print(f"  guide {file}: {e}")
+        return {}
+    listed = Counter(html.unescape(m) for m in re.findall(r'<programme[^>]*?channel="([^"]+)"', xml))
+    out = defaultdict(set)
+    for m in re.finditer(r'<channel id="([^"]+)"[^>]*>(.*?)</channel>', xml, re.S):
+        cid = html.unescape(m.group(1))
+        if listed[cid] < 2:
+            continue
+        for n in re.findall(r"<display-name[^>]*>(.*?)</display-name>", m.group(2), re.S):
+            k = name_key(html.unescape(n))
+            if len(k) >= 3:
+                out[k].add(cid)
+    return out
+
+
+def named_guides(channels):
+    """{id(channel): (file, id there)} for channels without listings that NAMED_GUIDES' files name exactly."""
+    files = {}
+    out = {}
+    for c in channels:
+        if "gi" in c or c["cc"] not in NAMED_GUIDES:
+            continue
+        k = name_key(c["_base"])
+        for file in NAMED_GUIDES[c["cc"]]:
+            if file not in files:
+                files[file] = guide_names(file)
+            ids = files[file].get(k, ())
+            if len(ids) == 1:
+                out[id(c)] = (file, next(iter(ids)))
+                break
+    return out
+
+
+# Pluto TV channels iptv-org's playlist does not list (owner, 10 Nov 2026: "add those Pluto TV channels that are
+# present with actual English audio ... in their respective genre and respective country list"): every channel of
+# Pluto TV's US, UK and Canadian line-ups (i.mjh.nz's public data) whose stream's master playlist names English as
+# its only audio language, checked at each build. Country: the first of these line-ups that has it. Genre: from
+# Pluto TV's own category. Anime is left to the anime genres, Spanish ("En Español") out by its audio anyway.
+PLUTO_REGIONS = (("us", "US"), ("gb", "UK"), ("ca", "CA"))
+
+
+def pluto_band(group):
+    g = (group or "").lower()
+    if "anime" in g:
+        return None
+    for words, band in ((("movie",), "Movies"), (("news", "opinion"), "News"), (("sport",), "Sports"),
+                        (("kids",), "Kids"), (("music",), "Music"),
+                        (("history", "science", "nature", "animal", "documentar", "adventure"), "Infotainment")):
+        if any(w in g for w in words):
+            return band
+    return "Entertainment"
+
+
+def pluto_audio(cid):
+    """The audio languages Pluto TV's master playlist names for a channel; None when it does not answer."""
+    import urllib.request
+    try:
+        req = urllib.request.Request(f"https://jmp2.uk/plu-{cid}.m3u8", headers={"User-Agent": "LiveTVGuide-builder"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            text = r.read(200_000).decode("utf-8", "replace")
+    except Exception:
+        return None
+    return sorted(set(re.findall(r'TYPE=AUDIO[^\n]*?LANGUAGE="([^"]+)"', text)))
+
+
+def extra_pluto(data, known_ids):
+    """World channel entries for Pluto TV's English channels the playlist lacks (known_ids: Pluto ids already in it)."""
+    from concurrent.futures import ThreadPoolExecutor
+    path = os.path.join(data, "plutotv_channels.json")
+    if not os.path.exists(path):
+        return []
+    regions = json.load(open(path, encoding="utf-8"))["regions"]
+    wanted = {}
+    for region, cc in PLUTO_REGIONS:
+        for cid, ch in regions.get(region, {}).get("channels", {}).items():
+            band = pluto_band(ch.get("group"))
+            if cid in known_ids or cid in wanted or not band or not ch.get("name"):
+                continue
+            wanted[cid] = {"name": ch["name"].strip(), "cat": band, "lang": "English", "cc": cc, "id": "",
+                           "url": f"https://jmp2.uk/plu-{cid}.m3u8", "logo": ch.get("logo") or "", "_q": 0,
+                           "_extra": 1}
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        audio = dict(zip(wanted, pool.map(pluto_audio, wanted)))
+    out = []
+    for cid, c in wanted.items():
+        if audio[cid] == ["en"]:
+            if not c["logo"]:
+                del c["logo"]
+            out.append(c)
+    print(f"Pluto TV channels the playlist lacks: {len(wanted)}; English audio: {len(out)}; "
+          f"other or none: {Counter(tuple(a) if a is not None else 'no answer' for a in audio.values()).most_common(6)}")
+    return out
 
 
 def pluto_numbers(data):
@@ -437,6 +786,15 @@ def main():
             c["part"] = 1
         c["_q"] = int(i["quality"])
         kept.append(c)
+    # Pluto TV's English channels iptv-org does not list (a licensed free platform, like its others here); the
+    # playlist's own come first, and the main list's Pluto TV channels (EXTRA_ANIME, STREAM_SWAPS) are left alone.
+    known = set(re.findall(r"jmp2\.uk/plu-([0-9a-f]+)", open(os.path.join(B.DATA, "index.m3u"), encoding="utf-8").read()))
+    known |= {cid for _, cid in EXTRA_ANIME}
+    known |= {m.group(1) for u in STREAM_SWAPS.values() for m in [re.search(r"plu-([0-9a-f]+)", u)] if m}
+    for c in extra_pluto(B.DATA, known):
+        if c["url"] not in seen_urls:
+            seen_urls.add(c["url"])
+            kept.append(c)
 
     # One stream per channel and country: the best quality stays.
     best = {}
@@ -474,8 +832,15 @@ def main():
             c["n"] = start + n
             c["cat"] = band + WORLD_SUFFIX
             del c["_q"]
-            # Names are the guide's identity for a channel (favourites, recent, stream tests): one that the
-            # Indian list or another country already uses gets the country added.
+            c["_base"] = c["name"]   # the playlist's own name, for finding listings by name (dropped below)
+            numbered.append(c)
+    # Names are the guide's identity for a channel (favourites, recent, stream tests): one that the Indian list or
+    # another country already uses gets the country added. The playlist's channels are named first, so a channel
+    # added from Pluto TV's line-ups (extra_pluto) takes the country rather than renaming one already there.
+    for extra in (False, True):
+        for c in numbered:
+            if bool(c.get("_extra")) != extra:
+                continue
             if c["name"].lower() in names_in_use:
                 c["name"] = f"{c['name']} ({country_names.get(c['cc'], c['cc'])})"
             k = 2
@@ -484,19 +849,46 @@ def main():
                 c["name"] = f"{base} {k}"
                 k += 1
             names_in_use.add(c["name"].lower())
-            numbered.append(c)
+            c.pop("_extra", None)
 
     # Programme listings: the i.mjh.nz guide file that lists each channel ("gi", an index into "guides") and the
     # channel's id there ("xt"). The guide downloads only the files its ticked countries' channels need.
-    guides, guide_files = mjh_guides(B.DATA), []
+    guides, guide_urls = mjh_guides(B.DATA), []
+
+    def use(c, url, xt):
+        if url not in guide_urls:
+            guide_urls.append(url)
+        c["gi"] = guide_urls.index(url)
+        c["xt"] = xt
+
     pluto_ids = pluto_numbers(B.DATA)
     for c in numbered:
         g = pick_guide(guides, pluto_ids, c)
         if g:
-            if g[0] not in guide_files:
-                guide_files.append(g[0])
-            c["gi"] = guide_files.index(g[0])
-            c["xt"] = g[1]
+            use(c, GUIDE_BASE + g[0] + ".xml.gz", g[1])
+    from_mjh = sum(1 for c in numbered if "gi" in c)
+    # A: more i.mjh.nz files, by the channel's exact name in its own country.
+    named = named_guides(numbered)
+    for c in numbered:
+        if id(c) in named:
+            file, xt = named[id(c)]
+            use(c, GUIDE_BASE + file + ".xml.gz", xt)
+    # B: the rest that iptv-org's grabber can collect from a working site, from this repository's daily listings
+    # (tools/collect_listings.py, .github/workflows/listings.yml): one file per country, the channel's key there.
+    collected = 0
+    try:
+        sites_md = os.path.join(B.DATA, "epg_sites.md")
+        fetch_to(SITES_MD_URL, sites_md)
+        sources = L.Sources(B.DATA)
+    except Exception as e:
+        print(f"  daily listings left out: {e}")
+        sources = None
+    for c in numbered:
+        if sources and "gi" not in c and sources.candidates(c):
+            use(c, L.LISTINGS_BASE + c["cc"].lower() + ".xml.gz", L.key(sources, c))
+            collected += 1
+    for c in numbered:
+        del c["_base"]
     counts = Counter(c["cc"] for c in numbered)
     region = regions_of(B.DATA, counts)
     countries = sorted(({"cc": cc, "name": country_names.get(cc, cc), "region": region[cc], "n": n}
@@ -505,7 +897,7 @@ def main():
                "checked": False, "source": INDEX_URL,
                "bands": [b + WORLD_SUFFIX for b in B.BAND_DISPLAY if any(c["cat"] == b + WORLD_SUFFIX for c in numbered)],
                "regions": [name for name, _ in REGIONS if any(c["region"] == name for c in countries)],
-               "countries": countries, "guides": [GUIDE_BASE + f + ".xml.gz" for f in guide_files],
+               "countries": countries, "guides": guide_urls,
                "channels": numbered}
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
@@ -522,8 +914,9 @@ def main():
         nums = [c["n"] for c in numbered if c["cat"] == band]
         print(f"  {band:20} {len(nums):5} channels  {min(nums)}-{max(nums)}")
     print("regions:", {r: sum(1 for c in countries if c["region"] == r) for r in payload["regions"]})
-    print(f"programme listings: {sum(1 for c in numbered if 'gi' in c)} of {len(numbered)} channels, "
-          f"from {len(guide_files)} i.mjh.nz guide files")
+    print(f"programme listings: {sum(1 for c in numbered if 'gi' in c)} of {len(numbered)} channels: "
+          f"{from_mjh} from iptv-org's i.mjh.nz links, {len(named)} more by name there, "
+          f"{collected} from the daily listings; {len(guide_urls)} guide files")
     print(f"wrote {out_path} ({os.path.getsize(out_path) / 1024:.0f} KB)")
 
 
