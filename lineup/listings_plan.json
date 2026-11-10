@@ -3487,22 +3487,6 @@
 }
 ]
 },
-"moviemusicbystingray.ca~hd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "PLEX1#plex.tv.Movie.Music.by.Stingray.plex",
-"site_name": "plex.tv.Movie.Music.by.Stingray.plex"
-},
-{
-"lang": "en",
-"site": "i.mjh.nz",
-"site_id": "Plex/ca#647f8d22a2fc3fadb4721685-62fbf197c67d52bddf74cc87",
-"site_name": "Movie Music by Stingray"
-}
-]
-},
 "moviespheregold.us~wfxt": {
 "sites": [
 {
