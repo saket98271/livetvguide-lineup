@@ -1,0 +1,51 @@
+# Now / Next for the whole line-up in two small files (tools/nownext.py), so the guide on the TV reads about 1 MB
+# instead of 161 guide files (246 MB of XMLTV) and shows every channel's programmes in seconds (the owner's choice,
+# 10 Nov 2026). Every 6 hours, because Pluto TV's and Samsung's guides reach only 11-28 hours ahead, and after each
+# new channel list or day's listings. The branch holds only the latest files (one commit), so it does not grow.
+# Free: standard runners cost nothing in a public repository.
+name: Now and Next
+
+on:
+  schedule:
+    - cron: "20 */6 * * *"   # 05:50, 11:50, 17:50, 23:50 India time
+  workflow_run:
+    workflows: ["Weekly channel list", "Daily listings"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nownext
+  cancel-in-progress: false
+
+jobs:
+  # Only this repository's own Python: it downloads guide files (data) and runs nothing from them.
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build
+        run: |
+          python -I tools/nownext.py lineup/channels.json lineup/world.json "$RUNNER_TEMP/nownext"
+          printf '%s\n' "Now / Next for the Live TV guide: titles and times of its own channels, an hour back to 32 hours" \
+            "ahead, rebuilt every 6 hours from the guide files the channel lists name (tools/nownext.py)." \
+            > "$RUNNER_TEMP/nownext/README.md"
+          { echo '```'; cat "$RUNNER_TEMP/nownext/report.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish
+        run: |
+          git checkout -q --orphan nownext-today
+          git rm -rf -q .
+          cp "$RUNNER_TEMP/nownext"/* .
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Now and Next $(date -u '+%Y-%m-%d %H:%M')"
+          git push -q -f origin HEAD:refs/heads/nownext

@@ -25,6 +25,9 @@ import collect_listings as L  # noqa: E402
 
 MJH = "https://i.mjh.nz/"
 EPGSHARE = "https://epgshare01.online/epgshare01/"
+# The "nownext" branch: the two small Now / Next files tools/nownext.py writes every 6 hours (.github/workflows/
+# nownext.yml).
+NOWNEXT_BASE = "https://raw.githubusercontent.com/saket98271/livetvguide-lineup/nownext/"
 UA = {"User-Agent": "LiveTVGuide-builder"}
 # Free streaming services whose channels are the same wherever they are listed.
 FAST_EPGSHARE = ("PLEX1", "DISTROTV1", "WHALETVPLUS1", "TBNPLUS1")
@@ -319,6 +322,10 @@ def assign(channels_path, world_path, data_dir, epg_root, plan_path):
             stats["epgshare01" if uniq[0]["site"] == "epgshare01.online" else "sites"] += 1
         use(which, c, L.LISTINGS_BASE + ("in" if which == "main" else cc.lower()) + ".xml.gz", key)
         stats[which] += 1
+    # Both lists name their Now / Next file (tools/nownext.py, every 6 hours): the guide reads that one small file and
+    # falls back to the guide files above while it is missing.
+    lineup["nownext"] = NOWNEXT_BASE + "main.tsv.gz"
+    world["nownext"] = NOWNEXT_BASE + "world.tsv.gz"
     for path, data in ((channels_path, lineup), (world_path, world)):
         if path == channels_path and not data["guides"]:
             data.pop("guides")

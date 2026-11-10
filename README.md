@@ -21,6 +21,11 @@ The weekly channel list for a private Live TV guide app on a Fire TV Stick. A Gi
   channel's own country or FAST service); and the TV-guide sites iptv-org/epg supports, by exact name with the
   country agreeing. The daily job fetches the Cablecast schedules and reads the epgshare01 files itself (streamed, a
   file at a time) and puts the main list's channels in `listings/in.xml.gz`
+- Now / Next in two small files on the `nownext` branch (`tools/nownext.py`, `.github/workflows/nownext.yml`, every
+  6 hours and after each new list or day's listings): `main.tsv.gz` and `world.tsv.gz` hold only the lists' own
+  channels, titles and times, an hour back to 32 hours ahead (about 1 MB in all), read from every guide file the
+  lists name; both lists name them ("nownext"), and the app reads them instead of those guide files, which it falls
+  back to while they are missing or more than 30 hours old
 - anime channels from abroad (and seven English ones from Pluto TV US that iptv-org does not list,
   `tools/build_world.py` EXTRA_ANIME) are in `channels.json`'s three anime genres
 - channels iptv-org does not list, from licensed free services through i.mjh.nz's public data: Pluto TV's US, UK and
