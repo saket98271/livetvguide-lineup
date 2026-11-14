@@ -1,0 +1,614 @@
+{
+ "countries": {
+  "ae": {
+   "listed": 10,
+   "planned": 12,
+   "programmes": 367
+  },
+  "al": {
+   "listed": 5,
+   "planned": 5,
+   "programmes": 158
+  },
+  "ao": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "ar": {
+   "listed": 13,
+   "planned": 15,
+   "programmes": 575
+  },
+  "at": {
+   "listed": 7,
+   "planned": 7,
+   "programmes": 522
+  },
+  "au": {
+   "listed": 1,
+   "planned": 3,
+   "programmes": 95
+  },
+  "az": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "ba": {
+   "listed": 4,
+   "planned": 7,
+   "programmes": 195
+  },
+  "be": {
+   "listed": 18,
+   "planned": 19,
+   "programmes": 763
+  },
+  "bf": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 176
+  },
+  "bg": {
+   "listed": 6,
+   "planned": 7,
+   "programmes": 301
+  },
+  "bh": {
+   "listed": 1,
+   "planned": 2,
+   "programmes": 110
+  },
+  "bj": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 14
+  },
+  "br": {
+   "listed": 34,
+   "planned": 40,
+   "programmes": 1891
+  },
+  "by": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "ca": {
+   "listed": 9,
+   "planned": 11,
+   "programmes": 455
+  },
+  "cd": {
+   "listed": 1,
+   "planned": 2,
+   "programmes": 16
+  },
+  "ch": {
+   "listed": 15,
+   "planned": 19,
+   "programmes": 1078
+  },
+  "ci": {
+   "listed": 6,
+   "planned": 6,
+   "programmes": 159
+  },
+  "cl": {
+   "listed": 8,
+   "planned": 8,
+   "programmes": 335
+  },
+  "cm": {
+   "listed": 2,
+   "planned": 3,
+   "programmes": 75
+  },
+  "cn": {
+   "listed": 19,
+   "planned": 20,
+   "programmes": 869
+  },
+  "co": {
+   "listed": 5,
+   "planned": 5,
+   "programmes": 220
+  },
+  "cr": {
+   "listed": 4,
+   "planned": 4,
+   "programmes": 216
+  },
+  "cy": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 64
+  },
+  "cz": {
+   "listed": 11,
+   "planned": 14,
+   "programmes": 601
+  },
+  "de": {
+   "listed": 75,
+   "planned": 86,
+   "programmes": 4995
+  },
+  "dk": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 148
+  },
+  "do": {
+   "listed": 5,
+   "planned": 5,
+   "programmes": 131
+  },
+  "ec": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 68
+  },
+  "ee": {
+   "listed": 6,
+   "planned": 7,
+   "programmes": 301
+  },
+  "eg": {
+   "listed": 0,
+   "planned": 4,
+   "programmes": 0
+  },
+  "es": {
+   "listed": 30,
+   "planned": 30,
+   "programmes": 1356
+  },
+  "fi": {
+   "listed": 7,
+   "planned": 7,
+   "programmes": 537
+  },
+  "fr": {
+   "listed": 37,
+   "planned": 45,
+   "programmes": 1484
+  },
+  "ge": {
+   "listed": 0,
+   "planned": 9,
+   "programmes": 0
+  },
+  "gn": {
+   "listed": 3,
+   "planned": 4,
+   "programmes": 44
+  },
+  "gp": {
+   "listed": 1,
+   "planned": 2,
+   "programmes": 15
+  },
+  "gr": {
+   "listed": 17,
+   "planned": 18,
+   "programmes": 521
+  },
+  "gt": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 23
+  },
+  "hk": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 110
+  },
+  "hn": {
+   "listed": 5,
+   "planned": 6,
+   "programmes": 213
+  },
+  "hr": {
+   "listed": 9,
+   "planned": 9,
+   "programmes": 515
+  },
+  "hu": {
+   "listed": 3,
+   "planned": 14,
+   "programmes": 152
+  },
+  "id": {
+   "listed": 13,
+   "planned": 16,
+   "programmes": 481
+  },
+  "ie": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 30
+  },
+  "il": {
+   "listed": 9,
+   "planned": 11,
+   "programmes": 464
+  },
+  "in": {
+   "listed": 93,
+   "planned": 98,
+   "programmes": 5217
+  },
+  "iq": {
+   "listed": 6,
+   "planned": 16,
+   "programmes": 173
+  },
+  "ir": {
+   "listed": 2,
+   "planned": 3,
+   "programmes": 128
+  },
+  "is": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 88
+  },
+  "it": {
+   "listed": 41,
+   "planned": 48,
+   "programmes": 1696
+  },
+  "jo": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 111
+  },
+  "jp": {
+   "listed": 4,
+   "planned": 4,
+   "programmes": 206
+  },
+  "ke": {
+   "listed": 0,
+   "planned": 3,
+   "programmes": 0
+  },
+  "kr": {
+   "listed": 3,
+   "planned": 20,
+   "programmes": 193
+  },
+  "kw": {
+   "listed": 0,
+   "planned": 2,
+   "programmes": 0
+  },
+  "kz": {
+   "listed": 0,
+   "planned": 3,
+   "programmes": 0
+  },
+  "lb": {
+   "listed": 2,
+   "planned": 4,
+   "programmes": 52
+  },
+  "lt": {
+   "listed": 6,
+   "planned": 6,
+   "programmes": 237
+  },
+  "lu": {
+   "listed": 2,
+   "planned": 6,
+   "programmes": 68
+  },
+  "lv": {
+   "listed": 1,
+   "planned": 2,
+   "programmes": 30
+  },
+  "ma": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 71
+  },
+  "mc": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 195
+  },
+  "md": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 69
+  },
+  "me": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 13
+  },
+  "mk": {
+   "listed": 4,
+   "planned": 4,
+   "programmes": 171
+  },
+  "ml": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 56
+  },
+  "mm": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 56
+  },
+  "mn": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 20
+  },
+  "mo": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 84
+  },
+  "mq": {
+   "listed": 0,
+   "planned": 2,
+   "programmes": 0
+  },
+  "mt": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 90
+  },
+  "mx": {
+   "listed": 10,
+   "planned": 10,
+   "programmes": 507
+  },
+  "my": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 43
+  },
+  "mz": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 52
+  },
+  "ne": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "ng": {
+   "listed": 1,
+   "planned": 2,
+   "programmes": 53
+  },
+  "ni": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 28
+  },
+  "nl": {
+   "listed": 57,
+   "planned": 60,
+   "programmes": 3973
+  },
+  "no": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "nz": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 85
+  },
+  "om": {
+   "listed": 4,
+   "planned": 5,
+   "programmes": 255
+  },
+  "pa": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 66
+  },
+  "pe": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 111
+  },
+  "pf": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "ph": {
+   "listed": 0,
+   "planned": 2,
+   "programmes": 0
+  },
+  "pk": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "pl": {
+   "listed": 20,
+   "planned": 21,
+   "programmes": 1222
+  },
+  "pr": {
+   "listed": 5,
+   "planned": 6,
+   "programmes": 295
+  },
+  "ps": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "pt": {
+   "listed": 12,
+   "planned": 13,
+   "programmes": 638
+  },
+  "py": {
+   "listed": 4,
+   "planned": 4,
+   "programmes": 123
+  },
+  "qa": {
+   "listed": 2,
+   "planned": 7,
+   "programmes": 85
+  },
+  "ro": {
+   "listed": 31,
+   "planned": 32,
+   "programmes": 1508
+  },
+  "rs": {
+   "listed": 21,
+   "planned": 26,
+   "programmes": 1084
+  },
+  "ru": {
+   "listed": 2,
+   "planned": 44,
+   "programmes": 78
+  },
+  "rw": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 35
+  },
+  "sa": {
+   "listed": 20,
+   "planned": 23,
+   "programmes": 1415
+  },
+  "sd": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  },
+  "se": {
+   "listed": 1,
+   "planned": 4,
+   "programmes": 36
+  },
+  "sg": {
+   "listed": 4,
+   "planned": 5,
+   "programmes": 175
+  },
+  "si": {
+   "listed": 6,
+   "planned": 6,
+   "programmes": 304
+  },
+  "sk": {
+   "listed": 5,
+   "planned": 10,
+   "programmes": 1124
+  },
+  "sm": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 54
+  },
+  "sn": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 50
+  },
+  "sv": {
+   "listed": 3,
+   "planned": 3,
+   "programmes": 108
+  },
+  "sy": {
+   "listed": 2,
+   "planned": 4,
+   "programmes": 46
+  },
+  "tg": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 107
+  },
+  "th": {
+   "listed": 30,
+   "planned": 34,
+   "programmes": 1681
+  },
+  "tn": {
+   "listed": 2,
+   "planned": 2,
+   "programmes": 81
+  },
+  "tr": {
+   "listed": 61,
+   "planned": 67,
+   "programmes": 3672
+  },
+  "tw": {
+   "listed": 0,
+   "planned": 2,
+   "programmes": 0
+  },
+  "ua": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 57
+  },
+  "uk": {
+   "listed": 26,
+   "planned": 28,
+   "programmes": 1430
+  },
+  "us": {
+   "listed": 237,
+   "planned": 275,
+   "programmes": 17371
+  },
+  "uy": {
+   "listed": 1,
+   "planned": 1,
+   "programmes": 64
+  },
+  "ve": {
+   "listed": 5,
+   "planned": 5,
+   "programmes": 265
+  },
+  "vn": {
+   "listed": 30,
+   "planned": 30,
+   "programmes": 1270
+  },
+  "xk": {
+   "listed": 6,
+   "planned": 6,
+   "programmes": 376
+  },
+  "ye": {
+   "listed": 0,
+   "planned": 1,
+   "programmes": 0
+  }
+ },
+ "from_second_site": 63,
+ "generated": "2026-11-14T07:11Z",
+ "kept_from_yesterday": 10,
+ "listed": 1220,
+ "planned": 1499
+}
