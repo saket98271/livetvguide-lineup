@@ -10,6 +10,7 @@ EMI TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence fo
 Etno TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Euronews Romania,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Favorit TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
+Formula 1 AntenaPlay,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Inedit TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Kapital TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Mireasa,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
@@ -17,6 +18,7 @@ Mireasa Extra,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no lic
 National 24 Plus,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 National TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 NCN,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
+NHL AntenaPlay,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Nostalgia TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Orizont TV,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
 Party Mix HD,Romania,antenaplay.ro,a Romanian site carrying 57 channels; no licence found
@@ -138,6 +140,7 @@ Canal 4 Posadas,Argentina,190.128.214.97,bare-IP server re-sending many channels
 DeporTV,Argentina,158.172.155.130,bare-IP server re-sending many channels
 Disney Channel Latin America,Argentina,15.204.246.24,bare-IP server re-sending many channels
 Disney Channel Latin America Center,Argentina,181.78.8.199,bare-IP server re-sending many channels
+Disney Channel Latin America Mexico,Argentina,45.166.93.156,bare-IP server re-sending many channels
 Disney Channel Latin America North,Argentina,138.121.15.230,bare-IP server re-sending many channels
 Disney Channel Latin America Panregional HD,Argentina,45.134.141.161,bare-IP server re-sending many channels
 Disney Jr. Latin America North HD,Argentina,181.78.14.26,bare-IP server re-sending many channels
@@ -145,8 +148,8 @@ El Gourmet,Argentina,15.204.246.24,bare-IP server re-sending many channels
 El Nueve,Argentina,15.204.246.24,bare-IP server re-sending many channels
 El Trece Internacional Latin America,Argentina,45.184.109.10,bare-IP server re-sending many channels
 Encuentro,Argentina,138.59.227.20,bare-IP server re-sending many channels
+ESPN Premium,Argentina,45.134.141.161,bare-IP server re-sending many channels
 ESPN Premium HD,Argentina,158.172.155.130,bare-IP server re-sending many channels
-Europa Europa,Argentina,38.252.238.18,bare-IP server re-sending many channels
 Film & Arts,Argentina,15.204.246.24,bare-IP server re-sending many channels
 Fox Sports,Argentina,138.59.227.20,bare-IP server re-sending many channels
 Fox Sports HD,Argentina,45.184.109.10,bare-IP server re-sending many channels
@@ -192,54 +195,57 @@ RTP (Bolivia),Bolivia,190.181.61.93,bare-IP server re-sending many channels
 TV Culturas,Bolivia,15.204.246.24,bare-IP server re-sending many channels
 Unitel (Bolivia),Bolivia,190.181.61.93,bare-IP server re-sending many channels
 Vos TV (Bolivia),Bolivia,15.204.246.24,bare-IP server re-sending many channels
-AgroCanal,Brazil,45.162.64.114,bare-IP server re-sending many channels
-AgroMais,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Arte 1,Brazil,45.162.64.114,bare-IP server re-sending many channels
+AgroCanal,Brazil,170.83.49.66,bare-IP server re-sending many channels
+AgroMais,Brazil,45.177.114.115,bare-IP server re-sending many channels
+Arte 1,Brazil,45.177.114.115,bare-IP server re-sending many channels
 AXN (Brazil),Brazil,170.83.16.50,bare-IP server re-sending many channels
 Band,Brazil,170.84.165.204,bare-IP server re-sending many channels
 Box Kids TV,Brazil,170.83.49.66,bare-IP server re-sending many channels
-Canal do Boi,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Canal Educacao,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Canal Futura,Brazil,45.162.64.114,bare-IP server re-sending many channels
+Canal do Boi,Brazil,170.83.16.50,bare-IP server re-sending many channels
+Canal Educacao,Brazil,45.177.114.115,bare-IP server re-sending many channels
+Canal Futura,Brazil,170.83.16.50,bare-IP server re-sending many channels
+Canal Gov,Brazil,45.177.114.115,bare-IP server re-sending many channels
 Canal Rural,Brazil,170.83.49.66,bare-IP server re-sending many channels
-Chef TV,Brazil,168.197.104.22,bare-IP server re-sending many channels
 Cultura Para,Brazil,170.84.165.204,bare-IP server re-sending many channels
-DumDum,Brazil,45.162.64.114,bare-IP server re-sending many channels
+DumDum,Brazil,186.219.52.187,bare-IP server re-sending many channels
 Fish TV,Brazil,190.128.214.97,bare-IP server re-sending many channels
 Futura,Brazil,170.83.49.66,bare-IP server re-sending many channels
 GloboNews,Brazil,79.127.238.228,bare-IP server re-sending many channels
 Globoplay Novelas,Brazil,79.127.238.228,bare-IP server re-sending many channels
 Jovem Pan News,Brazil,170.83.49.66,bare-IP server re-sending many channels
-Music Box Brazil,Brazil,168.197.104.22,bare-IP server re-sending many channels
-Novo Tempo,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Play TV (Brazil),Brazil,45.162.64.114,bare-IP server re-sending many channels
+Music Box Brazil,Brazil,170.83.49.66,bare-IP server re-sending many channels
+Novo Tempo,Brazil,186.219.52.187,bare-IP server re-sending many channels
+Play TV (Brazil),Brazil,45.177.114.115,bare-IP server re-sending many channels
 Record,Brazil,170.84.165.204,bare-IP server re-sending many channels
-Record News,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Rede CNT Rio de Janeiro,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Rede Familia,Brazil,168.197.104.22,bare-IP server re-sending many channels
-Rede Seculo 21,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Rede TV! SD,Brazil,45.162.64.114,bare-IP server re-sending many channels
+Record News,Brazil,45.177.114.115,bare-IP server re-sending many channels
+Rede CNT Rio de Janeiro,Brazil,170.83.49.66,bare-IP server re-sending many channels
+Rede Familia,Brazil,186.219.52.187,bare-IP server re-sending many channels
+Rede Seculo 21,Brazil,186.219.52.187,bare-IP server re-sending many channels
+Rede TV! SD,Brazil,170.83.16.50,bare-IP server re-sending many channels
 Sony Channel (Brazil),Brazil,170.83.16.50,bare-IP server re-sending many channels
-Sony Movies (Brazil),Brazil,45.162.64.114,bare-IP server re-sending many channels
+Sony Movies (Brazil),Brazil,45.177.114.115,bare-IP server re-sending many channels
+SporTV 2,Brazil,195.178.110.110,bare-IP server re-sending many channels
+SporTV 3,Brazil,195.178.110.110,bare-IP server re-sending many channels
 Telecine Cult,Brazil,45.185.15.154,bare-IP server re-sending many channels
 Telecine Fun,Brazil,45.185.15.154,bare-IP server re-sending many channels
 Telecine Premium,Brazil,45.185.15.154,bare-IP server re-sending many channels
 Telecine Touch,Brazil,45.185.15.154,bare-IP server re-sending many channels
-Terra Viva,Brazil,45.162.64.114,bare-IP server re-sending many channels
-Travel Box Brazil,Brazil,168.197.104.22,bare-IP server re-sending many channels
-TV Aparecida,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Brasil,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Cancao Nova,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Cultura,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Evangelizar,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Gazeta,Brazil,45.162.64.114,bare-IP server re-sending many channels
+Terra Viva,Brazil,45.177.114.115,bare-IP server re-sending many channels
+Travel Box Brazil,Brazil,170.83.49.66,bare-IP server re-sending many channels
+TV Aparecida,Brazil,45.177.114.115,bare-IP server re-sending many channels
+TV Brasil,Brazil,45.177.114.115,bare-IP server re-sending many channels
+TV Cancao Nova,Brazil,170.83.16.50,bare-IP server re-sending many channels
+TV Cultura,Brazil,45.177.114.115,bare-IP server re-sending many channels
+TV Evangelizar,Brazil,170.83.16.50,bare-IP server re-sending many channels
+TV Gazeta,Brazil,186.219.52.187,bare-IP server re-sending many channels
 TV Globo Brasilia,Brazil,79.127.238.228,bare-IP server re-sending many channels
 TV Globo Sao Paulo,Brazil,170.84.165.204,bare-IP server re-sending many channels
-TV Justica,Brazil,45.162.64.114,bare-IP server re-sending many channels
+TV Justica,Brazil,170.83.16.50,bare-IP server re-sending many channels
 TV Natal,Brazil,185.228.163.146,bare-IP server re-sending many channels
-TV Pai Eterno,Brazil,45.162.64.114,bare-IP server re-sending many channels
-TV Senado (Brazil),Brazil,45.162.64.114,bare-IP server re-sending many channels
-WooHoo,Brazil,45.162.64.114,bare-IP server re-sending many channels
+TV Pai Eterno,Brazil,186.219.52.187,bare-IP server re-sending many channels
+TV Ra Tim Bum,Brazil,45.177.114.115,bare-IP server re-sending many channels
+TV Senado (Brazil),Brazil,170.83.16.50,bare-IP server re-sending many channels
+WooHoo,Brazil,170.83.16.50,bare-IP server re-sending many channels
 7/8 TV,Bulgaria,213.91.179.28,bare-IP server re-sending many channels
 Animal Planet (Bulgaria),Bulgaria,213.91.179.28,bare-IP server re-sending many channels
 Bloomberg TV Bulgaria,Bulgaria,213.91.179.28,bare-IP server re-sending many channels
@@ -290,7 +296,6 @@ Mega Ficcion,Chile,15.204.196.147,bare-IP server re-sending many channels
 Meganoticias Ahora,Chile,15.204.196.147,bare-IP server re-sending many channels
 Star Channel (Chile),Chile,138.121.15.230,bare-IP server re-sending many channels
 TNT Sports Premium ArgentinaHD,Chile,181.78.79.131,bare-IP server re-sending many channels
-TV Chile,Chile,38.252.238.18,bare-IP server re-sending many channels
 TVN (Chile),Chile,15.204.246.24,bare-IP server re-sending many channels
 V Classic TV,Chile,186.148.196.100,bare-IP server re-sending many channels
 Via X,Chile,45.170.130.224,bare-IP server re-sending many channels
@@ -362,7 +367,6 @@ Ranchenato TV,Colombia,181.78.12.119,bare-IP server re-sending many channels
 RCN HD2,Colombia,181.78.14.26,bare-IP server re-sending many channels
 Rumba TV,Colombia,38.134.250.110,bare-IP server re-sending many channels
 Senal Colombia,Colombia,138.121.15.230,bare-IP server re-sending many channels
-Sin Limites,Colombia,170.244.209.30,bare-IP server re-sending many channels
 Star Channel (Colombia),Colombia,190.61.47.54,bare-IP server re-sending many channels
 Tele Amiga,Colombia,200.122.223.13,bare-IP server re-sending many channels
 Tele Vid,Colombia,200.122.223.13,bare-IP server re-sending many channels
@@ -379,8 +383,11 @@ Win+ Futbol,Colombia,181.78.12.119,bare-IP server re-sending many channels
 Zoom (Colombia),Colombia,138.121.15.230,bare-IP server re-sending many channels
 Enlace,Costa Rica,45.5.117.57,bare-IP server re-sending many channels
 FUTV,Costa Rica,45.228.234.9,bare-IP server re-sending many channels
+Teletica 7,Costa Rica,181.119.177.253,bare-IP server re-sending many channels
 National Geographic (Croatia),Croatia,176.61.157.250,bare-IP server re-sending many channels
-Nick Jr. (Croatia),Croatia,176.61.157.250,bare-IP server re-sending many channels
+Nick Jr. (Croatia),Croatia,5.175.174.49,bare-IP server re-sending many channels
+Nickelodeon (Croatia),Croatia,5.175.174.49,bare-IP server re-sending many channels
+Nicktoons Adria,Croatia,5.175.174.49,bare-IP server re-sending many channels
 Nova TV,Croatia,176.61.157.250,bare-IP server re-sending many channels
 RIK 1,Cyprus,213.7.216.229,bare-IP server re-sending many channels
 RIK 2,Cyprus,213.7.216.229,bare-IP server re-sending many channels
@@ -449,11 +456,7 @@ Mikuba TV,Democratic Republic of the Congo,51.254.199.122,bare-IP server re-send
 PSTV HD,Democratic Republic of the Congo,51.254.199.122,bare-IP server re-sending many channels
 RTNC 3,Democratic Republic of the Congo,51.254.199.122,bare-IP server re-sending many channels
 RTVS1,Democratic Republic of the Congo,51.254.199.122,bare-IP server re-sending many channels
-CDN,Dominican Republic,190.61.90.17,bare-IP server re-sending many channels
-SiTV,Dominican Republic,190.122.104.210,bare-IP server re-sending many channels
-Tarima TV,Dominican Republic,190.122.104.210,bare-IP server re-sending many channels
 Tele Antillas,Dominican Republic,45.171.108.253,bare-IP server re-sending many channels
-Telefuturo (Dominican Republic),Dominican Republic,190.122.104.210,bare-IP server re-sending many channels
 Ecuador TV,Ecuador,45.224.97.181,bare-IP server re-sending many channels
 Ecuavisa,Ecuador,45.171.108.253,bare-IP server re-sending many channels
 Gamavision,Ecuador,45.224.97.181,bare-IP server re-sending many channels
@@ -476,8 +479,8 @@ Tigo Sports (El Salvador),El Salvador,45.167.2.101,bare-IP server re-sending man
 CTV Dla Ciebie TV,Estonia,90.183.52.46,bare-IP server re-sending many channels
 OTV (Estonia),Estonia,88.212.7.14,bare-IP server re-sending many channels
 13eme Rue,France,192.99.186.30,bare-IP server re-sending many channels
-6ter,France,149.62.177.107,bare-IP server re-sending many channels
 arte (France),France,5.180.164.197,bare-IP server re-sending many channels
+Boomerang (France) HD,France,41.205.93.154,bare-IP server re-sending many channels
 Cine+ Classic,France,99.27.51.147,bare-IP server re-sending many channels
 Cine+ Frisson,France,99.27.51.147,bare-IP server re-sending many channels
 Discovery Channel (France),France,192.99.186.30,bare-IP server re-sending many channels
@@ -497,31 +500,22 @@ Eurosport 2 Hungary,France,88.212.7.14,bare-IP server re-sending many channels
 Eurosport 2 Portugal,France,185.228.163.146,bare-IP server re-sending many channels
 Eurosport 2 Romania,France,89.44.231.73,bare-IP server re-sending many channels
 Eurosport 2 Spain,France,45.134.141.161,bare-IP server re-sending many channels
-France 2,France,149.62.177.107,bare-IP server re-sending many channels
-France 3,France,85.14.32.26,bare-IP server re-sending many channels
 France 3 Lorraine,France,5.180.164.197,bare-IP server re-sending many channels
-France 4,France,149.62.177.107,bare-IP server re-sending many channels
-France 5,France,149.62.177.107,bare-IP server re-sending many channels
-Franceinfo,France,149.62.177.107,bare-IP server re-sending many channels
 Gulli,France,99.27.51.147,bare-IP server re-sending many channels
 Investigation Discovery (France),France,192.99.186.30,bare-IP server re-sending many channels
-LCI,France,149.62.177.107,bare-IP server re-sending many channels
 LCI HD,France,151.80.18.177,bare-IP server re-sending many channels
 M6 HD,France,99.27.51.147,bare-IP server re-sending many channels
 MCM Top (France),France,185.228.163.146,bare-IP server re-sending many channels
-MTV (France),France,99.27.51.147,bare-IP server re-sending many channels
-NOVO19,France,149.62.177.107,bare-IP server re-sending many channels
+Mezzo,France,92.180.26.103,bare-IP server re-sending many channels
 SciFi,France,192.99.186.30,bare-IP server re-sending many channels
 Syfy,France,99.27.51.147,bare-IP server re-sending many channels
-TF1 Series Films,France,149.62.177.107,bare-IP server re-sending many channels
-TFX,France,149.62.177.107,bare-IP server re-sending many channels
 TV5Monde Europe,France,5.180.164.197,bare-IP server re-sending many channels
 W9,France,5.180.164.197,bare-IP server re-sending many channels
 Comedy TV,Georgia,31.146.5.178,bare-IP server re-sending many channels
 GDS TV,Georgia,31.146.5.178,bare-IP server re-sending many channels
-GMS TV (Georgia),Georgia,158.101.222.193,bare-IP server re-sending many channels
 Rustavi 2,Georgia,31.146.5.178,bare-IP server re-sending many channels
-Setanta Sports 3,Georgia,158.101.222.193,bare-IP server re-sending many channels
+Setanta Sports 3,Georgia,85.117.61.84,bare-IP server re-sending many channels
+Setanta Sports+ Georgia,Georgia,85.117.61.84,bare-IP server re-sending many channels
 TVC (Georgia),Georgia,31.146.5.178,bare-IP server re-sending many channels
 AXN Black (Germany),Germany,46.244.99.71,bare-IP server re-sending many channels
 AXN White (Germany),Germany,46.244.99.71,bare-IP server re-sending many channels
@@ -529,24 +523,28 @@ Nick Jr. (Germany),Germany,94.130.48.67,bare-IP server re-sending many channels
 Nick/Comedy Central +1,Germany,90.183.52.46,bare-IP server re-sending many channels
 Nicktoons (Germany),Germany,94.130.48.67,bare-IP server re-sending many channels
 RiC.today,Germany,88.212.7.14,bare-IP server re-sending many channels
-Sky Sport F1,Germany,45.142.104.86,bare-IP server re-sending many channels
-Sky Sport Golf,Germany,45.142.104.86,bare-IP server re-sending many channels
-Sky Sport Mix,Germany,45.142.104.86,bare-IP server re-sending many channels
-Sky Sport News,Germany,45.142.104.86,bare-IP server re-sending many channels
-Sky Sport Tennis,Germany,45.142.104.86,bare-IP server re-sending many channels
-Sky Sport Top Event,Germany,45.142.104.86,bare-IP server re-sending many channels
+Sky Sport F1,Germany,94.130.48.67,bare-IP server re-sending many channels
+Sky Sport Golf,Germany,94.130.48.67,bare-IP server re-sending many channels
+Sky Sport Mix,Germany,94.130.48.67,bare-IP server re-sending many channels
+Sky Sport News,Germany,94.130.48.67,bare-IP server re-sending many channels
+Sky Sport Tennis,Germany,94.130.48.67,bare-IP server re-sending many channels
+Sky Sport Top Event,Germany,94.130.48.67,bare-IP server re-sending many channels
 TVRUS,Germany,213.91.179.28,bare-IP server re-sending many channels
 ZDFneo,Germany,5.180.164.197,bare-IP server re-sending many channels
+Amigos TV Chiquimula,Guatemala,45.166.93.156,bare-IP server re-sending many channels
 Canal 11 (Guatemala),Guatemala,168.228.44.241,bare-IP server re-sending many channels
 Canal 13 (Guatemala),Guatemala,168.196.127.137,bare-IP server re-sending many channels
+Canal 3 (Guatemala),Guatemala,181.119.177.253,bare-IP server re-sending many channels
+Canal 7,Guatemala,181.119.177.253,bare-IP server re-sending many channels
 Guatevision,Guatemala,200.115.120.1,bare-IP server re-sending many channels
 Rhema TV,Guatemala,45.171.64.30,bare-IP server re-sending many channels
-Canal 11 (Honduras),Honduras,190.11.225.124,bare-IP server re-sending many channels
+Vea Canal,Guatemala,181.78.106.127,bare-IP server re-sending many channels
 Canal 5 El Lider,Honduras,186.33.26.18,bare-IP server re-sending many channels
 HCH,Honduras,45.228.234.9,bare-IP server re-sending many channels
 Picosa TV,Honduras,45.167.2.101,bare-IP server re-sending many channels
 Telecadena 7 y 4,Honduras,45.167.2.101,bare-IP server re-sending many channels
 Tigo Sports (Honduras),Honduras,168.196.127.137,bare-IP server re-sending many channels
+UNE TV,Honduras,45.166.93.156,bare-IP server re-sending many channels
 Asian Drama,Hong Kong,103.172.187.30,bare-IP server re-sending many channels
 Golden Jade,Hong Kong,103.172.187.30,bare-IP server re-sending many channels
 Jade,Hong Kong,103.172.187.30,bare-IP server re-sending many channels
@@ -659,6 +657,7 @@ Al Sharqiya,Iraq,185.9.2.18,bare-IP server re-sending many channels
 Health Channel,Israel,89.33.29.115,bare-IP server re-sending many channels
 TeenNick (Israel),Israel,89.33.29.115,bare-IP server re-sending many channels
 Alma TV,Italy,151.0.207.99,bare-IP server re-sending many channels
+Boing Plus,Italy,95.141.36.9,bare-IP server re-sending many channels
 Caccia e Pesca,Italy,102.129.186.182,bare-IP server re-sending many channels
 Cartoon Network (Italy),Italy,185.227.34.104,bare-IP server re-sending many channels
 DeA Kids,Italy,185.227.34.104,bare-IP server re-sending many channels
@@ -670,9 +669,18 @@ Lazio TV,Italy,151.0.207.99,bare-IP server re-sending many channels
 Nick Jr. (Italy),Italy,102.129.186.182,bare-IP server re-sending many channels
 Nickelodeon (Italy),Italy,185.227.34.104,bare-IP server re-sending many channels
 Pesca e Caccia,Italy,102.129.186.182,bare-IP server re-sending many channels
+Radio Monte Carlo TV,Italy,95.141.36.9,bare-IP server re-sending many channels
 Rai Gulp,Italy,5.180.164.197,bare-IP server re-sending many channels
 Rai Italia North Americas,Italy,138.59.177.78,bare-IP server re-sending many channels
+Rai Premium,Italy,95.141.36.9,bare-IP server re-sending many channels
+Rai Yoyo,Italy,95.141.36.9,bare-IP server re-sending many channels
 Real Time HD,Italy,102.129.186.182,bare-IP server re-sending many channels
+Sky Cinema Action,Italy,109.169.87.42,bare-IP server re-sending many channels
+Sky Cinema Collection,Italy,109.169.87.42,bare-IP server re-sending many channels
+Sky Cinema Due,Italy,109.169.87.42,bare-IP server re-sending many channels
+Sky Cinema Family,Italy,109.169.87.42,bare-IP server re-sending many channels
+Sky Cinema Suspense,Italy,109.169.87.42,bare-IP server re-sending many channels
+Sky Cinema Uno,Italy,109.169.87.42,bare-IP server re-sending many channels
 TV8 (Italy),Italy,102.129.186.182,bare-IP server re-sending many channels
 Radio Fann Jordan Studio,Jordan,45.63.116.205,bare-IP server re-sending many channels
 Radio Yaqeen Jordan City View,Jordan,45.63.116.205,bare-IP server re-sending many channels
@@ -683,9 +691,9 @@ LBC International,Lebanon,185.9.2.18,bare-IP server re-sending many channels
 Luxe TV,Luxembourg,103.154.3.101,bare-IP server re-sending many channels
 AyM Sports,Mexico,168.196.127.137,bare-IP server re-sending many channels
 Az Cinema,Mexico,15.204.196.147,bare-IP server re-sending many channels
-Az Clic,Mexico,38.252.238.18,bare-IP server re-sending many channels
 Az Corazon,Mexico,200.115.120.1,bare-IP server re-sending many channels
 Azteca Internacional,Mexico,167.249.23.102,bare-IP server re-sending many channels
+Bandamax,Mexico,181.78.106.127,bare-IP server re-sending many channels
 Canal 5 (Mexico) XET-TDT,Mexico,45.5.118.152,bare-IP server re-sending many channels
 CineLatino,Mexico,168.196.127.137,bare-IP server re-sending many channels
 Claro Cinema,Mexico,45.171.64.30,bare-IP server re-sending many channels
@@ -693,7 +701,7 @@ Claro Sports,Mexico,45.171.64.30,bare-IP server re-sending many channels
 De Pelicula Latin America,Mexico,15.204.196.147,bare-IP server re-sending many channels
 De Pelicula Plus,Mexico,200.115.120.1,bare-IP server re-sending many channels
 Discovery Home & Health Latin America South,Mexico,45.184.109.10,bare-IP server re-sending many channels
-Exa TV,Mexico,190.61.90.17,bare-IP server re-sending many channels
+FOX Central,Mexico,181.78.106.127,bare-IP server re-sending many channels
 Golden,Mexico,15.204.196.147,bare-IP server re-sending many channels
 Golden Edge,Mexico,15.204.196.147,bare-IP server re-sending many channels
 Golden Plus,Mexico,45.5.118.152,bare-IP server re-sending many channels
@@ -703,7 +711,6 @@ MC,Mexico,168.196.127.137,bare-IP server re-sending many channels
 MultiPremier,Mexico,168.196.127.137,bare-IP server re-sending many channels
 National Geographic (Mexico),Mexico,138.121.15.230,bare-IP server re-sending many channels
 Panico,Mexico,181.78.8.199,bare-IP server re-sending many channels
-PX Sports,Mexico,38.65.175.84,bare-IP server re-sending many channels
 Sky Sports 1,Mexico,45.228.234.9,bare-IP server re-sending many channels
 Sky Sports 2,Mexico,200.115.120.1,bare-IP server re-sending many channels
 TeleHit,Mexico,186.148.196.100,bare-IP server re-sending many channels
@@ -794,9 +801,8 @@ ATV (Peru),Peru,190.93.224.42,bare-IP server re-sending many channels
 ATV Sur,Peru,190.93.224.42,bare-IP server re-sending many channels
 ATV+,Peru,45.171.108.253,bare-IP server re-sending many channels
 Canal IPe,Peru,187.102.210.46,bare-IP server re-sending many channels
-Canal N,Peru,170.244.209.30,bare-IP server re-sending many channels
 Chikitoonz,Peru,45.70.201.81,bare-IP server re-sending many channels
-Exitosa TV,Peru,170.244.209.30,bare-IP server re-sending many channels
+Exitosa TV,Peru,190.93.224.42,bare-IP server re-sending many channels
 Global TV (Peru),Peru,190.93.224.42,bare-IP server re-sending many channels
 JN 19,Peru,187.102.210.46,bare-IP server re-sending many channels
 Justicia TV (Peru),Peru,190.93.224.42,bare-IP server re-sending many channels
@@ -805,7 +811,7 @@ L1 Max,Peru,190.93.224.42,bare-IP server re-sending many channels
 La Tele,Peru,190.93.224.42,bare-IP server re-sending many channels
 Latina,Peru,190.93.224.42,bare-IP server re-sending many channels
 Latina Clasicos,Peru,45.171.108.253,bare-IP server re-sending many channels
-Movistar Deportes,Peru,170.244.209.30,bare-IP server re-sending many channels
+Movistar Deportes,Peru,195.178.110.110,bare-IP server re-sending many channels
 Nativa,Peru,187.102.210.46,bare-IP server re-sending many channels
 Panamericana TV,Peru,45.171.108.253,bare-IP server re-sending many channels
 PBO,Peru,190.93.224.42,bare-IP server re-sending many channels
@@ -815,18 +821,16 @@ Trivu,Peru,190.93.224.42,bare-IP server re-sending many channels
 TV Peru,Peru,181.224.200.5,bare-IP server re-sending many channels
 TV Peru Noticias,Peru,190.93.224.42,bare-IP server re-sending many channels
 USMPTV,Peru,187.102.210.46,bare-IP server re-sending many channels
-Willax TV,Peru,170.244.209.30,bare-IP server re-sending many channels
+Willax TV,Peru,190.93.224.42,bare-IP server re-sending many channels
 4 Fun Dance,Poland,92.114.85.87,bare-IP server re-sending many channels
 Active Family HD,Poland,92.114.85.87,bare-IP server re-sending many channels
 Antena HD,Poland,92.114.85.87,bare-IP server re-sending many channels
 AXN Black (Poland),Poland,92.114.85.87,bare-IP server re-sending many channels
 AXN Poland,Poland,92.114.85.87,bare-IP server re-sending many channels
-AXN Spin (Poland),Poland,92.114.85.87,bare-IP server re-sending many channels
 AXN White (Poland),Poland,92.114.85.87,bare-IP server re-sending many channels
 CANAL+ 360,Poland,92.114.85.87,bare-IP server re-sending many channels
 Canal+ Domo,Poland,92.114.85.87,bare-IP server re-sending many channels
 Canal+ Kuchnia,Poland,92.114.85.87,bare-IP server re-sending many channels
-Canal+ Now,Poland,92.114.85.87,bare-IP server re-sending many channels
 Canal+ Sport (Poland),Poland,57.129.96.133,bare-IP server re-sending many channels
 Canal+ Sport 2,Poland,57.129.96.133,bare-IP server re-sending many channels
 Canal+ Sport 3,Poland,57.129.96.133,bare-IP server re-sending many channels
@@ -845,7 +849,6 @@ Eska TV,Poland,92.114.85.87,bare-IP server re-sending many channels
 Eska TV Extra,Poland,92.114.85.87,bare-IP server re-sending many channels
 Eurosport 1 Polska,Poland,57.128.210.196,bare-IP server re-sending many channels
 Eurosport 2 Polska,Poland,57.128.210.196,bare-IP server re-sending many channels
-Eurosport 3 Polska,Poland,91.228.35.249,bare-IP server re-sending many channels
 FILMBOX+ Action,Poland,92.114.85.87,bare-IP server re-sending many channels
 FILMBOX+ Comedy,Poland,92.114.85.87,bare-IP server re-sending many channels
 FILMBOX+ Comedy Czechia,Poland,88.212.15.50,bare-IP server re-sending many channels
@@ -877,7 +880,6 @@ Newsmax Polska,Poland,92.114.85.87,bare-IP server re-sending many channels
 Nick Jr. (Poland),Poland,92.114.85.87,bare-IP server re-sending many channels
 Nicktoons (Poland),Poland,92.114.85.87,bare-IP server re-sending many channels
 Nowa TV,Poland,92.114.85.87,bare-IP server re-sending many channels
-Nuta Gold,Poland,92.114.85.87,bare-IP server re-sending many channels
 Polonia 1,Poland,92.114.85.87,bare-IP server re-sending many channels
 Polsat 2,Poland,57.128.210.196,bare-IP server re-sending many channels
 Polsat JimJam,Poland,92.114.85.87,bare-IP server re-sending many channels
@@ -921,19 +923,12 @@ VOD 208,Poland,91.228.35.249,bare-IP server re-sending many channels
 VOX Music TV,Poland,92.114.85.87,bare-IP server re-sending many channels
 WP TV,Poland,92.114.85.87,bare-IP server re-sending many channels
 Disney Channel (Portugal),Portugal,151.80.18.177,bare-IP server re-sending many channels
-beIN Sports 1,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 2,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 3,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 4,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 5,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 6,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 7,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 8,Qatar,86.192.195.47,bare-IP server re-sending many channels
-beIN Sports 9,Qatar,86.192.195.47,bare-IP server re-sending many channels
 Tele Congo,Republic of the Congo,51.254.199.122,bare-IP server re-sending many channels
+Discovery Channel (Romania),Romania,92.180.26.103,bare-IP server re-sending many channels
 Nickelodeon (Romania),Romania,178.76.68.60,bare-IP server re-sending many channels
 Nicktoons (Romania),Romania,178.76.68.60,bare-IP server re-sending many channels
 Prima TV (Romania),Romania,89.44.231.73,bare-IP server re-sending many channels
+Sport Extra HD,Romania,92.180.26.103,bare-IP server re-sending many channels
 .red,Russia,5.188.159.128,bare-IP server re-sending many channels
 .red HD,Russia,178.134.1.158,bare-IP server re-sending many channels
 1HD Music Television,Russia,176.118.197.101,bare-IP server re-sending many channels
@@ -954,9 +949,7 @@ BRIDGE Hits,Russia,5.188.159.128,bare-IP server re-sending many channels
 BRIDGE Rock,Russia,178.134.1.158,bare-IP server re-sending many channels
 Carousel,Russia,31.148.48.15,bare-IP server re-sending many channels
 Channel 5 (Russia),Russia,31.148.5.241,bare-IP server re-sending many channels
-Channel 5 International,Russia,178.134.1.158,bare-IP server re-sending many channels
 Channel One (Russia),Russia,31.148.48.15,bare-IP server re-sending many channels
-Che!,Russia,176.118.197.101,bare-IP server re-sending many channels
 Doctor,Russia,31.148.48.15,bare-IP server re-sending many channels
 Dom kino,Russia,88.212.15.50,bare-IP server re-sending many channels
 Dom kino Premium,Russia,31.148.48.15,bare-IP server re-sending many channels
@@ -977,7 +970,6 @@ KHL,Russia,31.148.48.15,bare-IP server re-sending many channels
 Kineko,Russia,31.148.48.15,bare-IP server re-sending many channels
 Kino TV,Russia,31.148.48.15,bare-IP server re-sending many channels
 Kino TV HD,Russia,176.118.197.101,bare-IP server re-sending many channels
-Kinopremyera,Russia,5.188.159.128,bare-IP server re-sending many channels
 KinoSat,Russia,31.148.48.15,bare-IP server re-sending many channels
 Kinosvidanie,Russia,5.188.159.128,bare-IP server re-sending many channels
 Komedia,Russia,176.118.197.101,bare-IP server re-sending many channels
@@ -1012,7 +1004,6 @@ Poehali!,Russia,31.148.48.15,bare-IP server re-sending many channels
 Radost Moya,Russia,31.148.48.15,bare-IP server re-sending many channels
 RBK-TV,Russia,176.118.197.101,bare-IP server re-sending many channels
 REN TV,Russia,31.148.5.241,bare-IP server re-sending many channels
-REN TV International,Russia,178.134.1.158,bare-IP server re-sending many channels
 Retro,Russia,176.118.197.101,bare-IP server re-sending many channels
 RT,Russia,212.5.144.156,bare-IP server re-sending many channels
 RT en Espanol,Russia,15.204.246.24,bare-IP server re-sending many channels
@@ -1029,22 +1020,18 @@ Russkiy Illusion,Russia,31.148.48.15,bare-IP server re-sending many channels
 Russkiy roman,Russia,31.148.48.15,bare-IP server re-sending many channels
 Sankt-Peterburg,Russia,31.148.48.15,bare-IP server re-sending many channels
 Saphire,Russia,46.53.200.153,bare-IP server re-sending many channels
-Setanta Sports 1,Russia,158.101.222.193,bare-IP server re-sending many channels
-Setanta Sports 2,Russia,158.101.222.193,bare-IP server re-sending many channels
 Seven,Russia,31.148.48.15,bare-IP server re-sending many channels
 Shanson TV SD,Russia,46.53.200.153,bare-IP server re-sending many channels
 Solnce,Russia,31.148.48.15,bare-IP server re-sending many channels
 Spas,Russia,31.148.5.241,bare-IP server re-sending many channels
 START Air,Russia,176.118.197.101,bare-IP server re-sending many channels
 STS,Russia,31.148.5.241,bare-IP server re-sending many channels
-STS International,Russia,178.134.1.158,bare-IP server re-sending many channels
 STS kids,Russia,31.148.48.15,bare-IP server re-sending many channels
 SuperGeroi,Russia,31.148.48.15,bare-IP server re-sending many channels
 Svoboda,Russia,88.212.15.50,bare-IP server re-sending many channels
 T24,Russia,178.134.1.158,bare-IP server re-sending many channels
 Teatr,Russia,31.148.48.15,bare-IP server re-sending many channels
 Teleputeshestviya,Russia,31.148.48.15,bare-IP server re-sending many channels
-TERRA,Russia,31.148.48.15,bare-IP server re-sending many channels
 TNT (Russia),Russia,31.148.5.241,bare-IP server re-sending many channels
 TNT International,Russia,91.228.35.249,bare-IP server re-sending many channels
 TNT4,Russia,176.118.197.101,bare-IP server re-sending many channels
@@ -1117,13 +1104,10 @@ Star Channel (Slovenia),Slovenia,92.36.202.5,bare-IP server re-sending many chan
 Star Crime (Slovenia),Slovenia,92.36.202.5,bare-IP server re-sending many channels
 Star Life (Slovenia),Slovenia,92.36.202.5,bare-IP server re-sending many channels
 Star Movies (Slovenia),Slovenia,92.36.202.5,bare-IP server re-sending many channels
-Antena 3 Internacional,Spain,38.252.238.18,bare-IP server re-sending many channels
 AXN CEE,Spain,88.212.15.50,bare-IP server re-sending many channels
 AXN CEE Czech Republic,Spain,88.212.15.50,bare-IP server re-sending many channels
 Clan Internacional,Spain,168.228.44.241,bare-IP server re-sending many channels
 Real Madrid TV English,Spain,88.212.15.50,bare-IP server re-sending many channels
-TVE Internacional Europe,Spain,91.228.35.249,bare-IP server re-sending many channels
-TVE Star HD,Spain,38.252.238.18,bare-IP server re-sending many channels
 Alikhbaria Syria,Syria,185.9.2.18,bare-IP server re-sending many channels
 Discovery Asia Taiwan,Taiwan,125.227.210.55,bare-IP server re-sending many channels
 EBC Foreign Movie,Taiwan,111.59.139.85,bare-IP server re-sending many channels
@@ -1132,17 +1116,18 @@ SJTV,Taiwan,111.59.139.85,bare-IP server re-sending many channels
 Badakhshon,Tajikistan,185.121.1.163,bare-IP server re-sending many channels
 Dushanbe HD,Tajikistan,185.121.1.163,bare-IP server re-sending many channels
 Futbol,Tajikistan,185.121.1.163,bare-IP server re-sending many channels
+CNN Turk,Turkiye,85.117.61.84,bare-IP server re-sending many channels
 Kanal D Drama,Turkiye,190.93.224.42,bare-IP server re-sending many channels
-1+1 International,Ukraine,158.101.222.193,bare-IP server re-sending many channels
 100% NEWS,Ukraine,85.238.112.40,bare-IP server re-sending many channels
 eQtv,Ukraine,91.228.35.249,bare-IP server re-sending many channels
-Kvartal TV,Ukraine,158.101.222.193,bare-IP server re-sending many channels
 MEGOGO Sport,Ukraine,5.188.159.128,bare-IP server re-sending many channels
 Obshchestvennoe Nezavisimoe Televidenie,Ukraine,85.238.112.40,bare-IP server re-sending many channels
 Renome TV,Ukraine,85.238.112.40,bare-IP server re-sending many channels
 Viasat Kino Balkan,Ukraine,176.61.157.250,bare-IP server re-sending many channels
 Viasat Kino Bulgaria,Ukraine,85.14.32.26,bare-IP server re-sending many channels
 Dubai TV International,United Arab Emirates,185.9.2.18,bare-IP server re-sending many channels
+Nickelodeon Arabia,United Arab Emirates,85.237.89.159,bare-IP server re-sending many channels
+Star World Middle East,United Arab Emirates,85.237.89.159,bare-IP server re-sending many channels
 AMC Europe Czech Republic,United Kingdom,88.212.7.14,bare-IP server re-sending many channels
 AMC Europe Hungary,United Kingdom,88.212.7.14,bare-IP server re-sending many channels
 Animal Planet (United Kingdom),United Kingdom,37.49.224.5,bare-IP server re-sending many channels
@@ -1161,8 +1146,6 @@ Cartoonito CEE Bulgary,United Kingdom,213.91.179.28,bare-IP server re-sending ma
 Cartoonito CEE Czechia,United Kingdom,88.212.7.14,bare-IP server re-sending many channels
 Cartoonito CEE Poland,United Kingdom,92.114.85.87,bare-IP server re-sending many channels
 Crime + Investigation CEE,United Kingdom,88.212.7.14,bare-IP server re-sending many channels
-DAZN 1 Germany,United Kingdom,45.142.104.86,bare-IP server re-sending many channels
-DAZN 2 Germany,United Kingdom,45.142.104.86,bare-IP server re-sending many channels
 DAZN 3 Portugal,United Kingdom,23.237.104.106,bare-IP server re-sending many channels
 DAZN 4,United Kingdom,23.237.104.106,bare-IP server re-sending many channels
 DAZN 5,United Kingdom,23.237.104.106,bare-IP server re-sending many channels
@@ -1192,13 +1175,8 @@ U&W,United Kingdom,92.114.85.72,bare-IP server re-sending many channels
 Viasat Epic Drama Czechia,United Kingdom,88.212.7.14,bare-IP server re-sending many channels
 Viasat Epic Drama Poland,United Kingdom,92.114.85.87,bare-IP server re-sending many channels
 3ABN Latino,United States,138.59.177.78,bare-IP server re-sending many channels
-A&E,United States,23.239.31.26,bare-IP server re-sending many channels
 A&E Latin America,United States,138.121.15.230,bare-IP server re-sending many channels
 A&E Latin America Brazil,United States,79.127.238.228,bare-IP server re-sending many channels
-ACC Network,United States,23.239.31.26,bare-IP server re-sending many channels
-Adult Swim Latin America,United States,170.244.209.30,bare-IP server re-sending many channels
-Adult Swim Latin America Brazil,United States,45.162.64.114,bare-IP server re-sending many channels
-AMC (United States),United States,23.239.31.26,bare-IP server re-sending many channels
 AMC Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
 AMC Latin America Brazil,United States,170.83.49.66,bare-IP server re-sending many channels
 AMC Series Latin America,United States,45.171.64.30,bare-IP server re-sending many channels
@@ -1213,22 +1191,17 @@ AXN Black (United States) Poland,United States,185.227.34.179,bare-IP server re-
 AXN Crime,United States,88.212.7.14,bare-IP server re-sending many channels
 AXN Latin America,United States,138.121.15.230,bare-IP server re-sending many channels
 AXN Latin America Andes,United States,181.78.8.199,bare-IP server re-sending many channels
-AXN Latin America Mexico,United States,190.11.225.124,bare-IP server re-sending many channels
 AXN Latin America South,United States,45.184.109.10,bare-IP server re-sending many channels
 AXN White (United States) Bulgaria,United States,85.14.32.26,bare-IP server re-sending many channels
 AXN White (United States) CzechRepublic,United States,88.212.15.50,bare-IP server re-sending many channels
 AXN White (United States) Poland,United States,185.227.34.179,bare-IP server re-sending many channels
-AXS TV,United States,23.239.31.26,bare-IP server re-sending many channels
 BabyFirst Spanish,United States,168.196.127.137,bare-IP server re-sending many channels
-BBC America,United States,23.239.31.26,bare-IP server re-sending many channels
 Big Ten Network,United States,23.237.104.106,bare-IP server re-sending many channels
 Bloomberg TV,United States,23.237.104.106,bare-IP server re-sending many channels
-Boomerang,United States,23.237.104.106,bare-IP server re-sending many channels
+Boomerang (United States),United States,23.237.104.106,bare-IP server re-sending many channels
 Bounce,United States,23.237.104.106,bare-IP server re-sending many channels
 Bravo,United States,41.205.93.154,bare-IP server re-sending many channels
 Buzzr,United States,23.237.104.106,bare-IP server re-sending many channels
-Cartoon Network Latin America Brazil,United States,45.162.64.114,bare-IP server re-sending many channels
-Cartoon Network Latin America North Atlantic,United States,38.252.238.18,bare-IP server re-sending many channels
 Cartoon Network Latin America South Atlantic,United States,158.172.217.18,bare-IP server re-sending many channels
 Cartoon Network Latin America South Pacific,United States,45.167.1.138,bare-IP server re-sending many channels
 Cinecanal,United States,15.204.246.24,bare-IP server re-sending many channels
@@ -1237,7 +1210,6 @@ Cinecanal South,United States,45.184.109.10,bare-IP server re-sending many chann
 Cinemax (United States) West,United States,23.237.104.106,bare-IP server re-sending many channels
 Cinemax Classics,United States,23.237.104.106,bare-IP server re-sending many channels
 Cinemax Hits,United States,23.237.104.106,bare-IP server re-sending many channels
-Cinemax Latin America HD,United States,38.65.175.84,bare-IP server re-sending many channels
 CMT,United States,23.237.104.106,bare-IP server re-sending many channels
 CNN International Latin America,United States,168.228.44.241,bare-IP server re-sending many channels
 CNN International South Asia,United States,103.253.74.210,bare-IP server re-sending many channels
@@ -1249,20 +1221,19 @@ De Pelicula US,United States,138.121.15.230,bare-IP server re-sending many chann
 Destination America,United States,23.237.104.106,bare-IP server re-sending many channels
 DHE,United States,15.204.246.24,bare-IP server re-sending many channels
 Discovery Channel Latin America,United States,45.171.64.30,bare-IP server re-sending many channels
-Discovery Channel Latin America Brazil,United States,45.162.64.114,bare-IP server re-sending many channels
 Discovery Channel Latin America South,United States,45.184.109.10,bare-IP server re-sending many channels
+Discovery Channel Middle East & Africa,United States,85.237.89.159,bare-IP server re-sending many channels
 Discovery Kids Latin America,United States,181.224.200.5,bare-IP server re-sending many channels
 Discovery Kids Latin America Colombia,United States,38.134.250.110,bare-IP server re-sending many channels
-Discovery Kids Latin America Mexico,United States,38.65.175.84,bare-IP server re-sending many channels
 Discovery Science Latin America,United States,45.171.64.30,bare-IP server re-sending many channels
 Discovery Science Latin America ColombiaPeru,United States,45.134.141.161,bare-IP server re-sending many channels
 Discovery Theater Latin America,United States,181.224.200.5,bare-IP server re-sending many channels
 Discovery Turbo (United States),United States,41.205.93.154,bare-IP server re-sending many channels
 Discovery Turbo Latin America,United States,38.134.250.110,bare-IP server re-sending many channels
 Discovery World,United States,168.196.127.137,bare-IP server re-sending many channels
-E! East,United States,23.237.104.106,bare-IP server re-sending many channels
+E! (United States) East,United States,23.237.104.106,bare-IP server re-sending many channels
 E! Latin America Colombia,United States,38.134.250.110,bare-IP server re-sending many channels
-El Sembrador Nueva Evangelizacion ESNE,United States,190.61.90.17,bare-IP server re-sending many channels
+ESNE TV,United States,168.196.127.137,bare-IP server re-sending many channels
 ESPN (United States) HD,United States,85.237.89.160,bare-IP server re-sending many channels
 ESPN 2 (United States) HD,United States,85.237.89.160,bare-IP server re-sending many channels
 ESPN 2 Latin America Colombia,United States,190.61.47.54,bare-IP server re-sending many channels
@@ -1273,7 +1244,6 @@ ESPNU HD,United States,85.237.89.160,bare-IP server re-sending many channels
 Fierro a Fondo TV,United States,45.70.201.81,bare-IP server re-sending many channels
 Food Network (United States),United States,23.237.104.106,bare-IP server re-sending many channels
 Food Network Latin America,United States,168.196.127.137,bare-IP server re-sending many channels
-Fox (United States) WSVN,United States,190.197.41.183,bare-IP server re-sending many channels
 Fox Deportes,United States,23.237.104.106,bare-IP server re-sending many channels
 Fox News International,United States,103.253.74.210,bare-IP server re-sending many channels
 Fox Sports 1,United States,85.237.89.160,bare-IP server re-sending many channels
@@ -1293,12 +1263,11 @@ Hola! TV Latin America,United States,15.204.246.24,bare-IP server re-sending man
 HTV,United States,45.171.64.30,bare-IP server re-sending many channels
 HTV Argentina,United States,45.134.141.161,bare-IP server re-sending many channels
 IFC,United States,23.237.104.106,bare-IP server re-sending many channels
-Investigation Discovery Latin America South,United States,38.65.175.84,bare-IP server re-sending many channels
+Investigation Discovery Latin America South,United States,45.184.109.10,bare-IP server re-sending many channels
 ION TV,United States,23.237.104.106,bare-IP server re-sending many channels
 Lifetime Latin America,United States,138.121.15.230,bare-IP server re-sending many channels
 Lifetime Latin America Brazil,United States,170.83.16.50,bare-IP server re-sending many channels
 Lifetime Movies,United States,23.237.104.106,bare-IP server re-sending many channels
-Magnolia Network,United States,190.197.41.183,bare-IP server re-sending many channels
 Mi Musica Reggaeton,United States,181.78.12.119,bare-IP server re-sending many channels
 Mi Musica Romantica,United States,168.228.44.241,bare-IP server re-sending many channels
 Mi Musica Salsa,United States,181.78.12.119,bare-IP server re-sending many channels
@@ -1314,25 +1283,22 @@ National Geographic (United States) HD East,United States,198.58.104.90,bare-IP 
 National Geographic Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
 National Geographic Wild (United States) HD East,United States,198.58.104.90,bare-IP server re-sending many channels
 NBA TV,United States,23.237.104.106,bare-IP server re-sending many channels
-NBC,United States,190.11.225.124,bare-IP server re-sending many channels
-NBC WTLV,United States,190.197.41.183,bare-IP server re-sending many channels
 NFL Network,United States,198.58.104.90,bare-IP server re-sending many channels
-Nick Jr. (United States),United States,212.5.144.156,bare-IP server re-sending many channels
 Nickelodeon Latin America,United States,181.78.79.131,bare-IP server re-sending many channels
-Nicktoons (United States),United States,41.205.93.154,bare-IP server re-sending many channels
 Novelisima,United States,138.59.177.78,bare-IP server re-sending many channels
 One America News Network,United States,23.237.104.106,bare-IP server re-sending many channels
 Outdoor Channel HD,United States,23.237.104.106,bare-IP server re-sending many channels
 OWN,United States,23.237.104.106,bare-IP server re-sending many channels
-Paramount Network,United States,23.237.104.106,bare-IP server re-sending many channels
+Paramount Network (United States),United States,23.237.104.106,bare-IP server re-sending many channels
 Pasiones Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
 Reelz,United States,23.237.104.106,bare-IP server re-sending many channels
 Revolt,United States,23.237.104.106,bare-IP server re-sending many channels
 SEC Network,United States,23.237.104.106,bare-IP server re-sending many channels
-Semillitas TV,United States,38.252.238.18,bare-IP server re-sending many channels
+Semillitas TV,United States,168.196.127.137,bare-IP server re-sending many channels
 Showtime Family Zone,United States,23.237.104.106,bare-IP server re-sending many channels
 Sony Channel Andes,United States,15.204.246.24,bare-IP server re-sending many channels
-Sony Movies Latin America,United States,38.252.238.18,bare-IP server re-sending many channels
+Sony Movies Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
+Star Action,United States,85.237.89.159,bare-IP server re-sending many channels
 Star Channel Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
 Star Channel Latin America South,United States,45.184.109.10,bare-IP server re-sending many channels
 Starz Cinema,United States,23.237.104.106,bare-IP server re-sending many channels
@@ -1347,32 +1313,25 @@ Studio Universal Latin America South,United States,45.184.109.10,bare-IP server 
 SYFY,United States,23.237.104.106,bare-IP server re-sending many channels
 TCM Latin America,United States,181.78.14.26,bare-IP server re-sending many channels
 TCM Latin America South,United States,45.171.64.30,bare-IP server re-sending many channels
-Telemundo,United States,190.11.225.124,bare-IP server re-sending many channels
 Telemundo Internacional,United States,45.173.231.22,bare-IP server re-sending many channels
 Telemundo West,United States,45.5.117.57,bare-IP server re-sending many channels
-TeleXitos,United States,190.197.41.183,bare-IP server re-sending many channels
 TLC Latin America,United States,38.134.250.110,bare-IP server re-sending many channels
 TLC Latin America Brazil,United States,79.127.238.228,bare-IP server re-sending many channels
 TNT Latin America,United States,45.171.64.30,bare-IP server re-sending many channels
 TNT Latin America Argentina,United States,45.134.141.161,bare-IP server re-sending many channels
 TNT Latin America Colombia,United States,181.78.211.244,bare-IP server re-sending many channels
 TNT Novelas,United States,158.172.155.130,bare-IP server re-sending many channels
-TNT Novelas Brazil,United States,45.162.64.114,bare-IP server re-sending many channels
 TNT Novelas Colombia,United States,190.61.47.54,bare-IP server re-sending many channels
 TNT Novelas ColombiaHD,United States,181.78.79.131,bare-IP server re-sending many channels
 TNT Series Latin America,United States,168.196.127.137,bare-IP server re-sending many channels
 Tooncast,United States,45.184.109.10,bare-IP server re-sending many channels
 Tooncast Argentina,United States,45.134.141.161,bare-IP server re-sending many channels
 truTV,United States,23.237.104.106,bare-IP server re-sending many channels
-UniMas Central,United States,190.197.41.183,bare-IP server re-sending many channels
 UniMas Mountain,United States,168.228.44.241,bare-IP server re-sending many channels
-UniMas WAMI-DT,United States,190.197.41.183,bare-IP server re-sending many channels
 Universal Cinema,United States,45.167.1.138,bare-IP server re-sending many channels
 Universal TV Latin America,United States,15.204.246.24,bare-IP server re-sending many channels
 Universal TV Latin America Colombia,United States,38.134.250.110,bare-IP server re-sending many channels
-Univision,United States,190.197.41.183,bare-IP server re-sending many channels
 Univision WLTV-DT,United States,168.228.44.241,bare-IP server re-sending many channels
-USA Network,United States,190.197.41.183,bare-IP server re-sending many channels
 USA Network Latin America,United States,138.121.15.230,bare-IP server re-sending many channels
 VH1,United States,23.237.104.106,bare-IP server re-sending many channels
 VICE TV,United States,23.237.104.106,bare-IP server re-sending many channels
@@ -1396,6 +1355,7 @@ Venevision,Venezuela,181.78.8.199,bare-IP server re-sending many channels
 Vive,Venezuela,200.59.191.177,bare-IP server re-sending many channels
 Hewad TV,Afghanistan,51.210.199.58,"bare-IP server, not the broadcaster's own site"
 Panorama TV,Albania,159.69.221.56,"bare-IP server, not the broadcaster's own site"
+Europa Europa,Argentina,38.252.238.18,"bare-IP server, not the broadcaster's own site"
 NET TV,Argentina,45.226.205.96,"bare-IP server, not the broadcaster's own site"
 Plim Plim,Argentina,45.70.168.162,"bare-IP server, not the broadcaster's own site"
 Radiocanal,Argentina,204.199.3.2,"bare-IP server, not the broadcaster's own site"
@@ -1406,7 +1366,6 @@ Sol TV (Bolivia),Bolivia,190.211.140.91,"bare-IP server, not the broadcaster's o
 Federalna televizija,Bosnia and Herzegovina,185.81.240.65,"bare-IP server, not the broadcaster's own site"
 TV Slon Extra,Bosnia and Herzegovina,31.47.0.130,"bare-IP server, not the broadcaster's own site"
 AgroBrasil TV,Brazil,45.162.230.234,"bare-IP server, not the broadcaster's own site"
-Canal Gov,Brazil,45.177.114.115,"bare-IP server, not the broadcaster's own site"
 CazeTV,Brazil,138.204.86.4,"bare-IP server, not the broadcaster's own site"
 Gloob,Brazil,45.235.0.78,"bare-IP server, not the broadcaster's own site"
 GNT,Brazil,170.82.202.31,"bare-IP server, not the broadcaster's own site"
@@ -1414,7 +1373,6 @@ Primer TV,Brazil,200.194.238.229,"bare-IP server, not the broadcaster's own site
 RecordTV Interior SP,Brazil,200.77.176.130,"bare-IP server, not the broadcaster's own site"
 Rede CNT Salvador,Brazil,168.205.87.198,"bare-IP server, not the broadcaster's own site"
 TV Parana Turismo,Brazil,200.189.113.201,"bare-IP server, not the broadcaster's own site"
-TV Ra Tim Bum,Brazil,45.177.114.115,"bare-IP server, not the broadcaster's own site"
 bTV,Bulgaria,85.11.189.178,"bare-IP server, not the broadcaster's own site"
 DSTV (Bulgaria),Bulgaria,46.249.95.140,"bare-IP server, not the broadcaster's own site"
 EKids,Bulgaria,78.108.244.134,"bare-IP server, not the broadcaster's own site"
@@ -1468,13 +1426,15 @@ Canal 4 (Costa Rica),Costa Rica,45.186.106.207,"bare-IP server, not the broadcas
 Canal 6 (Costa Rica),Costa Rica,45.5.118.188,"bare-IP server, not the broadcaster's own site"
 Quince UCR,Costa Rica,163.178.170.127,"bare-IP server, not the broadcaster's own site"
 Super Cable,Costa Rica,191.102.39.254,"bare-IP server, not the broadcaster's own site"
-Teletica 7,Costa Rica,190.61.101.11,"bare-IP server, not the broadcaster's own site"
 VM Latino,Costa Rica,45.163.139.42,"bare-IP server, not the broadcaster's own site"
 XperTV,Costa Rica,45.163.139.42,"bare-IP server, not the broadcaster's own site"
 Klasik,Croatia,178.253.194.105,"bare-IP server, not the broadcaster's own site"
 STV (Croatia),Croatia,89.201.163.244,"bare-IP server, not the broadcaster's own site"
 Trend TV,Croatia,185.62.75.22,"bare-IP server, not the broadcaster's own site"
 TV Zapad,Croatia,85.94.67.158,"bare-IP server, not the broadcaster's own site"
+CDN,Dominican Republic,187.245.231.226,"bare-IP server, not the broadcaster's own site"
+SiTV,Dominican Republic,190.122.104.210,"bare-IP server, not the broadcaster's own site"
+Tarima TV,Dominican Republic,190.122.104.210,"bare-IP server, not the broadcaster's own site"
 Telemicro Internacional,Dominican Republic,45.228.234.60,"bare-IP server, not the broadcaster's own site"
 Marca TV,Ecuador,200.7.219.221,"bare-IP server, not the broadcaster's own site"
 Maxivision Canal 8,Ecuador,181.119.97.124,"bare-IP server, not the broadcaster's own site"
@@ -1494,13 +1454,11 @@ TV5Monde Latin America,France,45.162.231.38,"bare-IP server, not the broadcaster
 TV5Monde Pacific,France,103.190.232.129,"bare-IP server, not the broadcaster's own site"
 TV5Monde Style,France,103.190.232.129,"bare-IP server, not the broadcaster's own site"
 TVRUS+,Germany,91.235.255.32,"bare-IP server, not the broadcaster's own site"
+ANT1 Satellite,Greece,194.156.236.36,"bare-IP server, not the broadcaster's own site"
 DELTA TV,Greece,81.171.10.42,"bare-IP server, not the broadcaster's own site"
 Extra ProNews,Greece,62.1.176.18,"bare-IP server, not the broadcaster's own site"
-Canal 3 (Guatemala),Guatemala,181.119.177.253,"bare-IP server, not the broadcaster's own site"
-Canal 7,Guatemala,181.119.177.253,"bare-IP server, not the broadcaster's own site"
 Jubilo TV,Guatemala,173.249.60.54,"bare-IP server, not the broadcaster's own site"
 Tigo Sports (Guatemala),Guatemala,45.5.119.43,"bare-IP server, not the broadcaster's own site"
-Vea Canal,Guatemala,181.78.106.127,"bare-IP server, not the broadcaster's own site"
 Radio Tele Amen FM,Haiti,184.173.179.163,"bare-IP server, not the broadcaster's own site"
 Tele Haiti,Haiti,66.175.238.147,"bare-IP server, not the broadcaster's own site"
 CVA TV,Honduras,190.124.161.21,"bare-IP server, not the broadcaster's own site"
@@ -1526,9 +1484,12 @@ Mohabat TV (Iran),Iran,204.11.235.251,"bare-IP server, not the broadcaster's own
 Al-Naeem TV,Iraq,37.238.136.61,"bare-IP server, not the broadcaster's own site"
 Canale Dieci,Italy,37.187.142.147,"bare-IP server, not the broadcaster's own site"
 Euro Indie Music Chart TV,Italy,178.33.224.197,"bare-IP server, not the broadcaster's own site"
+Italia 1 HD,Italy,185.227.34.62,"bare-IP server, not the broadcaster's own site"
 Le Cronache TV,Italy,77.68.40.210,"bare-IP server, not the broadcaster's own site"
 Passione Lotto,Italy,185.63.52.103,"bare-IP server, not the broadcaster's own site"
+Rete 4 HD,Italy,185.227.34.62,"bare-IP server, not the broadcaster's own site"
 Super TV Oristano,Italy,193.70.81.40,"bare-IP server, not the broadcaster's own site"
+SuperTennis,Italy,57.128.225.206,"bare-IP server, not the broadcaster's own site"
 Telemolise,Italy,185.202.128.1,"bare-IP server, not the broadcaster's own site"
 TV Sei,Italy,185.202.128.1,"bare-IP server, not the broadcaster's own site"
 Alerth Alnabawi Channel,Jordan,82.212.74.2,"bare-IP server, not the broadcaster's own site"
@@ -1546,7 +1507,6 @@ TM1 TV,Mali,69.64.57.208,"bare-IP server, not the broadcaster's own site"
 Az Mundo,Mexico,15.204.142.109,"bare-IP server, not the broadcaster's own site"
 Azteca 7,Mexico,187.245.231.226,"bare-IP server, not the broadcaster's own site"
 Azteca Deportes Network,Mexico,209.14.115.253,"bare-IP server, not the broadcaster's own site"
-Bandamax,Mexico,181.78.106.127,"bare-IP server, not the broadcaster's own site"
 Canal 5 (Mexico),Mexico,45.181.87.106,"bare-IP server, not the broadcaster's own site"
 Distrito Comedia,Mexico,15.204.142.109,"bare-IP server, not the broadcaster's own site"
 Golden Premier,Mexico,200.57.28.141,"bare-IP server, not the broadcaster's own site"
@@ -1574,6 +1534,7 @@ Polsat Film HD,Poland,92.63.196.180,"bare-IP server, not the broadcaster's own s
 Polsat Games HD,Poland,92.63.196.180,"bare-IP server, not the broadcaster's own site"
 Puls 2 HD,Poland,193.24.244.60,"bare-IP server, not the broadcaster's own site"
 TV Torun,Poland,217.173.176.107,"bare-IP server, not the broadcaster's own site"
+TVP Sport,Poland,213.189.46.75,"bare-IP server, not the broadcaster's own site"
 Kuriakos Music,Portugal,195.23.211.179,"bare-IP server, not the broadcaster's own site"
 TeleM Botosani,Romania,89.137.197.15,"bare-IP server, not the broadcaster's own site"
 Traditional TV,Romania,83.103.149.75,"bare-IP server, not the broadcaster's own site"
@@ -1648,7 +1609,6 @@ Thaqalayn TV,Turkiye,62.60.207.173,"bare-IP server, not the broadcaster's own si
 Ulke TV,Turkiye,217.174.229.138,"bare-IP server, not the broadcaster's own site"
 Balta TV,Ukraine,194.50.51.34,"bare-IP server, not the broadcaster's own site"
 Donbass Online,Ukraine,176.110.1.30,"bare-IP server, not the broadcaster's own site"
-FilmUADrama,Ukraine,88.99.215.227,"bare-IP server, not the broadcaster's own site"
 Glas,Ukraine,85.238.112.69,"bare-IP server, not the broadcaster's own site"
 Herson Plyus,Ukraine,46.175.163.130,"bare-IP server, not the broadcaster's own site"
 Misto+,Ukraine,93.78.206.172,"bare-IP server, not the broadcaster's own site"
@@ -1661,7 +1621,6 @@ PBS America,United Kingdom,185.19.191.2,"bare-IP server, not the broadcaster's o
 American Horrors,United States,107.167.7.162,"bare-IP server, not the broadcaster's own site"
 Canal Infantil,United States,179.1.196.222,"bare-IP server, not the broadcaster's own site"
 Cine Sony,United States,186.148.196.82,"bare-IP server, not the broadcaster's own site"
-ESNE TV,United States,132.255.210.69,"bare-IP server, not the broadcaster's own site"
 Hope4Life TV,United States,144.217.14.88,"bare-IP server, not the broadcaster's own site"
 KBSV 23.1,United States,66.242.170.53,"bare-IP server, not the broadcaster's own site"
 Mi Musica Hits,United States,38.188.186.47,"bare-IP server, not the broadcaster's own site"
@@ -1699,6 +1658,7 @@ NHK World-Japan HD,Japan,freem3u.xyz,copy on a personal or anonymous site
 Raajje TV,Maldives,workers.dev,copy on a personal or anonymous site
 Nouvelle Caledonie 1ere,New Caledonia,githubusercontent.com,copy on a personal or anonymous site
 LotPlus TV,Peru,workers.dev,copy on a personal or anonymous site
+Polsat X,Poland,workers.dev,copy on a personal or anonymous site
 TVI,Portugal,githubusercontent.com,copy on a personal or anonymous site
 TVI Ficcao,Portugal,githubusercontent.com,copy on a personal or anonymous site
 TVI Reality,Portugal,githubusercontent.com,copy on a personal or anonymous site
@@ -1709,8 +1669,16 @@ CNA International,Singapore,freem3u.xyz,copy on a personal or anonymous site
 CNBC Asia HD,Singapore,freem3u.xyz,copy on a personal or anonymous site
 Zee TV Asia Pacific,Singapore,githubusercontent.com,copy on a personal or anonymous site
 Arirang TV HD,South Korea,freem3u.xyz,copy on a personal or anonymous site
+Antena 3,Spain,github.io,copy on a personal or anonymous site
+Atreseries HD,Spain,github.io,copy on a personal or anonymous site
+La Sexta HD,Spain,github.io,copy on a personal or anonymous site
+Mega (Spain) HD,Spain,github.io,copy on a personal or anonymous site
+Neox HD,Spain,github.io,copy on a personal or anonymous site
+Nova (Spain) HD,Spain,github.io,copy on a personal or anonymous site
 GEM Sport,Turkiye,workers.dev,copy on a personal or anonymous site
+KRT,Turkiye,githubusercontent.com,copy on a personal or anonymous site
 Show Turk,Turkiye,githubusercontent.com,copy on a personal or anonymous site
+Sozcu TV,Turkiye,githubusercontent.com,copy on a personal or anonymous site
 Star Bharat (United Kingdom),United Kingdom,githubusercontent.com,copy on a personal or anonymous site
 Utsav Plus,United Kingdom,githubusercontent.com,copy on a personal or anonymous site
 HGTV Asia,United States,freem3u.xyz,copy on a personal or anonymous site
@@ -1724,12 +1692,14 @@ HTV5,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON BiBi,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Cine,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON E Channel,Vietnam,freem3u.xyz,copy on a personal or anonymous site
+ON Info TV,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Kids,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Life,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Movies,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Music,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON O2TV,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Style TV,Vietnam,freem3u.xyz,copy on a personal or anonymous site
+ON Trending TV,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Vie Dramas,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 ON Vie Giai Tri,Vietnam,freem3u.xyz,copy on a personal or anonymous site
 Quang Nam TV,Vietnam,freem3u.xyz,copy on a personal or anonymous site
@@ -1755,8 +1725,6 @@ TV Guarapari,Brazil,welltecnologia.com.br,needs a faked referring page (hotlink 
 MSJ TV,Cambodia,metfone.com.kh,needs a faked referring page (hotlink protection)
 Afrique Media,Cameroon,odysee.live,needs a faked referring page (hotlink protection)
 CRTV Sports and Entertainment SD,Cameroon,acangroup.org,needs a faked referring page (hotlink protection)
-New Channel,Canada,bamboo-cloud.com,needs a faked referring page (hotlink protection)
-New Channel Pop!,Canada,bamboo-cloud.com,needs a faked referring page (hotlink protection)
 Uvagut TV,Canada,uvagut.tv,needs a faked referring page (hotlink protection)
 TVO San Vicente,Chile,streamlock.net,needs a faked referring page (hotlink protection)
 Vision Plus TV,Chile,streamlock.net,needs a faked referring page (hotlink protection)
@@ -1788,9 +1756,9 @@ KidZone Max SD,Estonia,cgates.lt,needs a faked referring page (hotlink protectio
 GTV (Ghana),Ghana,5centscdn.com,needs a faked referring page (hotlink protection)
 TV3 (Ghana),Ghana,5centscdn.com,needs a faked referring page (hotlink protection)
 ANT1,Greece,antennaplus.gr,needs a faked referring page (hotlink protection)
-SIL TV,Guatemala,bozztv.com,needs a faked referring page (hotlink protection)
-AXN Spin (Hungary),Hungary,mangora1.cfd,needs a faked referring page (hotlink protection)
-AXN Spin (Hungary) Poland,Hungary,workers.dev,needs a faked referring page (hotlink protection)
+SIL TV,Guatemala,giatvcdn.com,needs a faked referring page (hotlink protection)
+AXN Spin,Hungary,mangora1.cfd,needs a faked referring page (hotlink protection)
+AXN Spin Poland,Hungary,workers.dev,needs a faked referring page (hotlink protection)
 Film Cafe Romania,Hungary,aquax1.cfd,needs a faked referring page (hotlink protection)
 AFBTV Kupang,Indonesia,siar.us,needs a faked referring page (hotlink protection)
 AKTV,Indonesia,siar.us,needs a faked referring page (hotlink protection)
@@ -1844,6 +1812,7 @@ USM TV,Indonesia,my.id,needs a faked referring page (hotlink protection)
 VTV (Indonesia),Indonesia,intechmedia.net,needs a faked referring page (hotlink protection)
 Press TV,Iran,odysee.live,needs a faked referring page (hotlink protection)
 Anwar TV2,Iraq,odysee.live,needs a faked referring page (hotlink protection)
+Cula4,Ireland,41.180.140.146,needs a faked referring page (hotlink protection)
 RTEjr,Ireland,etvhosts.site,needs a faked referring page (hotlink protection)
 Odeon 24,Italy,streamlock.net,needs a faked referring page (hotlink protection)
 CGNTV Japan,Japan,cloudfront.net,needs a faked referring page (hotlink protection)
@@ -1872,6 +1841,7 @@ Canal 8 Vision TV,Paraguay,desdeparaguay.net,needs a faked referring page (hotli
 Canal Pro,Paraguay,desde-paraguay.com,needs a faked referring page (hotlink protection)
 Del Rey TV,Paraguay,hostingcaaguazu.com,needs a faked referring page (hotlink protection)
 E40,Paraguay,desdeparaguay.net,needs a faked referring page (hotlink protection)
+Gen,Paraguay,mitvparaguay.com,needs a faked referring page (hotlink protection)
 HEi Now,Paraguay,desdeparaguay.net,needs a faked referring page (hotlink protection)
 NPY,Paraguay,desdeparaguay.net,needs a faked referring page (hotlink protection)
 Tigo Sports+,Paraguay,voxtvhd.com.br,needs a faked referring page (hotlink protection)
@@ -1886,10 +1856,8 @@ Disney Channel (Romania),Romania,thobias11.cfd,needs a faked referring page (hot
 Disney Junior (Romania),Romania,aquax1.cfd,needs a faked referring page (hotlink protection)
 Impact TV (Romania),Romania,tvimpact.ro,needs a faked referring page (hotlink protection)
 National Geographic Wild (Romania),Romania,bogulus1.cfd,needs a faked referring page (hotlink protection)
-Timeless Dizi Channel,Romania,aquax1.cfd,needs a faked referring page (hotlink protection)
 TV Paprika (Romania),Romania,thobias11.cfd,needs a faked referring page (hotlink protection)
 Channel 8 International,Russia,cdnvideo.net,needs a faked referring page (hotlink protection)
-Channel 8 Krasnoyarsk HD,Russia,telecoma.tv,needs a faked referring page (hotlink protection)
 Rossiya 1 Vainah,Russia,chechensoft.ru,needs a faked referring page (hotlink protection)
 Al Resalah,Saudi Arabia,hibridcdn.net,needs a faked referring page (hotlink protection)
 Rotana Cinema KSA,Saudi Arabia,hibridcdn.net,needs a faked referring page (hotlink protection)
@@ -1935,6 +1903,7 @@ Aneflix Live,United States,vaughnsoft.net,needs a faked referring page (hotlink 
 FNX KVCR-DT,United States,amazonaws.com,needs a faked referring page (hotlink protection)
 Mega Extreno HD,United States,vaughnsoft.net,needs a faked referring page (hotlink protection)
 Military History,United States,workers.dev,needs a faked referring page (hotlink protection)
+Tom Sings TV,United States,bamboo-cloud.com,needs a faked referring page (hotlink protection)
 Univision WGBO-DT,United States,fastly.net,needs a faked referring page (hotlink protection)
 Zoom News,United States,zoomnews.info,needs a faked referring page (hotlink protection)
 Canal ALMA,Uruguay,voxtvhd.com.br,needs a faked referring page (hotlink protection)
@@ -1956,7 +1925,6 @@ Azan TV,Canada,sonarbanglatv.com,one site carrying several broadcasters' channel
 DesheBideshe TV,Canada,sonarbanglatv.com,one site carrying several broadcasters' channels; no licence found
 A2 CNN,Albania,a2news.com,pay channel outside a licensed platform
 Bravo TV,Argentina,rudo.video,pay channel outside a licensed platform
-Disney Channel Latin America Mexico,Argentina,45.166.93.156,pay channel outside a licensed platform
 Disney Channel Latin America South,Argentina,iptvperu.tv,pay channel outside a licensed platform
 Disney Jr. Latin America,Argentina,190.14.10.19,pay channel outside a licensed platform
 Disney Jr. Latin America South,Argentina,45.185.163.75,pay channel outside a licensed platform
@@ -1971,8 +1939,6 @@ ESPN 4 (Brazil),Brazil,181.78.197.59,pay channel outside a licensed platform
 History (Brazil),Brazil,45.177.114.114,pay channel outside a licensed platform
 Nickelodeon (Brazil),Brazil,srvif.com,pay channel outside a licensed platform
 NickOnline HD,Brazil,x1colegal.com,pay channel outside a licensed platform
-SporTV 2,Brazil,195.178.110.110,pay channel outside a licensed platform
-SporTV 3,Brazil,195.178.110.110,pay channel outside a licensed platform
 Telecine Action,Brazil,46.151.196.223,pay channel outside a licensed platform
 Disney Channel (Bulgaria),Bulgaria,87.120.179.187,pay channel outside a licensed platform
 Nickelodeon (Bulgaria),Bulgaria,87.120.179.187,pay channel outside a licensed platform
@@ -1985,17 +1951,28 @@ TSN The Ocho,Canada,cloudfront.net,pay channel outside a licensed platform
 TSN4,Canada,109.104.153.220,pay channel outside a licensed platform
 ITV Patagonia,Chile,dps.live,pay channel outside a licensed platform
 TNT Sports (Chile),Chile,209.45.101.130,pay channel outside a licensed platform
-TNT Sports Premium HD,Chile,205.235.6.29,pay channel outside a licensed platform
+TNT Sports Premium HD,Chile,play-fulltv.com.ar,pay channel outside a licensed platform
 CND Film Discovery Channel,China,125.210.152.18,pay channel outside a licensed platform
 Guangxi Variety & Travel Channel,China,111.59.24.227,pay channel outside a licensed platform
 Bravo! Kids TV,Croatia,radiohub.hr,pay channel outside a licensed platform
 Golf Channel (Czech Republic),Czech Republic,antik.sk,pay channel outside a licensed platform
 MTV Uutiset,Finland,a2d.tv,pay channel outside a licensed platform
+Comedy Central (France),France,cdn-redge.media,pay channel outside a licensed platform
+Eurosport 1,France,cdn-redge.media,pay channel outside a licensed platform
+Eurosport 1 Italy,France,cdn-redge.media,pay channel outside a licensed platform
 Eurosport 1 Russia,France,iptv-24.net,pay channel outside a licensed platform
 Eurosport 1 Serbia,France,87.238.211.217,pay channel outside a licensed platform
 Eurosport 1 Turkiye,France,mangeinde4.lat,pay channel outside a licensed platform
+Eurosport 1 UK,France,85.117.37.43,pay channel outside a licensed platform
+Eurosport 2,France,cdn-redge.media,pay channel outside a licensed platform
+Eurosport 2 Italy,France,cdn-redge.media,pay channel outside a licensed platform
 Eurosport 2 Russia,France,iptv-24.net,pay channel outside a licensed platform
 Eurosport 2 Turkiye,France,mangeinde4.lat,pay channel outside a licensed platform
+Eurosport 2 UK,France,cdn-redge.media,pay channel outside a licensed platform
+MTV (France),France,cdn-redge.media,pay channel outside a licensed platform
+Nickelodeon (France),France,cdn-redge.media,pay channel outside a licensed platform
+Nickelodeon Junior,France,cdn-redge.media,pay channel outside a licensed platform
+Nicktoons (France),France,cdn-redge.media,pay channel outside a licensed platform
 Sony One Blacklist,France,amazonaws.com,pay channel outside a licensed platform
 Sony One Favoris,France,amazonaws.com,pay channel outside a licensed platform
 Sony One Hits Action,France,amazonaws.com,pay channel outside a licensed platform
@@ -2018,6 +1995,7 @@ FX 1,Iran,wns.live,pay channel outside a licensed platform
 FX 2,Iran,wns.live,pay channel outside a licensed platform
 Setanta Sports 1 Eurasia,Ireland,mcquack.net,pay channel outside a licensed platform
 Setanta Sports 2 Eurasia,Ireland,mcquack.net,pay channel outside a licensed platform
+Boomerang (Italy),Italy,alwaysdata.net,pay channel outside a licensed platform
 Cartoonito HD,Italy,akamaized.net,pay channel outside a licensed platform
 Class CNBC,Italy,dailymotion.com,pay channel outside a licensed platform
 Comedy Central (Italy),Italy,team-tv.co,pay channel outside a licensed platform
@@ -2057,6 +2035,9 @@ Star Plus Televizija,North Macedonia,muzickatv.mk,pay channel outside a licensed
 Cartoon Network (Pakistan),Pakistan,mjunoon.tv,pay channel outside a licensed platform
 Minimax (Pakistan),Pakistan,mjunoon.tv,pay channel outside a licensed platform
 Movistar Plus,Peru,45.4.1.201,pay channel outside a licensed platform
+Disney Junior (Poland),Poland,111.88.7.92,pay channel outside a licensed platform
+Eurosport 3 Polska,Poland,alwaysdata.net,pay channel outside a licensed platform
+Eurosport 4 Polska,Poland,alwaysdata.net,pay channel outside a licensed platform
 FILMBOX+ Comedy Romania,Poland,antenaplay.ro,pay channel outside a licensed platform
 FILMBOX+ Emotion Adria,Poland,bhtelecom.ba,pay channel outside a licensed platform
 FILMBOX+ Festival,Poland,antik.sk,pay channel outside a licensed platform
@@ -2067,6 +2048,7 @@ FILMBOX+ Love & Crime Adria,Poland,bhtelecom.ba,pay channel outside a licensed p
 FILMBOX+ Love & Crime Romania,Poland,antenaplay.ro,pay channel outside a licensed platform
 FILMBOX+ One Nederland,Poland,46.149.191.219,pay channel outside a licensed platform
 FILMBOX+ One Romania,Poland,antenaplay.ro,pay channel outside a licensed platform
+Paramount Network (Poland),Poland,alwaysdata.net,pay channel outside a licensed platform
 Viasat Explore Classic,Poland,wurl.com,pay channel outside a licensed platform
 AXN (Portugal),Portugal,188.115.15.121,pay channel outside a licensed platform
 AXN Movies (Portugal),Portugal,50.7.120.34,pay channel outside a licensed platform
@@ -2077,9 +2059,14 @@ Sport TV5,Portugal,dyndns.org,pay channel outside a licensed platform
 Sport TV6,Portugal,dyndns.org,pay channel outside a licensed platform
 Sport TV7,Portugal,dyndns.org,pay channel outside a licensed platform
 Star Movies (Portugal),Portugal,dyndns.org,pay channel outside a licensed platform
+beIN Sports 1,Qatar,adcdsd123321.shop,pay channel outside a licensed platform
 Antena 3 CNN,Romania,antenaplay.ro,pay channel outside a licensed platform
 Antena 3 CNN HD,Romania,antenaplay.ro,pay channel outside a licensed platform
-Discovery Channel (Romania),Romania,92.180.26.103,pay channel outside a licensed platform
+Digi Sport 1 HD,Romania,alwaysdata.net,pay channel outside a licensed platform
+Digi Sport 2 HD,Romania,alwaysdata.net,pay channel outside a licensed platform
+Digi Sport 3 HD,Romania,alwaysdata.net,pay channel outside a licensed platform
+Digi Sport 4,Romania,alwaysdata.net,pay channel outside a licensed platform
+E! (Romania),Romania,alwaysdata.net,pay channel outside a licensed platform
 Radio Fx Net,Romania,alsolnet.com,pay channel outside a licensed platform
 Amedia Hit,Russia,mcquack.net,pay channel outside a licensed platform
 Animal Planet (Russia),Russia,mcquack.net,pay channel outside a licensed platform
@@ -2118,13 +2105,15 @@ History (Slovenia),Slovenia,xploretv.si,pay channel outside a licensed platform
 Viasat Explore (Slovenia),Slovenia,dstvmultimedia.com,pay channel outside a licensed platform
 Viasat History (Slovenia),Slovenia,dstvmultimedia.com,pay channel outside a licensed platform
 Viasat Nature (Slovenia),Slovenia,dstvmultimedia.com,pay channel outside a licensed platform
+AXN (Spain),Spain,alwaysdata.net,pay channel outside a licensed platform
 AXN CEE Bulgary,Spain,85.11.144.9,pay channel outside a licensed platform
-AXN Movies (Spain),Spain,stmify.com,pay channel outside a licensed platform
+AXN Movies (Spain),Spain,alwaysdata.net,pay channel outside a licensed platform
 Sundance TV (Spain),Spain,stmify.com,pay channel outside a licensed platform
 Nick Schweiz,Switzerland,s.gy,pay channel outside a licensed platform
+Boomerang (Thailand),Thailand,thaimomo.com,pay channel outside a licensed platform
+beIN Sports 1 Turk,Turkiye,57.129.0.61,pay channel outside a licensed platform
 Cartoon Network (Turkiye),Turkiye,176.65.153.40,pay channel outside a licensed platform
 CNBC-e,Turkiye,ercdn.net,pay channel outside a licensed platform
-CNN Turk,Turkiye,85.117.61.84,pay channel outside a licensed platform
 National Geographic (Turkiye),Turkiye,ayakkabiparti.lol,pay channel outside a licensed platform
 National Geographic Wild (Turkiye),Turkiye,ayakkabiparti.lol,pay channel outside a licensed platform
 Viasat History (Turkiye),Turkiye,ayakkabiparti.lol,pay channel outside a licensed platform
@@ -2150,7 +2139,9 @@ Cartoon Network CEE Ukraine,United Kingdom,45.132.87.69,pay channel outside a li
 CBBC HD,United Kingdom,stmify.com,pay channel outside a licensed platform
 CBeebies (United Kingdom) HD,United Kingdom,stmify.com,pay channel outside a licensed platform
 Channel 4,United Kingdom,iptvnetwork.net,pay channel outside a licensed platform
+DAZN 1 Germany,United Kingdom,45.142.104.86,pay channel outside a licensed platform
 DAZN 1 Portugal,United Kingdom,50.7.120.34,pay channel outside a licensed platform
+DAZN 2 Germany,United Kingdom,45.142.104.86,pay channel outside a licensed platform
 DAZN F1,United Kingdom,tvorb.net,pay channel outside a licensed platform
 E4,United Kingdom,iptvnetwork.net,pay channel outside a licensed platform
 ITV2,United Kingdom,iptvnetwork.net,pay channel outside a licensed platform
@@ -2164,15 +2155,18 @@ AXN Adria,United States,87.238.211.217,pay channel outside a licensed platform
 AXN White (United States) Portugal,United States,188.115.15.121,pay channel outside a licensed platform
 BBC Kids,United States,cloudfront.net,pay channel outside a licensed platform
 beIN SPORTS XTRA en Espanol,United States,cloudfront.net,pay channel outside a licensed platform
+Cartoon Network (United States),United States,hostless.app,pay channel outside a licensed platform
 Cartoon Network Latin America,United States,iptvperu.tv,pay channel outside a licensed platform
+Cartoon Network Latin America North Atlantic,United States,45.173.12.70,pay channel outside a licensed platform
 Cartoonito Latin America,United States,45.173.12.70,pay channel outside a licensed platform
 Cinemax Latin America,United States,onnethn.com,pay channel outside a licensed platform
 Classic Arts Showcase,United States,akamaized.net,pay channel outside a licensed platform
 CNN International,United States,cloudfront.net,pay channel outside a licensed platform
 CNN International North America,United States,cloudfront.net,pay channel outside a licensed platform
-Comedy Central Latin America,United States,iptvperu.tv,pay channel outside a licensed platform
+Comedy Central (United States),United States,hostless.app,pay channel outside a licensed platform
 Discovery Kids Latin America Chile,United States,38.224.231.176,pay channel outside a licensed platform
 Disney Channel (United States),United States,4.30.180.36,pay channel outside a licensed platform
+Disney Junior (United States),United States,hostless.app,pay channel outside a licensed platform
 Disney XD (United States),United States,89.187.179.148,pay channel outside a licensed platform
 DSports,United States,38.187.7.252,pay channel outside a licensed platform
 DSports 2,United States,187.102.208.209,pay channel outside a licensed platform
@@ -2201,12 +2195,16 @@ HGTV Latin America,United States,38.87.224.19,pay channel outside a licensed pla
 History 2 Latin America Brazil,United States,45.177.114.114,pay channel outside a licensed platform
 Lifetime Asia,United States,ioapk.com,pay channel outside a licensed platform
 Lifetime Latin America Mexico,United States,onnethn.com,pay channel outside a licensed platform
+Nick Jr. (United States),United States,hostless.app,pay channel outside a licensed platform
 Nick Jr. Latin America,United States,onnethn.com,pay channel outside a licensed platform
+Nickelodeon (United States),United States,hostless.app,pay channel outside a licensed platform
+Nicktoons (United States),United States,hostless.app,pay channel outside a licensed platform
 Sony Canal Novelas,United States,amazonaws.com,pay channel outside a licensed platform
 Sony Movies (United States),United States,klowdtv.com,pay channel outside a licensed platform
 Tennis Channel 2,United States,smartplaytv.in,pay channel outside a licensed platform
 TNT Latin America South,United States,iptvperu.tv,pay channel outside a licensed platform
 TNT Series Latin America South,United States,iptvperu.tv,pay channel outside a licensed platform
+USA Network,United States,200.32.231.178,pay channel outside a licensed platform
 Warner TV Asia,United States,skygo.mn,pay channel outside a licensed platform
 Willow Sports,United States,cloudfront.net,pay channel outside a licensed platform
 Utsav Bharat,United Kingdom,cloudfront.net,pay channel outside a licensed platform: Disney Star's UK channel
@@ -2223,6 +2221,7 @@ Channel 9 (Australia),Australia,akamaized.net,plays only in its own country
 Channel 9 (Australia) Adelaide,Australia,akamaized.net,plays only in its own country
 Channel 9 (Australia) Brisbane,Australia,akamaized.net,plays only in its own country
 Channel 9 (Australia) Perth,Australia,akamaized.net,plays only in its own country
+Nickelodeon (Australia),Australia,mjh.nz,plays only in its own country
 NickToons 90s,Australia,mjh.nz,plays only in its own country
 Sky Racing 2,Australia,akamaized.net,plays only in its own country
 Uppera Balkan,Austria,89.187.168.245,plays only in its own country
@@ -2317,6 +2316,7 @@ Montecristi Digital 8,Dominican Republic,soportedvb.click,plays only in its own 
 Peravia Vision,Dominican Republic,tvrdomi.com,plays only in its own country
 Punto TV Digital 40,Dominican Republic,tvrdomi.com,plays only in its own country
 Super TV 55,Dominican Republic,tvrdomi.com,plays only in its own country
+Telemicro HD,Dominican Republic,wind.do,plays only in its own country
 TV Plata,Dominican Republic,tvrdomi.com,plays only in its own country
 Vision 3000,Dominican Republic,tvrdomi.com,plays only in its own country
 Xtremo Channel,Dominican Republic,tvrdomi.com,plays only in its own country
@@ -2515,6 +2515,7 @@ El 33,Spain,3catdirectes.cat,plays only in its own country
 Esport3,Spain,3catdirectes.cat,plays only in its own country
 ETB 1,Spain,etbon.eus,plays only in its own country
 ETB 2,Spain,etbon.eus,plays only in its own country
+Kidz,Spain,amazonaws.com,plays only in its own country
 Love The Planet DE,Spain,amagi.tv,plays only in its own country
 Love The Planet ES,Spain,amagi.tv,plays only in its own country
 Love The Planet IT,Spain,amagi.tv,plays only in its own country
@@ -2608,10 +2609,12 @@ CBeebies (United Kingdom),United Kingdom,akamaized.net,plays only in its own cou
 Pop Up,United Kingdom,amagi.tv,plays only in its own country
 S4C,United Kingdom,s4c-cdn.co.uk,plays only in its own country
 YAAAS!,United Kingdom,cloudfront.net,plays only in its own country
+AMC (United States),United States,41.205.93.154,plays only in its own country
 Animal Planet Latin America HD,United States,15.204.246.24,plays only in its own country
 Animation+,United States,akamaized.net,plays only in its own country
 Billiard TV,United States,akamaized.net,plays only in its own country
-Cartoon Network (United States),United States,212.5.144.156,plays only in its own country
+Cartoon Network (United States) West,United States,212.5.144.156,plays only in its own country
+Cartoon Network Latin America Brazil,United States,15.204.246.24,plays only in its own country
 Celebrity Name Game,United States,amagi.tv,plays only in its own country
 Cinevault Westerns,United States,wurl.tv,plays only in its own country
 City of Fairfield Channel 26,United States,cablecast.tv,plays only in its own country
@@ -2681,14 +2684,12 @@ truTV West,United States,warnermediacdn.com,plays only in its own country
 TUDN (United States),United States,univisionnow.com,plays only in its own country
 UniMas KFTR-DT,United States,univisionnow.com,plays only in its own country
 UniMas WFUT-DT,United States,univisionnow.com,plays only in its own country
+Univision,United States,univisionnow.com,plays only in its own country
 Univision KMEX-DT,United States,univisionnow.com,plays only in its own country
 Univision West,United States,univisionnow.com,plays only in its own country
 Warner Channel Mexico,United States,15.204.246.24,plays only in its own country
 Wired2FishTV,United States,amagi.tv,plays only in its own country
 WSOC Now,United States,amagi.tv,plays only in its own country
-An Giang TV 1,Vietnam,angiangtv.vn,plays only in its own country
-An Giang TV 2,Vietnam,angiangtv.vn,plays only in its own country
-An Giang TV 3,Vietnam,angiangtv.vn,plays only in its own country
 Binh Thuan TV,Vietnam,vnns.net,plays only in its own country
 Ca Mau TV,Vietnam,ctvcamau.vn,plays only in its own country
 Lang Son TV,Vietnam,langsontv.vn,plays only in its own country
@@ -2708,6 +2709,9 @@ VTM,Belgium,iptvnetwork.net,server re-broadcasts pay channels
 VTM 3,Belgium,iptvnetwork.net,server re-broadcasts pay channels
 VTM 4,Belgium,iptvnetwork.net,server re-broadcasts pay channels
 Radio Centro,Bolivia,alsolnet.com,server re-broadcasts pay channels
+Adriatic Sport 1,Bosnia and Herzegovina,alwaysdata.net,server re-broadcasts pay channels
+Adriatic Sport 2,Bosnia and Herzegovina,alwaysdata.net,server re-broadcasts pay channels
+Adriatic Sport 3,Bosnia and Herzegovina,alwaysdata.net,server re-broadcasts pay channels
 BHT 1,Bosnia and Herzegovina,bhtelecom.ba,server re-broadcasts pay channels
 Rede Vida,Brazil,46.151.196.223,server re-broadcasts pay channels
 BNT 1,Bulgaria,isp.bg,server re-broadcasts pay channels
@@ -2755,15 +2759,26 @@ Jim,Finland,tvkaista.net,server re-broadcasts pay channels
 Liv,Finland,tvkaista.net,server re-broadcasts pay channels
 Nelonen,Finland,tvkaista.net,server re-broadcasts pay channels
 STAR Channel (Finland),Finland,tvkaista.net,server re-broadcasts pay channels
+6ter,France,cdn-redge.media,server re-broadcasts pay channels
 Euronews English HD,France,antik.sk,server re-broadcasts pay channels
+France 2,France,cdn-redge.media,server re-broadcasts pay channels
 France 24 English HD,France,ioapk.com,server re-broadcasts pay channels
+France 3,France,cdn-redge.media,server re-broadcasts pay channels
+France 4,France,cdn-redge.media,server re-broadcasts pay channels
+France 5,France,cdn-redge.media,server re-broadcasts pay channels
+Franceinfo,France,cdn-redge.media,server re-broadcasts pay channels
+LCI,France,cdn-redge.media,server re-broadcasts pay channels
 Mezzo Live,France,mcquack.net,server re-broadcasts pay channels
+NOVO19,France,cdn-redge.media,server re-broadcasts pay channels
+TF1 Series Films,France,cdn-redge.media,server re-broadcasts pay channels
+TFX,France,cdn-redge.media,server re-broadcasts pay channels
 Trace Sport Stars Russia,France,cinerama.uz,server re-broadcasts pay channels
 3sat,Germany,antik.sk,server re-broadcasts pay channels
 Anixe +,Germany,anixa.tv,server re-broadcasts pay channels
 Anixe HD Serie,Germany,anixa.tv,server re-broadcasts pay channels
 Aristo TV,Germany,anixa.tv,server re-broadcasts pay channels
 arte (Germany) HD,Germany,antik.sk,server re-broadcasts pay channels
+DMAX (Germany) HD,Germany,hopslan.com,server re-broadcasts pay channels
 hr-fernsehen HD,Germany,antik.sk,server re-broadcasts pay channels
 kabel eins,Germany,antik.sk,server re-broadcasts pay channels
 kabel eins Doku,Germany,hopslan.com,server re-broadcasts pay channels
@@ -2786,6 +2801,7 @@ VOX,Germany,antik.sk,server re-broadcasts pay channels
 Voxup,Germany,hopslan.com,server re-broadcasts pay channels
 WELT,Germany,antik.sk,server re-broadcasts pay channels
 ZDF,Germany,antik.sk,server re-broadcasts pay channels
+Canal 11 (Honduras),Honduras,rudo.video,server re-broadcasts pay channels
 Puringla TV,Honduras,srvif.com,server re-broadcasts pay channels
 RSV Honduras,Honduras,srvif.com,server re-broadcasts pay channels
 Film Mania,Hungary,205.237.104.26,server re-broadcasts pay channels
@@ -2811,6 +2827,7 @@ HOT Zone,Israel,mcquack.net,server re-broadcasts pay channels
 Kan Educational,Israel,mcquack.net,server re-broadcasts pay channels
 Keshet 12,Israel,mcquack.net,server re-broadcasts pay channels
 Knesset Channel,Israel,mcquack.net,server re-broadcasts pay channels
+The Israeli Network,Israel,cdn-redge.media,server re-broadcasts pay channels
 Viva Premium,Israel,mcquack.net,server re-broadcasts pay channels
 Yam Tichoni,Israel,mcquack.net,server re-broadcasts pay channels
 Yes Movies Action,Israel,mcquack.net,server re-broadcasts pay channels
@@ -2823,11 +2840,12 @@ Horse TV,Italy,klowdtv.com,server re-broadcasts pay channels
 Milan TV,Italy,team-tv.co,server re-broadcasts pay channels
 Nautical Channel,Italy,klowdtv.com,server re-broadcasts pay channels
 Nove,Italy,enhanced.live,server re-broadcasts pay channels
+Rai 1,Italy,team-tv.co,server re-broadcasts pay channels
 Rai 2 HD,Italy,team-tv.co,server re-broadcasts pay channels
 Rai 4 HD,Italy,team-tv.co,server re-broadcasts pay channels
 Rai 5,Italy,team-tv.co,server re-broadcasts pay channels
 Rai Movie HD,Italy,team-tv.co,server re-broadcasts pay channels
-Rai Premium,Italy,team-tv.co,server re-broadcasts pay channels
+Rai Sport,Italy,alwaysdata.net,server re-broadcasts pay channels
 Real Time,Italy,enhanced.live,server re-broadcasts pay channels
 TeleVenezia,Italy,streamlock.net,server re-broadcasts pay channels
 24KZ,Kazakhstan,uplink.kz,server re-broadcasts pay channels
@@ -2924,6 +2942,7 @@ News One,Pakistan,mjunoon.tv,server re-broadcasts pay channels
 Paighan TV,Pakistan,116.90.120.151,server re-broadcasts pay channels
 Planet 100.9 FM,Panama,alsolnet.com,server re-broadcasts pay channels
 Antena 1 (Peru),Peru,iptvperu.tv,server re-broadcasts pay channels
+Canal N,Peru,187.102.208.209,server re-broadcasts pay channels
 FuegoTV,Peru,iptvperu.tv,server re-broadcasts pay channels
 Juntos TV (Peru),Peru,iptvperu.tv,server re-broadcasts pay channels
 L1,Peru,45.4.1.201,server re-broadcasts pay channels
@@ -2966,7 +2985,7 @@ Pro Cinema,Romania,cra.cz,server re-broadcasts pay channels
 PRO TV HD,Romania,cra.cz,server re-broadcasts pay channels
 PRO TV International,Romania,cra.cz,server re-broadcasts pay channels
 PROTV News,Romania,cra.cz,server re-broadcasts pay channels
-Sport Extra HD,Romania,92.180.26.103,server re-broadcasts pay channels
+Timeless Dizi Channel,Romania,antenaplay.ro,server re-broadcasts pay channels
 UTV (Romania) HD,Romania,vip-acasatv.online,server re-broadcasts pay channels
 Voyo Events,Romania,cra.cz,server re-broadcasts pay channels
 Voyo Sport 1,Romania,vip-acasatv.online,server re-broadcasts pay channels
@@ -2979,6 +2998,7 @@ Big Planet,Russia,uplink.kz,server re-broadcasts pay channels
 Blokbaster HD,Russia,mcquack.net,server re-broadcasts pay channels
 BRIDGE Deluxe HD,Russia,mcquack.net,server re-broadcasts pay channels
 Carousel International,Russia,uplink.kz,server re-broadcasts pay channels
+Channel 5 International,Russia,skygo.mn,server re-broadcasts pay channels
 Channel One CIS,Russia,uplink.kz,server re-broadcasts pay channels
 Classic Music,Russia,mcquack.net,server re-broadcasts pay channels
 Detskiy,Russia,cinerama.uz,server re-broadcasts pay channels
@@ -3006,10 +3026,9 @@ Kapitan Fantastika,Russia,mcquack.net,server re-broadcasts pay channels
 KinoHit,Russia,mcquack.net,server re-broadcasts pay channels
 Kinokomedija,Russia,mcquack.net,server re-broadcasts pay channels
 Kinopokaz,Russia,mcquack.net,server re-broadcasts pay channels
-Kinopremyera HD,Russia,uplink.kz,server re-broadcasts pay channels
+Kinopremyera,Russia,uplink.kz,server re-broadcasts pay channels
 Kinosemja,Russia,mcquack.net,server re-broadcasts pay channels
 Kinoseriya,Russia,uplink.kz,server re-broadcasts pay channels
-Kinouzhas,Russia,mcquack.net,server re-broadcasts pay channels
 Komediynoe HD,Russia,mcquack.net,server re-broadcasts pay channels
 Kuhnya,Russia,mcquack.net,server re-broadcasts pay channels
 Lapki Live,Russia,uplink.kz,server re-broadcasts pay channels
@@ -3045,6 +3064,7 @@ RTVi,Russia,isp.bg,server re-broadcasts pay channels
 Russian MusicBox,Russia,mcquack.net,server re-broadcasts pay channels
 Russkiy Bestseller,Russia,mcquack.net,server re-broadcasts pay channels
 Russkiy Detektiv,Russia,mcquack.net,server re-broadcasts pay channels
+Rybalka i okhota,Russia,uplink.kz,server re-broadcasts pay channels
 Rybolov,Russia,mcquack.net,server re-broadcasts pay channels
 Ryzhiy,Russia,cinerama.uz,server re-broadcasts pay channels
 Sarafan,Russia,mcquack.net,server re-broadcasts pay channels
@@ -3053,7 +3073,6 @@ START World,Russia,uplink.kz,server re-broadcasts pay channels
 STS HD,Russia,mcquack.net,server re-broadcasts pay channels
 STS Love,Russia,skygo.mn,server re-broadcasts pay channels
 Subbota! HD,Russia,mcquack.net,server re-broadcasts pay channels
-Telecafe (Russia),Russia,skygo.mn,server re-broadcasts pay channels
 TNT4 International,Russia,uplink.kz,server re-broadcasts pay channels
 TNV-Planet,Russia,uplink.kz,server re-broadcasts pay channels
 Tochka otryva,Russia,uplink.kz,server re-broadcasts pay channels
@@ -3085,6 +3104,8 @@ DM Sat,Serbia,isp.bg,server re-broadcasts pay channels
 Sci Fi (Serbia),Serbia,bhtelecom.ba,server re-broadcasts pay channels
 Antik Info TV,Slovakia,antik.sk,server re-broadcasts pay channels
 HAHA TV,Slovakia,antik.sk,server re-broadcasts pay channels
+Sport 1 (Slovakia),Slovakia,cra.cz,server re-broadcasts pay channels
+Sport 2 (Slovakia),Slovakia,cra.cz,server re-broadcasts pay channels
 Turbo TV,Slovakia,antik.sk,server re-broadcasts pay channels
 TV Mistral,Slovakia,antik.sk,server re-broadcasts pay channels
 TV Nitricka,Slovakia,antik.sk,server re-broadcasts pay channels
@@ -3094,15 +3115,28 @@ TV9 (Slovakia),Slovakia,antik.sk,server re-broadcasts pay channels
 H2 HD,Slovenia,dstvmultimedia.com,server re-broadcasts pay channels
 National Assembly TV,South Korea,github.com,server re-broadcasts pay channels
 A Punt,Spain,brightcove.com,server re-broadcasts pay channels
-Antena 3,Spain,stmify.com,server re-broadcasts pay channels
 KinoKazka,Spain,mcquack.net,server re-broadcasts pay channels
 La 1,Spain,stmify.com,server re-broadcasts pay channels
 TVE Internacional America,Spain,boldmss.com,server re-broadcasts pay channels
+TVE Internacional Europe,Spain,cdn-redge.media,server re-broadcasts pay channels
 Shakthi TV,Sri Lanka,smartplaytv.in,server re-broadcasts pay channels
 Al-Souriya TV,Syria,edgenextcdn.net,server re-broadcasts pay channels
 DaAi 2,Taiwan,ioapk.com,server re-broadcasts pay channels
 MOMO TV,Taiwan,ioapk.com,server re-broadcasts pay channels
+3HD,Thailand,thaimomo.com,server re-broadcasts pay channels
+Amarin TV,Thailand,thaimomo.com,server re-broadcasts pay channels
+Channel 8 (Thailand),Thailand,thaimomo.com,server re-broadcasts pay channels
+Lanthung TV,Thailand,thaimomo.com,server re-broadcasts pay channels
+MCOT HD,Thailand,thaimomo.com,server re-broadcasts pay channels
+Nation TV,Thailand,thaimomo.com,server re-broadcasts pay channels
+News1,Thailand,thaimomo.com,server re-broadcasts pay channels
+T Sports 7,Thailand,thaimomo.com,server re-broadcasts pay channels
+Thai PBS,Thailand,thaimomo.com,server re-broadcasts pay channels
+Thairath TV,Thailand,thaimomo.com,server re-broadcasts pay channels
+True4U,Thailand,thaimomo.com,server re-broadcasts pay channels
+Umm TV,Thailand,thaimomo.com,server re-broadcasts pay channels
 Vipa TV,Thailand,brightcove.com,server re-broadcasts pay channels
+Workpoint TV,Thailand,thaimomo.com,server re-broadcasts pay channels
 Bloomberg HT,Turkiye,smartplaytv.in,server re-broadcasts pay channels
 TRT World,Turkiye,smartplaytv.in,server re-broadcasts pay channels
 1+1 Ukraina,Ukraine,mcquack.net,server re-broadcasts pay channels
@@ -3279,6 +3313,7 @@ Zo'r TV,Uzbekistan,cinerama.uz,server re-broadcasts pay channels
 LaPuraCrema Television,Venezuela,alsolnet.com,server re-broadcasts pay channels
 HTV Sports,Vietnam,dpdns.org,server re-broadcasts pay channels
 ON Phim Viet,Vietnam,dpdns.org,server re-broadcasts pay channels
+ON V Family,Vietnam,dpdns.org,server re-broadcasts pay channels
 Lemar TV,Afghanistan,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Tolo TV,Afghanistan,bozztv.com,"streams of a paid US service (Boss TV), not free"
 TOLOnews,Afghanistan,bozztv.com,"streams of a paid US service (Boss TV), not free"
@@ -3312,21 +3347,7 @@ Telesangil,Colombia,bozztv.com,"streams of a paid US service (Boss TV), not free
 Canal 3 KMK TV,Costa Rica,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Gex TV,Costa Rica,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Retrox TV,Costa Rica,bozztv.com,"streams of a paid US service (Boss TV), not free"
-A7 TV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Adoram TV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Camu TV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Canal 70,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Canal Multivision,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-ConstanzaTV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Guaymate TV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-La Voz de Jesus HD,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Montones TV,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Nueva Vision 14,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Telealtura,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Tom And Jerry,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Turismo HD,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-TV Cotui Canal 31,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
-TV Montana Canal 10,Dominican Republic,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Imperio TV Canal 6,Ecuador,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Pantalla Clasica EC,Ecuador,bozztv.com,"streams of a paid US service (Boss TV), not free"
 GSG TV,El Salvador,bozztv.com,"streams of a paid US service (Boss TV), not free"
@@ -3335,22 +3356,18 @@ Adjarasport 1,Georgia,bozztv.com,"streams of a paid US service (Boss TV), not fr
 Mtavari Arkhi,Georgia,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Obieqtivi TV,Georgia,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Euro TV (Greece),Greece,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Canal 100 Chinique,Guatemala,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Expresion TV,Guatemala,bozztv.com,"streams of a paid US service (Boss TV), not free"
-World TV Guatemala,Guatemala,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Ignite Television,Guyana,bozztv.com,"streams of a paid US service (Boss TV), not free"
 TNH,Haiti,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Inmaculada TV,Honduras,bozztv.com,"streams of a paid US service (Boss TV), not free"
 AFN TV,Iran,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Pooya TV,Iran,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Iraq Future,Iraq,bozztv.com,"streams of a paid US service (Boss TV), not free"
-DellaTV,Italy,bozztv.com,"streams of a paid US service (Boss TV), not free"
 TV Arberia 3 Femije,Kosovo,bozztv.com,"streams of a paid US service (Boss TV), not free"
 TV Arberia 4 Muzike,Kosovo,bozztv.com,"streams of a paid US service (Boss TV), not free"
 TV Arberia Retro Hits,Kosovo,bozztv.com,"streams of a paid US service (Boss TV), not free"
 D3 TV,Mali,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Canal 30 Cintalapa,Mexico,bozztv.com,"streams of a paid US service (Boss TV), not free"
-El Chavo TV,Mexico,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Radio televizija Rozaje,Montenegro,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Dounia TV,Niger,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Saraounia TV,Niger,bozztv.com,"streams of a paid US service (Boss TV), not free"
@@ -3410,18 +3427,12 @@ HollyWire,United States,bozztv.com,"streams of a paid US service (Boss TV), not 
 JBS,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 LifevisionTV,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Mad Dog and Merrill,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Maxcine,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Maxcine 2,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Maxcine Comedy,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Maxcine Family,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Maxcine Kids,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Movies!,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 Payvand TV (United States),United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 RadiantTV,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 SGTN-49,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 SUMtv English,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 SUMtv Latino,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
-Telecyan,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 The Loop,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 The Point Televsion Network,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
 theDove TV,United States,bozztv.com,"streams of a paid US service (Boss TV), not free"
@@ -3476,9 +3487,9 @@ T Sports,Bangladesh,aynaott.com,unlicensed redistributor
 CP24,Canada,aynaott.com,unlicensed redistributor
 Madani Channel English,Pakistan,aynascope.net,unlicensed redistributor
 Iqra Bangla,United Kingdom,aynaott.com,unlicensed redistributor
+AXS TV,United States,aynaott.com,unlicensed redistributor
 beIN Sports USA,United States,aynaott.com,unlicensed redistributor
 CNN,United States,aynaott.com,unlicensed redistributor
-Disney Junior (United States),United States,aynascope.net,unlicensed redistributor
 ESPN (United States),United States,aynascope.net,unlicensed redistributor
 Fox Business Network,United States,aynaott.com,unlicensed redistributor
 Fox News Channel,United States,aynaott.com,unlicensed redistributor
