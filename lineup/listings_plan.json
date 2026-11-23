@@ -25,6 +25,56 @@
 }
 ]
 },
+"5gold.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#5GOLD.il",
+"site_name": "5GOLD.il"
+}
+]
+},
+"5live.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#5LIVE.HD.il",
+"site_name": "5LIVE.HD.il"
+}
+]
+},
+"5plus.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#5PLUS.HD.il",
+"site_name": "5PLUS.HD.il"
+}
+]
+},
+"5sport.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#5SPORT.HD.il",
+"site_name": "5SPORT.HD.il"
+}
+]
+},
+"5stars.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#5STARS.il",
+"site_name": "5STARS.il"
+}
+]
+},
 "7info.ci~sd": {
 "sites": [
 {
@@ -42,6 +92,22 @@
 "site": "tataplay.com",
 "site_id": "1795",
 "site_name": "Aagaaz Times"
+}
+]
+},
+"aakaashaath.in~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "airtelxstream.in",
+"site_id": "LIVETV_LIVETVCHANNEL_AAKASH_AATH",
+"site_name": "Aakash Aath"
+},
+{
+"lang": "en",
+"site": "dishtv.in",
+"site_id": "142510",
+"site_name": "Aakash Aath"
 }
 ]
 },
@@ -72,6 +138,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KAAL-DT.us_locals1",
 "site_name": "KAAL-DT.us_locals1"
+}
+]
+},
+"abc.us~katc": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KATC-DT.us_locals1",
+"site_name": "KATC-DT.us_locals1"
 }
 ]
 },
@@ -112,6 +188,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KITV-DT.us_locals1",
 "site_name": "KITV-DT.us_locals1"
+}
+]
+},
+"abc.us~kivitv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KIVI-DT.us_locals1",
+"site_name": "KIVI-DT.us_locals1"
 }
 ]
 },
@@ -185,6 +271,16 @@
 }
 ]
 },
+"abc.us~wcpotv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WCPO-DT.us_locals1",
+"site_name": "WCPO-DT.us_locals1"
+}
+]
+},
 "abc.us~wdiodt": {
 "sites": [
 {
@@ -192,6 +288,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#WDIO-DT.us_locals1",
 "site_name": "WDIO-DT.us_locals1"
+}
+]
+},
+"abc.us~wewstv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WEWS-DT.us_locals1",
+"site_name": "WEWS-DT.us_locals1"
 }
 ]
 },
@@ -375,8 +481,8 @@
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "SamsungTVPlus/in#IN400056QQ",
+"site": "tvpassport.com",
+"site_id": "ace-tv/35750",
 "site_name": "Ace TV"
 }
 ]
@@ -385,15 +491,15 @@
 "sites": [
 {
 "lang": "el",
-"site": "cosmotetv.gr",
-"site_id": "action24",
-"site_name": "Action 24"
-},
-{
-"lang": "el",
 "site": "digea.gr",
 "site_id": "5000",
 "site_name": "ACTION 24"
+},
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "action24",
+"site_name": "Action 24"
 }
 ]
 },
@@ -505,8 +611,8 @@
 },
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#1714036864/amazing-facts-tv",
+"site": "tvpassport.com",
+"site_id": "amazing-facts-tv/15187",
 "site_name": "Amazing Facts TV"
 }
 ]
@@ -515,15 +621,15 @@
 "sites": [
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#1775526541/amga-tv",
-"site_name": "AMGA TV"
-},
-{
-"lang": "en",
 "site": "tvpassport.com",
 "site_id": "amga-tv-armenian/13328",
 "site_name": "amga TV (Armenian)"
+},
+{
+"lang": "en",
+"site": "ontvtonight.com",
+"site_id": "us#1775526541/amga-tv",
+"site_name": "AMGA TV"
 }
 ]
 },
@@ -679,8 +785,8 @@
 },
 {
 "lang": "en",
-"site": "distro.tv",
-"site_id": "34009",
+"site": "tvpassport.com",
+"site_id": "awe-plus/37080",
 "site_name": "AWE Plus"
 }
 ]
@@ -725,8 +831,8 @@
 },
 {
 "lang": "en",
-"site": "watch.whaletvplus.com",
-"site_id": "942280082834594506",
+"site": "xumo.tv",
+"site_id": "150#99951409",
 "site_name": "Bark TV"
 }
 ]
@@ -821,14 +927,14 @@
 "sites": [
 {
 "lang": "da",
-"site": "pluto.tv",
-"site_id": "660d6c0094db140008fe2f74",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#660d6c0094db140008fe2f74",
 "site_name": "Breinholts"
 },
 {
 "lang": "da",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/dk#660d6c0094db140008fe2f74",
+"site": "pluto.tv",
+"site_id": "660d6c0094db140008fe2f74",
 "site_name": "Breinholts"
 }
 ]
@@ -933,16 +1039,6 @@
 }
 ]
 },
-"canalextremadura.es~sd": {
-"sites": [
-{
-"lang": "es",
-"site": "orangetv.orange.es",
-"site_id": "11211",
-"site_name": "Canal Extremadura"
-}
-]
-},
 "canalfdr.br~sd": {
 "sites": [
 {
@@ -987,8 +1083,8 @@
 "sites": [
 {
 "lang": "en",
-"site": "tvinsider.com",
-"site_id": "catholic-faith-network",
+"site": "tvpassport.com",
+"site_id": "catholic-faith-network/6004",
 "site_name": "Catholic Faith Network"
 },
 {
@@ -1003,15 +1099,25 @@
 "sites": [
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#69022309/catholic-tv",
+"site": "tvpassport.com",
+"site_id": "catholic-tv/15026",
 "site_name": "Catholic TV"
 },
 {
 "lang": "en",
-"site": "tvpassport.com",
-"site_id": "catholic-tv/15026",
+"site": "ontvtonight.com",
+"site_id": "us#69022309/catholic-tv",
 "site_name": "Catholic TV"
+}
+]
+},
+"cbs.us~kbzk": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KBZK-DT.us_locals1",
+"site_name": "KBZK-DT.us_locals1"
 }
 ]
 },
@@ -1042,6 +1148,36 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KMTV-DT.us_locals1",
 "site_name": "KMTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~kpaxtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KPAX-DT.us_locals1",
+"site_name": "KPAX-DT.us_locals1"
+}
+]
+},
+"cbs.us~krtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KRTV-DT.us_locals1",
+"site_name": "KRTV-DT.us_locals1"
+}
+]
+},
+"cbs.us~ktvq": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTVQ-DT.us_locals1",
+"site_name": "KTVQ-DT.us_locals1"
 }
 ]
 },
@@ -1132,6 +1268,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#WPEC-DT.us_locals1",
 "site_name": "WPEC-DT.us_locals1"
+}
+]
+},
+"cbs.us~wtkr": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTKR-DT.us_locals1",
+"site_name": "WTKR-DT.us_locals1"
 }
 ]
 },
@@ -1238,15 +1384,15 @@
 "cindietv.br~hd": {
 "sites": [
 {
-"lang": "es",
-"site": "i.mjh.nz",
-"site_id": "Plex/mx#608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7",
+"lang": "pt",
+"site": "plex.tv",
+"site_id": "6685ad945ffde3f71a3977d5",
 "site_name": "Cindie TV"
 },
 {
 "lang": "es",
-"site": "plex.tv",
-"site_id": "6685abbe59703916799193a7",
+"site": "i.mjh.nz",
+"site_id": "Plex/mx#608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7",
 "site_name": "Cindie TV"
 }
 ]
@@ -1311,8 +1457,8 @@
 },
 {
 "lang": "en",
-"site": "tvinsider.com",
-"site_id": "create",
+"site": "tvpassport.com",
+"site_id": "create/16401",
 "site_name": "Create"
 }
 ]
@@ -1659,14 +1805,14 @@
 "sites": [
 {
 "lang": "da",
-"site": "pluto.tv",
-"site_id": "660d6bc10cd4630008f4a25a",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#660d6bc10cd4630008f4a25a",
 "site_name": "Det sene show med Christian Fuhlendorff"
 },
 {
 "lang": "da",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/dk#660d6bc10cd4630008f4a25a",
+"site": "pluto.tv",
+"site_id": "660d6bc10cd4630008f4a25a",
 "site_name": "Det sene show med Christian Fuhlendorff"
 }
 ]
@@ -1773,8 +1919,8 @@
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "Roku/all#845b77875b6056d192401e10949948d2",
+"site": "plex.tv",
+"site_id": "6449369eb3ff17382cae5807",
 "site_name": "Dr. G: Medical Examiner"
 }
 ]
@@ -1865,14 +2011,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "distro.tv",
-"site_id": "140685",
+"site": "xumo.tv",
+"site_id": "300#99951543",
 "site_name": "Elevation Church Network"
 },
 {
 "lang": "en",
-"site": "xumo.tv",
-"site_id": "300#99951543",
+"site": "distro.tv",
+"site_id": "140685",
 "site_name": "Elevation Church Network"
 }
 ]
@@ -1907,15 +2053,15 @@
 "sites": [
 {
 "lang": "el",
-"site": "cosmotetv.gr",
-"site_id": "enachannel",
-"site_name": "ENA Channel"
-},
-{
-"lang": "el",
 "site": "digea.gr",
 "site_id": "4040",
 "site_name": "ENA CHANNEL"
+},
+{
+"lang": "el",
+"site": "cosmotetv.gr",
+"site_id": "enachannel",
+"site_name": "ENA Channel"
 }
 ]
 },
@@ -1954,9 +2100,9 @@
 "site_name": "plex.tv.Euronews.plex"
 },
 {
-"lang": "es",
-"site": "pluto.tv",
-"site_id": "60d3583ef310610007fb02b1",
+"lang": "en",
+"site": "plex.tv",
+"site_id": "60089d90f682a3002c348299",
 "site_name": "Euronews"
 }
 ]
@@ -2007,16 +2153,6 @@
 }
 ]
 },
-"fashiontv.in~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "tataplay.com",
-"site_id": "227",
-"site_name": "Fashion TV"
-}
-]
-},
 "fcpublicmedia.us~sd": {
 "cablecast": [
 "reflect-fcpublicmedia.cablecast.tv",
@@ -2029,13 +2165,13 @@
 1
 ]
 },
-"fibwi.es~sd": {
+"foody.il~sd": {
 "sites": [
 {
-"lang": "es",
-"site": "orangetv.orange.es",
-"site_id": "11250",
-"site_name": "Fibwi"
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#FOODY.il",
+"site_name": "FOODY.il"
 }
 ]
 },
@@ -2119,6 +2255,16 @@
 }
 ]
 },
+"fox.us~kstu": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KSTU-DT.us_locals1",
+"site_name": "KSTU-DT.us_locals1"
+}
+]
+},
 "fox.us~ktbc": {
 "sites": [
 {
@@ -2136,6 +2282,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KTTV-DT.us_locals1",
 "site_name": "KTTV-DT.us_locals1"
+}
+]
+},
+"fox.us~wagatv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WAGA-DT.us_locals1",
+"site_name": "WAGA-DT.us_locals1"
 }
 ]
 },
@@ -2229,6 +2385,16 @@
 }
 ]
 },
+"fox.us~wxmi": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WXMI-DT.us_locals1",
+"site_name": "WXMI-DT.us_locals1"
+}
+]
+},
 "fox.us~wxxvtv": {
 "sites": [
 {
@@ -2249,8 +2415,8 @@
 },
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "DTV:FSTV:348",
+"site": "directv.com",
+"site_id": "6aeb8ae6-2f8b-48fb-a746-2f963ea8e86d",
 "site_name": "Free Speech TV"
 }
 ]
@@ -2287,14 +2453,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "DTV:GEM:228",
+"site": "directv.com",
+"site_id": "e499c4cf-6b9b-483f-b1fa-cbd0d79a81bf",
 "site_name": "GEM Shopping Network"
 },
 {
 "lang": "en",
-"site": "directv.com",
-"site_id": "e499c4cf-6b9b-483f-b1fa-cbd0d79a81bf",
+"site": "streamingtvguides.com",
+"site_id": "DTV:GEM:228",
 "site_name": "GEM Shopping Network"
 }
 ]
@@ -2342,54 +2508,6 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KPCB-DT.us_locals1",
 "site_name": "KPCB-DT.us_locals1"
-}
-]
-},
-"goldmines.in~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "airtelxstream.in",
-"site_id": "LIVETV_LIVETVCHANNEL_GOLDMINES",
-"site_name": "Goldmines"
-},
-{
-"lang": "en",
-"site": "dishtv.in",
-"site_id": "143087",
-"site_name": "Goldmines"
-}
-]
-},
-"goldminesbollywood.in~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "dishtv.in",
-"site_id": "143089",
-"site_name": "Goldmines Bollywood"
-},
-{
-"lang": "en",
-"site": "tataplay.com",
-"site_id": "1050",
-"site_name": "Goldmines Bollywood"
-}
-]
-},
-"goldminesmovies.in~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "dishtv.in",
-"site_id": "142881",
-"site_name": "Goldmines Movies"
-},
-{
-"lang": "en",
-"site": "tataplay.com",
-"site_id": "1499",
-"site_name": "Goldmines Movies"
 }
 ]
 },
@@ -2571,22 +2689,6 @@
 }
 ]
 },
-"htv3.vn~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "VN1#HTV3.HD.vn",
-"site_name": "HTV3.HD.vn"
-},
-{
-"lang": "vi",
-"site": "xem.kplus.vn",
-"site_id": "uRY9Lhx566fKPuaLWcjs55wo_u2yIAkDFcE7F7J6",
-"site_name": "HTV3"
-}
-]
-},
 "htv7.vn~sd": {
 "sites": [
 {
@@ -2600,32 +2702,6 @@
 "site": "xem.kplus.vn",
 "site_id": "pPDPKS9_I8LucOy_DFvOqRuqqmsd7BGuWYsJHHhV",
 "site_name": "HTV7"
-}
-]
-},
-"htv9.vn~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "VN1#HTV9.HD.vn",
-"site_name": "HTV9.HD.vn"
-},
-{
-"lang": "vi",
-"site": "xem.kplus.vn",
-"site_id": "4o9U0OncN2xNqG4W_gqjfKxy4foQxWVzwOQWDTr4",
-"site_name": "HTV9"
-}
-]
-},
-"huelvatv.es~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "ES1#Huelva.TV.es",
-"site_name": "Huelva.TV.es"
 }
 ]
 },
@@ -2832,6 +2908,16 @@
 "site": "programetv.ro",
 "site_id": "job-tv",
 "site_name": "Job TV"
+}
+]
+},
+"junior.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "TA05",
+"site_name": "Junior"
 }
 ]
 },
@@ -3231,22 +3317,6 @@
 }
 ]
 },
-"manoranjanmovies.in~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "IN2#Manoranjan.Movies.in2",
-"site_name": "Manoranjan.Movies.in2"
-},
-{
-"lang": "en",
-"site": "dishtv.in",
-"site_id": "143303",
-"site_name": "Manoranjan Movies"
-}
-]
-},
 "manoranjanprime.in~sd": {
 "sites": [
 {
@@ -3367,9 +3437,9 @@
 },
 {
 "lang": "en",
-"site": "tataplay.com",
-"site_id": "399",
-"site_name": "MH One"
+"site": "dishtv.in",
+"site_id": "143539",
+"site_name": "MHONE"
 }
 ]
 },
@@ -3465,31 +3535,15 @@
 "sites": [
 {
 "lang": "en",
-"site": "pluto.tv",
-"site_id": "645e00d5d3fdde000829463a",
-"site_name": "More TV Sci-fi"
-},
-{
-"lang": "en",
 "site": "i.mjh.nz",
 "site_id": "PlutoTV/gb#645e00d5d3fdde000829463a",
 "site_name": "More TV Sci-fi"
-}
-]
-},
-"moviemusicbystingray.ca~hd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "PLEX1#plex.tv.Movie.Music.by.Stingray.plex",
-"site_name": "plex.tv.Movie.Music.by.Stingray.plex"
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "Plex/ca#647f8d22a2fc3fadb4721685-62fbf197c67d52bddf74cc87",
-"site_name": "Movie Music by Stingray"
+"site": "pluto.tv",
+"site_id": "645e00d5d3fdde000829463a",
+"site_name": "More TV Sci-fi"
 }
 ]
 },
@@ -3501,6 +3555,12 @@
 "site_id": "US_LOCALS1#WFXT-DT.us_locals1",
 "site_name": "WFXT-DT.us_locals1"
 }
+]
+},
+"mstv.us~sd": {
+"cablecast": [
+"reflect-mcsb-vod.cablecast.tv",
+1
 ]
 },
 "mta1world.uk~sd": {
@@ -3517,15 +3577,25 @@
 "sites": [
 {
 "lang": "es",
-"site": "pluto.tv",
-"site_id": "627d3176d7dfa500077042f1",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/es#627d3176d7dfa500077042f1",
 "site_name": "MTV Geordies"
 },
 {
 "lang": "es",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/es#627d3176d7dfa500077042f1",
+"site": "pluto.tv",
+"site_id": "627d3176d7dfa500077042f1",
 "site_name": "MTV Geordies"
+}
+]
+},
+"musicil.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CH79",
+"site_name": "Music IL"
 }
 ]
 },
@@ -3539,9 +3609,9 @@
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "Roku/all#be3c81de355c56f89cbf99301735cfd2",
-"site_name": "My Time Movie Network"
+"site": "plex.tv",
+"site_id": "644875d7af92c31f4a190bc2",
+"site_name": "MyTime Movie Network"
 }
 ]
 },
@@ -3555,6 +3625,16 @@
 }
 ]
 },
+"nbc.us~kjrhtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KJRH-DT.us_locals1",
+"site_name": "KJRH-DT.us_locals1"
+}
+]
+},
 "nbc.us~kntv": {
 "sites": [
 {
@@ -3562,6 +3642,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KNTV-DT.us_locals1",
 "site_name": "KNTV-DT.us_locals1"
+}
+]
+},
+"nbc.us~koaatv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KOAA-DT.us_locals1",
+"site_name": "KOAA-DT.us_locals1"
 }
 ]
 },
@@ -3612,6 +3702,16 @@
 "site": "epgshare01.online",
 "site_id": "US_LOCALS1#KSNV-DT.us_locals1",
 "site_name": "KSNV-DT.us_locals1"
+}
+]
+},
+"nbc.us~ktvhdt": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTVH-DT.us_locals1",
+"site_name": "KTVH-DT.us_locals1"
 }
 ]
 },
@@ -3886,8 +3986,8 @@
 {
 "lang": "bs",
 "site": "mtel.ba",
-"site_id": "iptv#ch-newsmax-balkans-hd",
-"site_name": "Newsmax Balkans HD"
+"site_id": "msat#ch-newsmax-balkans",
+"site_name": "Newsmax Balkans"
 }
 ]
 },
@@ -3928,6 +4028,22 @@
 "site": "sky.com",
 "site_id": "GB#3715",
 "site_name": "Noor TV"
+}
+]
+},
+"novosadskatv.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#Novosadska.TV.rs",
+"site_name": "Novosadska.TV.rs"
+},
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "novosadska_tv",
+"site_name": "Novosadska TV"
 }
 ]
 },
@@ -4019,14 +4135,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#3639356023/olelo-53",
+"site": "tvpassport.com",
+"site_id": "olelo-53/6028",
 "site_name": "OLELO 53"
 },
 {
 "lang": "en",
-"site": "tvpassport.com",
-"site_id": "olelo-53/6028",
+"site": "ontvtonight.com",
+"site_id": "us#3639356023/olelo-53",
 "site_name": "OLELO 53"
 }
 ]
@@ -4035,14 +4151,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#3639356119/olelo-54",
+"site": "tvpassport.com",
+"site_id": "olelo-54/6029",
 "site_name": "OLELO 54"
 },
 {
 "lang": "en",
-"site": "tvpassport.com",
-"site_id": "olelo-54/6029",
+"site": "ontvtonight.com",
+"site_id": "us#3639356119/olelo-54",
 "site_name": "OLELO 54"
 }
 ]
@@ -4051,14 +4167,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "ontvtonight.com",
-"site_id": "us#3639356120/olelo-55",
+"site": "tvpassport.com",
+"site_id": "olelo-55/6027",
 "site_name": "OLELO 55"
 },
 {
 "lang": "en",
-"site": "tvpassport.com",
-"site_id": "olelo-55/6027",
+"site": "ontvtonight.com",
+"site_id": "us#3639356120/olelo-55",
 "site_name": "OLELO 55"
 }
 ]
@@ -4079,6 +4195,22 @@
 }
 ]
 },
+"one2.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#ONE2.HD.il",
+"site_name": "ONE2.HD.il"
+},
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CH58",
+"site_name": "ONE2 HD"
+}
+]
+},
 "one31.th~sd": {
 "sites": [
 {
@@ -4092,6 +4224,32 @@
 "site": "gigatv.3bbtv.co.th",
 "site_id": "31",
 "site_name": "ONE31 HD"
+}
+]
+},
+"onedoco.il~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "IL1#ONE.DOCO.il",
+"site_name": "ONE.DOCO.il"
+},
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CHN2",
+"site_name": "ONE DOCO"
+}
+]
+},
+"oneedge.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "CHN3",
+"site_name": "ONE EDGE"
 }
 ]
 },
@@ -4219,38 +4377,18 @@
 }
 ]
 },
-"pink.rs~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "RS1#Pink.HD.rs",
-"site_name": "Pink.HD.rs"
-}
-]
-},
-"pirineustv.es~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "ES1#Pirineus.TV.es",
-"site_name": "Pirineus.TV.es"
-}
-]
-},
 "plutotvlaughsinspanish.de~dach": {
 "sites": [
 {
 "lang": "de",
-"site": "pluto.tv",
-"site_id": "69a554179a3f3bb488c7d2be",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/de#69a554179a3f3bb488c7d2be",
 "site_name": "Pluto TV Laughs in Spanish"
 },
 {
 "lang": "de",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/de#69a554179a3f3bb488c7d2be",
+"site": "pluto.tv",
+"site_id": "69a554179a3f3bb488c7d2be",
 "site_name": "Pluto TV Laughs in Spanish"
 }
 ]
@@ -4259,14 +4397,14 @@
 "sites": [
 {
 "lang": "de",
-"site": "pluto.tv",
-"site_id": "642ad072283aa4000806148c",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/de#642ad072283aa4000806148c",
 "site_name": "Pluto TV Weihnachten im Sommer"
 },
 {
 "lang": "de",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/de#642ad072283aa4000806148c",
+"site": "pluto.tv",
+"site_id": "642ad072283aa4000806148c",
 "site_name": "Pluto TV Weihnachten im Sommer"
 }
 ]
@@ -4307,54 +4445,6 @@
 }
 ]
 },
-"prvafiles.rs~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "RS1#Prva.Files.rs",
-"site_name": "Prva.Files.rs"
-},
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "prva_files",
-"site_name": "Prva Files"
-}
-]
-},
-"prvalife.rs~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "RS1#Prva.Life.rs",
-"site_name": "Prva.Life.rs"
-},
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "prva_life",
-"site_name": "Prva Life"
-}
-]
-},
-"prvamax.rs~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "RS1#Prva.MAX.rs",
-"site_name": "Prva.MAX.rs"
-},
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "Prva%20MAX",
-"site_name": "Prva MAX"
-}
-]
-},
 "puthiyathalaimurai.in~sd": {
 "sites": [
 {
@@ -4391,8 +4481,8 @@
 },
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "DTV:QVC3:318",
+"site": "directv.com",
+"site_id": "cdc92164-5416-44a1-a03a-3dc5713c0cd0",
 "site_name": "QVC3"
 }
 ]
@@ -4401,15 +4491,15 @@
 "sites": [
 {
 "lang": "de",
-"site": "web.magentatv.de",
-"site_id": "6686",
-"site_name": "QVC ZWEI"
-},
-{
-"lang": "de",
 "site": "sky.com",
 "site_id": "DE#5504",
 "site_name": "QVC ZWEI HD"
+},
+{
+"lang": "de",
+"site": "web.magentatv.de",
+"site_id": "6686",
+"site_name": "QVC ZWEI"
 }
 ]
 },
@@ -4526,15 +4616,15 @@
 "rallytv.us~sd": {
 "sites": [
 {
-"lang": "es",
-"site": "pluto.tv",
-"site_id": "696e02423b9ce349c90edef9",
+"lang": "en",
+"site": "dazn.com",
+"site_id": "us#zsree6bzeiaa1a8v4xo3j7bc4",
 "site_name": "Rally TV"
 },
 {
 "lang": "en",
-"site": "dazn.com",
-"site_id": "us#zsree6bzeiaa1a8v4xo3j7bc4",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/gb#696e024a7e92438c27a425a8",
 "site_name": "Rally TV"
 }
 ]
@@ -4667,18 +4757,28 @@
 }
 ]
 },
+"roar.us~wtvf": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#WTVF-DT.us_locals1",
+"site_name": "WTVF-DT.us_locals1"
+}
+]
+},
 "rocktv.mk~sd": {
 "sites": [
 {
 "lang": "it",
-"site": "watch.whaletvplus.com",
-"site_id": "647962207393027704",
+"site": "plex.tv",
+"site_id": "64c536427ada8486dae11a27",
 "site_name": "Rock TV"
 },
 {
 "lang": "it",
-"site": "i.mjh.nz",
-"site_id": "SamsungTVPlus/it#ITBC1100011RK",
+"site": "watch.whaletvplus.com",
+"site_id": "647962207393027704",
 "site_name": "Rock TV"
 }
 ]
@@ -4713,56 +4813,6 @@
 }
 ]
 },
-"rtsdrama.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rts_drama",
-"site_name": "RTS Drama"
-}
-]
-},
-"rtskolo.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rts_kolo",
-"site_name": "RTS Kolo"
-}
-]
-},
-"rtsmuzika.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rts_muzika",
-"site_name": "RTS Muzika"
-}
-]
-},
-"rtspoletarac.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rts_poletarac",
-"site_name": "RTS Poletarac"
-}
-]
-},
-"rtstrezor.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rts_trezor",
-"site_name": "RTS Trezor"
-}
-]
-},
 "rtvhb.ba~sd": {
 "sites": [
 {
@@ -4772,20 +4822,10 @@
 "site_name": "RTVHB.HD.ba"
 },
 {
-"lang": "bs",
-"site": "mtel.ba",
-"site_id": "iptv#ch-rtv-hb-hd",
-"site_name": "RTV HB HD"
-}
-]
-},
-"rtvnovipazar.rs~sd": {
-"sites": [
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "rtv_novi_pazar",
-"site_name": "RTV Novi Pazar"
+"lang": "hr",
+"site": "epg.telemach.ba",
+"site_id": "469",
+"site_name": "RTVHB HD"
 }
 ]
 },
@@ -4798,9 +4838,9 @@
 "site_name": "RTV.Zenica.HD.ba"
 },
 {
-"lang": "bs",
-"site": "mtel.ba",
-"site_id": "iptv#ch-rtv-zenica-hd",
+"lang": "hr",
+"site": "epg.telemach.ba",
+"site_id": "656",
 "site_name": "RTV Zenica HD"
 }
 ]
@@ -4917,14 +4957,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "DTV:SCNTV:320",
+"site": "directv.com",
+"site_id": "336feaf4-0c3f-4b91-b903-81d2694ba296",
 "site_name": "Scientology Network"
 },
 {
 "lang": "en",
-"site": "directv.com",
-"site_id": "336feaf4-0c3f-4b91-b903-81d2694ba296",
+"site": "streamingtvguides.com",
+"site_id": "DTV:SCNTV:320",
 "site_name": "Scientology Network"
 }
 ]
@@ -4942,15 +4982,15 @@
 "scorpion.de~gb": {
 "sites": [
 {
-"lang": "sv",
-"site": "pluto.tv",
-"site_id": "63a1c9c2847a090007f248da",
+"lang": "da",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/dk#63a1caefc8d285000799e8af",
 "site_name": "Scorpion"
 },
 {
 "lang": "da",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/dk#63a1caefc8d285000799e8af",
+"site": "pluto.tv",
+"site_id": "63a1caefc8d285000799e8af",
 "site_name": "Scorpion"
 }
 ]
@@ -5213,14 +5253,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "SamsungTVPlus/gb#GBBD1300001WA",
+"site": "plex.tv",
+"site_id": "639b8d803f4612cc150a5721",
 "site_name": "Smurf TV"
 },
 {
 "lang": "en",
-"site": "plex.tv",
-"site_id": "639b8d803f4612cc150a5721",
+"site": "i.mjh.nz",
+"site_id": "SamsungTVPlus/gb#GBBD1300001WA",
 "site_name": "Smurf TV"
 }
 ]
@@ -5245,22 +5285,6 @@
 }
 ]
 },
-"soskanalplus.rs~sd": {
-"sites": [
-{
-"lang": "en",
-"site": "epgshare01.online",
-"site_id": "RS1#SOS.Kanal.Plus.rs",
-"site_name": "SOS.Kanal.Plus.rs"
-},
-{
-"lang": "bs",
-"site": "mts.rs",
-"site_id": "sos_kanal_plus",
-"site_name": "SOS Kanal Plus"
-}
-]
-},
 "sportytv.cz~sd": {
 "sites": [
 {
@@ -5274,22 +5298,6 @@
 "site": "m.tv.sms.cz",
 "site_id": "Sporty+TV",
 "site_name": "Sporty TV"
-}
-]
-},
-"startrekvoyager.de~es": {
-"sites": [
-{
-"lang": "es",
-"site": "pluto.tv",
-"site_id": "65787f2eb228b7000843fa5c",
-"site_name": "Star Trek: Voyager"
-},
-{
-"lang": "en",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/us#634dacf51d90320007fcd5fa",
-"site_name": "Star Trek: Voyager"
 }
 ]
 },
@@ -5365,14 +5373,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "pluto.tv",
-"site_id": "6654adb1f99922000854388c",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/ca#6654adb1f99922000854388c",
 "site_name": "Summer of Movies"
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/ca#6654adb1f99922000854388c",
+"site": "pluto.tv",
+"site_id": "6654adb1f99922000854388c",
 "site_name": "Summer of Movies"
 }
 ]
@@ -5433,8 +5441,8 @@
 },
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "INSPIRE",
+"site": "directv.com",
+"site_id": "f01823c4-547e-4af2-b678-740752628217",
 "site_name": "TBN Inspire"
 }
 ]
@@ -5453,15 +5461,15 @@
 "sites": [
 {
 "lang": "en",
-"site": "streamingtvguides.com",
-"site_id": "DTV:TELe:406",
-"site_name": "Telemundo East (103A)"
-},
-{
-"lang": "en",
 "site": "directv.com",
 "site_id": "81eb963b-d26c-4a45-a525-1bdcd7655dda",
 "site_name": "Telemundo East"
+},
+{
+"lang": "en",
+"site": "streamingtvguides.com",
+"site_id": "DTV:TELe:406",
+"site_name": "Telemundo East (103A)"
 }
 ]
 },
@@ -5583,6 +5591,16 @@
 }
 ]
 },
+"thecw.us~ktnvtv": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "US_LOCALS1#KTNV-DT.us_locals1",
+"site_name": "KTNV-DT.us_locals1"
+}
+]
+},
 "theexplorers.ru~sd": {
 "sites": [
 {
@@ -5647,14 +5665,14 @@
 "sites": [
 {
 "lang": "en",
-"site": "pluto.tv",
-"site_id": "68e8ffee9d1d49e672fe790f",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/gb#68e8ffee9d1d49e672fe790f",
 "site_name": "The Yellow Couch with Jeremy Lynch"
 },
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "PlutoTV/gb#68e8ffee9d1d49e672fe790f",
+"site": "pluto.tv",
+"site_id": "68e8ffee9d1d49e672fe790f",
 "site_name": "The Yellow Couch with Jeremy Lynch"
 }
 ]
@@ -5701,13 +5719,19 @@
 }
 ]
 },
-"tracengoma.fr~sd": {
+"trans7.id~hd": {
 "sites": [
 {
 "lang": "en",
-"site": "i.mjh.nz",
-"site_id": "DStv/za#326.dstv_com",
-"site_name": "Trace Ngoma"
+"site": "epgshare01.online",
+"site_id": "ID1#Trans7.id",
+"site_name": "Trans7.id"
+},
+{
+"lang": "id",
+"site": "tivie.id",
+"site_id": "trans7",
+"site_name": "Trans7"
 }
 ]
 },
@@ -5715,15 +5739,31 @@
 "sites": [
 {
 "lang": "en",
-"site": "pluto.tv",
-"site_id": "60fb053712f22a0007ff14d2",
+"site": "nzxmltv.com",
+"site_id": "iptv/plutotv#3130",
 "site_name": "Transformers TV"
 },
 {
 "lang": "en",
-"site": "nzxmltv.com",
-"site_id": "iptv/plutotv#3130",
+"site": "i.mjh.nz",
+"site_id": "PlutoTV/us#60fb053712f22a0007ff14d2",
 "site_name": "Transformers TV"
+}
+]
+},
+"transtv.id~hd": {
+"sites": [
+{
+"lang": "id",
+"site": "tivie.id",
+"site_id": "transtv",
+"site_name": "Trans TV"
+},
+{
+"lang": "id",
+"site": "mncvision.id",
+"site_id": "87",
+"site_name": "Trans TV"
 }
 ]
 },
@@ -5744,6 +5784,22 @@
 "site": "tataplay.com",
 "site_id": "923",
 "site_name": "TravelXP 4K HDR"
+}
+]
+},
+"trt1.tr~hd": {
+"sites": [
+{
+"lang": "tr",
+"site": "turksatkablo.com.tr",
+"site_id": "1103",
+"site_name": "TRT 1"
+},
+{
+"lang": "tr",
+"site": "dsmart.com.tr",
+"site_id": "58d29bb0eefad3db9c606274",
+"site_name": "TRT 1"
 }
 ]
 },
@@ -5790,6 +5846,22 @@
 "site": "allente.dk",
 "site_id": "30042",
 "site_name": "TV 2 / Bornholm"
+}
+]
+},
+"tv2fyn.dk~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "DK1#TV.2/Fyn.dk",
+"site_name": "TV.2/Fyn.dk"
+},
+{
+"lang": "da",
+"site": "allente.dk",
+"site_id": "30037",
+"site_name": "TV 2 / Fyn"
 }
 ]
 },
@@ -5855,6 +5927,16 @@
 }
 ]
 },
+"tvas.rs~sd": {
+"sites": [
+{
+"lang": "bs",
+"site": "mts.rs",
+"site_id": "tv_as",
+"site_name": "TV AS"
+}
+]
+},
 "tvbrno1.cz~sd": {
 "sites": [
 {
@@ -5897,19 +5979,29 @@
 }
 ]
 },
-"tvhram.rs~sd": {
+"tvjefimija.rs~sd": {
 "sites": [
 {
 "lang": "en",
 "site": "epgshare01.online",
-"site_id": "RS1#TV.Hram.rs",
-"site_name": "TV.Hram.rs"
+"site_id": "RS1#TV.Jefimija.rs",
+"site_name": "TV.Jefimija.rs"
 },
 {
 "lang": "bs",
 "site": "mts.rs",
-"site_id": "tv_hram",
-"site_name": "TV Hram"
+"site_id": "TV%20Jefimija",
+"site_name": "TV Jefimija"
+}
+]
+},
+"tvkragujevac.rs~sd": {
+"sites": [
+{
+"lang": "en",
+"site": "epgshare01.online",
+"site_id": "RS1#TV.Kragujevac.rs",
+"site_name": "TV.Kragujevac.rs"
 }
 ]
 },
@@ -6153,6 +6245,26 @@
 }
 ]
 },
+"vivaistanbul.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "PT60",
+"site_name": "Viva Istanbul (Viva Plus)"
+}
+]
+},
+"vivatelenovelas.il~sd": {
+"sites": [
+{
+"lang": "he",
+"site": "yes.co.il",
+"site_id": "TV20",
+"site_name": "Viva Telenovelas (Viva)"
+}
+]
+},
 "vivetv.ar~hd": {
 "sites": [
 {
@@ -6353,9 +6465,9 @@
 },
 {
 "lang": "en",
-"site": "watch.whaletvplus.com",
-"site_id": "411588870569207033",
-"site_name": "Weather Spy"
+"site": "plex.tv",
+"site_id": "5f0ff266d71dcb00449ec030",
+"site_name": "WeatherSpy"
 }
 ]
 },
@@ -6369,9 +6481,9 @@
 },
 {
 "lang": "en",
-"site": "watch.whaletvplus.com",
-"site_id": "411588870569207033",
-"site_name": "Weather Spy"
+"site": "plex.tv",
+"site_id": "5f0ff266d71dcb00449ec030",
+"site_name": "WeatherSpy"
 }
 ]
 },
